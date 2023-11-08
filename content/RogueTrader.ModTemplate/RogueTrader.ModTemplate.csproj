@@ -79,9 +79,9 @@
 		<PubliciseInputAssemblies Include="$(RogueTraderData)\UnityModManager\UnityModManager.dll" />
 	</ItemGroup>
 	<ItemGroup>
-		<Content Update="Info.json" CopyToOutputDirectory="PreserveNewest" />
-		<Content Update="OwlcatModificationManifest.json" CopyToOutputDirectory="PreserveNewest" />
-		<Content Update="Repository.json" CopyToOutputDirectory="PreserveNewest" />
+		<None Include="Info.json" CopyToOutputDirectory="PreserveNewest" />
+		<None Include="OwlcatModificationManifest.json" CopyToOutputDirectory="PreserveNewest" />
+		<None Include="Repository.json" CopyToOutputDirectory="PreserveNewest" />
 	</ItemGroup>
 	<PropertyGroup>
 		<PostBuildEvent Condition=" '$(RogueTraderInstallDir)' != ''">
