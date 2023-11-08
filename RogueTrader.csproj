@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <PackageType>Template</PackageType>
-    <PackageVersion>1.0.9</PackageVersion>
+    <PackageVersion>1.0.3</PackageVersion>
     <PackageId>RogueTrader.Templates</PackageId>
     <Title>RogueTrader Mod Templates</Title>
     <Authors>ADDB</Authors>

@@ -9,6 +9,10 @@
 		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
 		<LangVersion>latest</LangVersion>
 		<RootNamespace>RogueTrader.ModTemplate</RootNamespace>
+		<RestoreAdditionalProjectSources>
+			https://api.nuget.org/v3/index.json;
+			https://nuget.bepinex.dev/v3/index.json;
+		</RestoreAdditionalProjectSources>
 		<RogueTraderData>$(LocalAppData)Low\Owlcat Games\Warhammer 40000 Rogue Trader</RogueTraderData>
 	</PropertyGroup>
 	<ItemGroup>
@@ -17,11 +21,11 @@
 			<Private>False</Private>
 		</Reference>
 		<Reference Include="RogueTrader.GameCore">
-			<HintPath>>$(SolutionDir)lib\RogueTrader.GameCore_public.dll</HintPath>
+			<HintPath>$(SolutionDir)lib\RogueTrader.GameCore_public.dll</HintPath>
 			<Private>False</Private>
 		</Reference>
 		<Reference Include="UnityModManager">
-			<HintPath>>$(SolutionDir)lib\UnityModManager_public.dll</HintPath>
+			<HintPath>$(SolutionDir)lib\UnityModManager_public.dll</HintPath>
 			<Private>False</Private>
 		</Reference>
 		<Reference Include="Kingmaker.Blueprints.Base">
@@ -62,6 +66,10 @@
 		</Reference>
 		<Reference Include="RogueTrader.SharedTypes">
 			<HintPath>$(RogueTraderInstallDir)\WH40KRT_Data\Managed\RogueTrader.SharedTypes.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="0Harmony">
+			<HintPath>$(RogueTraderInstallDir)\WH40KRT_Data\Managed\0Harmony.dll</HintPath>
 			<Private>False</Private>
 		</Reference>
 	</ItemGroup>
