@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <PackageType>Template</PackageType>
+    <PackageVersion>1.0.9</PackageVersion>
+    <PackageId>RogueTrader.Templates</PackageId>
+    <Title>RogueTrader Mod Templates</Title>
+    <Authors>ADDB</Authors>
+    <Description>UnityModManager Mod Templates for RogueTrader</Description>
+    <PackageTags>UnityModManager;Mod;Template;RogueTrader</PackageTags>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <TargetFramework>net472</TargetFramework>
+    <PackageOutputPath>$(SolutionDir)nuget</PackageOutputPath>
+    <IncludeContentInPack>true</IncludeContentInPack>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <NoDefaultExcludes>true</NoDefaultExcludes>
+    <ContentTargetFolders>content</ContentTargetFolders>
+    <NoWarn>$(NoWarn);NU5128</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="content\**\*" Exclude="content\**\bin\**;content\**\obj\**;content\**\GamePath.props" />
+    <Compile Remove="**\*" />
+  </ItemGroup>
+
+</Project>
