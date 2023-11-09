@@ -1,7 +1,3 @@
-# RogueTraderTemplates
-
-dotnet templates to create mods for the Warhammer 40,000: Rogue Trader.
-
 ## Usage
 
 - Open command prompt in directory which should contain project directory
@@ -10,7 +6,7 @@ dotnet templates to create mods for the Warhammer 40,000: Rogue Trader.
 - **Build resulting project twice (there will be errors when first building, this is normal**
 - Restart your IDE to rebuild cache if there are still red underlines
 
-After that you should have a working UMM setup; which:
+After that you should working setup for a UnityModManager mod which:
 
 - automatically installs the mod when building
 - has the correct path and already references a few assemblies (and even pubclizies three of them where I know it's often needed)
