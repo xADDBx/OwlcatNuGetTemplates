@@ -2,7 +2,7 @@
 using System.Reflection;
 using UnityModManagerNet;
 
-namespace RogueTrader.ModTemplate {
+namespace Wrath.ModTemplate {
     [EnableReloading]
     static class Main {
         internal static Harmony HarmonyInstance;
