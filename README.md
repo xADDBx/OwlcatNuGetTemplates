@@ -5,8 +5,8 @@ dotnet templates to create mods for the Warhammer 40,000: Rogue Trader.
 ## Usage
 
 - Open command prompt in directory which should contain project directory
-- dotnet new --install RogueTrader.Templates
-- dotnet new rtmod -n ModID -D "Mod Name"
+- `dotnet new --install RogueTrader.Templates`
+- `dotnet new rtmod -n ModID -D "Mod Name"`
 - **Build resulting project twice (there will be errors when first building, this is normal**
 - Restart your IDE to rebuild cache if there are still red underlines
 
