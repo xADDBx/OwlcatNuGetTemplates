@@ -2,12 +2,12 @@
 
   <PropertyGroup>
     <PackageType>Template</PackageType>
-    <PackageVersion>1.0.6</PackageVersion>
-    <PackageId>RogueTrader.Templates</PackageId>
-    <Title>RogueTrader Mod Templates</Title>
+    <PackageVersion>1.0.2</PackageVersion>
+    <PackageId>Owlcat.Templates</PackageId>
+    <Title>Owlcat Mod Templates</Title>
     <Authors>ADDB</Authors>
-    <Description>UnityModManager Mod Templates for RogueTrader</Description>
-    <PackageTags>UnityModManager;Mod;Template;RogueTrader</PackageTags>
+    <Description>Mod Templates for Owlcat Games</Description>
+    <PackageTags>UnityModManager;Mod;Template;Owlcat</PackageTags>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <TargetFramework>net472</TargetFramework>
     <PackageOutputPath>$(SolutionDir)nuget</PackageOutputPath>

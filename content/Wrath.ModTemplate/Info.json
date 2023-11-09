@@ -1,0 +1,12 @@
+﻿{
+  "Id": "RogueTrader.ModTemplate",
+  "DisplayName": "Template Mod",
+  "Author": "",
+  "Version": "1.0.0",
+  "ManagerVersion": "0.25.0",
+  "Requirements": [],
+  "AssemblyName": "RogueTrader.ModTemplate.dll",
+  "EntryMethod": "RogueTrader.ModTemplate.Main.Load",
+  "HomePage": "",
+  "Repository": ""
+}
