@@ -1,0 +1,12 @@
+﻿{
+  "Id": "RogueTrader.WorkshopModTemplate",
+  "DisplayName": "Template Mod",
+  "Author": "",
+  "Version": "1.0.0",
+  "ManagerVersion": "0.25.0",
+  "Requirements": [],
+  "AssemblyName": "RogueTrader.WorkshopModTemplate.dll",
+  "EntryMethod": "RogueTrader.WorkshopModTemplate.Main.Load",
+  "HomePage": "",
+  "Repository": ""
+}

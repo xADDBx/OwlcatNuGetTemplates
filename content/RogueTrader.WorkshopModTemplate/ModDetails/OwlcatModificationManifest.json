@@ -1,0 +1,12 @@
+{
+  "UniqueName": "RogueTrader.WorkshopModTemplate",
+  "Version": "1.0.0",
+  "DisplayName": "Template Mod",
+  "Description": "Template Mod",
+  "Author": "",
+  "ImageName": "Thumbnail.jpg",
+  "WorkshopId": "",
+  "Repository": "",
+  "HomePage": "",
+  "Dependencies": []
+}

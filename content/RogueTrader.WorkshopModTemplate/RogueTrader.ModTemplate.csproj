@@ -3,12 +3,12 @@
 	
 	<PropertyGroup>
 		<TargetFramework>net472</TargetFramework>
-		<AssemblyName>RogueTrader.ModTemplate</AssemblyName>
+		<AssemblyName>RogueTrader.WorkshopModTemplate</AssemblyName>
 		<Description>Template Mod</Description>
 		<Version>1.0.0</Version>
 		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
 		<LangVersion>latest</LangVersion>
-		<RootNamespace>RogueTrader.ModTemplate</RootNamespace>
+		<RootNamespace>RogueTrader.WorkshopModTemplate</RootNamespace>
 		<RestoreAdditionalProjectSources>
 			https://api.nuget.org/v3/index.json;
 			https://nuget.bepinex.dev/v3/index.json;
