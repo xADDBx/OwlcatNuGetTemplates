@@ -101,6 +101,9 @@
 		<MakeDir Directories="$(SolutionDir)lib/" />
 		<Publicise InputAssemblies="@(PubliciseInputAssemblies)" OutputPath="$(SolutionDir)lib/" PubliciseCompilerGenerated="true" />
 	</Target>
+	<Target Name="PublishToSteamWorkshop" AfterTargets="Publish">
+		<Exec Command="PublishToSteamWorkshop\PublishToRT.exe" EnvironmentVariables="PathToManifest=$(SolutionDir)$(OutDir)OwlcatModificationManifest.json;ImageDir=$(SolutionDir)$(OutDir);BuildDir=$(SolutionDir)$(OutDir)" />
+	</Target>
 	<Target Name="GenerateCustomPropsFile" BeforeTargets="BeforeBuild" Condition="$(RogueTraderInstallDir) == ''">
 		<Exec Command="findstr /C:&quot;Mono path[0]&quot; &quot;$(RogueTraderData)\Player.log&quot;" IgnoreExitCode="true" ConsoleToMSBuild="true">
 			<Output TaskParameter="ExitCode" PropertyName="ExitCode" />
