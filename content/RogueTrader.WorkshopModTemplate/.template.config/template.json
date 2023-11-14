@@ -9,7 +9,7 @@
 		"Steam Workshop"
 	],
 	"identity": "RogueTraderWorkshopMod",
-	"name": "UnityModManager Rogue Trader Mod",
+	"name": "UnityModManager Rogue Trader Workshop Mod",
 	"shortName": "rtmodworkshop",
 	"tags": {
 		"language": "C#",
