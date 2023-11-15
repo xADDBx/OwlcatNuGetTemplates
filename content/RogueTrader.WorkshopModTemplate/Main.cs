@@ -6,8 +6,10 @@ namespace RogueTrader.WorkshopModTemplate {
     [EnableReloading]
     static class Main {
         internal static Harmony HarmonyInstance;
+        internal static UnityModManager.ModEntry.ModLogger log;
 
         static bool Load(UnityModManager.ModEntry modEntry) {
+            log = modEntry.Logger;
             modEntry.OnUnload = OnUnload;
             modEntry.OnGUI = OnGUI;
             HarmonyInstance = new Harmony(modEntry.Info.Id);
