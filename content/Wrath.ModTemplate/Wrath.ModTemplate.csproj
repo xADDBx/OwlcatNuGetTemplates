@@ -39,7 +39,6 @@
 	</ItemGroup>
 	<ItemGroup>
 		<None Include="Info.json" CopyToOutputDirectory="PreserveNewest" />
-		<None Include="Repository.json" CopyToOutputDirectory="PreserveNewest" />
 	</ItemGroup>
 	<PropertyGroup>
 		<PostBuildEvent Condition=" '$(WrathInstallDir)' != ''">
