@@ -20,6 +20,18 @@
 			<HintPath>$(SolutionDir)lib\Assembly-CSharp_public.dll</HintPath>
 			<Private>False</Private>
 		</Reference>
+    <Reference Include="Owlcat.Runtime.UI">
+      <HintPath>$(SolutionDir)lib\Owlcat.Runtime.UI_public.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Owlcat.Runtime.Core">
+      <HintPath>$(SolutionDir)lib\Owlcat.Runtime.Core_public.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Owlcat.SharedTypes">
+      <HintPath>$(SolutionDir)lib\Owlcat.SharedTypes_public.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
 		<Reference Include="UnityModManager">
 			<HintPath>$(SolutionDir)lib\UnityModManager_public.dll</HintPath>
 			<Private>False</Private>
@@ -35,18 +47,21 @@
 	</ItemGroup>
 	<ItemGroup>
 		<PubliciseInputAssemblies Include="$(WrathInstallDir)\Wrath_Data\Managed\Assembly-CSharp.dll" />
+    <PubliciseInputAssemblies Include="$(WrathInstallDir)\Wrath_Data\Managed\Owlcat.Runtime.UI.dll" />
+    <PubliciseInputAssemblies Include="$(WrathInstallDir)\Wrath_Data\Managed\Owlcat.Runtime.Core.dll" />
+    <PubliciseInputAssemblies Include="$(WrathInstallDir)\Wrath_Data\Managed\Owlcat.SharedTypes.dll" />
 		<PubliciseInputAssemblies Include="$(WrathInstallDir)\Wrath_Data\Managed\UnityModManager\UnityModManager.dll" />
 	</ItemGroup>
 	<ItemGroup>
 		<None Include="Info.json" CopyToOutputDirectory="PreserveNewest" />
-		<None Include="Repository.json" CopyToOutputDirectory="PreserveNewest" />
 	</ItemGroup>
-	<PropertyGroup>
-		<PostBuildEvent Condition=" '$(WrathInstallDir)' != ''">
-			echo "Copying build results to $(WrathInstallDir)\Mods\$(AssemblyName)\"
-			xcopy /Y /E "$(TargetDir)*.*" "$(WrathInstallDir)\Mods\$(AssemblyName)\"
-		</PostBuildEvent>
-	</PropertyGroup>
+  <Target Name="Deploy" AfterTargets="Build">
+    <ItemGroup>
+      <Files Include="$(TargetDir)\**\*.*" />
+    </ItemGroup>
+
+    <Copy SourceFiles="@(Files)" DestinationFolder="$(WrathInstallDir)\Mods\$(AssemblyName)" />
+  </Target>
 	<ItemGroup Condition="'$(TargetFramework.TrimEnd(`0123456789`))' == 'net'">
 		<PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.2" PrivateAssets="all" />
 	</ItemGroup>
