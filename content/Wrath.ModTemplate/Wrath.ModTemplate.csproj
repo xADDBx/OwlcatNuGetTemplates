@@ -40,12 +40,13 @@
 	<ItemGroup>
 		<None Include="Info.json" CopyToOutputDirectory="PreserveNewest" />
 	</ItemGroup>
-	<PropertyGroup>
-		<PostBuildEvent Condition=" '$(WrathInstallDir)' != ''">
-			echo "Copying build results to $(WrathInstallDir)\Mods\$(AssemblyName)\"
-			xcopy /Y /E "$(TargetDir)*.*" "$(WrathInstallDir)\Mods\$(AssemblyName)\"
-		</PostBuildEvent>
-	</PropertyGroup>
+  <Target Name="Deploy" AfterTargets="Build">
+    <ItemGroup>
+      <Files Include="$(TargetDir)\**\*.*" />
+    </ItemGroup>
+
+    <Copy SourceFiles="@(Files)" DestinationFolder="$(WrathInstallDir)\Mods\$(AssemblyName)" />
+  </Target>
 	<ItemGroup Condition="'$(TargetFramework.TrimEnd(`0123456789`))' == 'net'">
 		<PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.2" PrivateAssets="all" />
 	</ItemGroup>
