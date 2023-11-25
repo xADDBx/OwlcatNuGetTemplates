@@ -20,6 +20,18 @@
 			<HintPath>$(SolutionDir)lib\Assembly-CSharp_public.dll</HintPath>
 			<Private>False</Private>
 		</Reference>
+    <Reference Include="Owlcat.Runtime.UI">
+      <HintPath>$(SolutionDir)lib\Owlcat.Runtime.UI_public.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Owlcat.Runtime.Core">
+      <HintPath>$(SolutionDir)lib\Owlcat.Runtime.Core_public.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Owlcat.SharedTypes">
+      <HintPath>$(SolutionDir)lib\Owlcat.SharedTypes_public.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
 		<Reference Include="UnityModManager">
 			<HintPath>$(SolutionDir)lib\UnityModManager_public.dll</HintPath>
 			<Private>False</Private>
@@ -35,6 +47,9 @@
 	</ItemGroup>
 	<ItemGroup>
 		<PubliciseInputAssemblies Include="$(WrathInstallDir)\Wrath_Data\Managed\Assembly-CSharp.dll" />
+    <PubliciseInputAssemblies Include="$(WrathInstallDir)\Wrath_Data\Managed\Owlcat.Runtime.UI.dll" />
+    <PubliciseInputAssemblies Include="$(WrathInstallDir)\Wrath_Data\Managed\Owlcat.Runtime.Core.dll" />
+    <PubliciseInputAssemblies Include="$(WrathInstallDir)\Wrath_Data\Managed\Owlcat.SharedTypes.dll" />
 		<PubliciseInputAssemblies Include="$(WrathInstallDir)\Wrath_Data\Managed\UnityModManager\UnityModManager.dll" />
 	</ItemGroup>
 	<ItemGroup>
