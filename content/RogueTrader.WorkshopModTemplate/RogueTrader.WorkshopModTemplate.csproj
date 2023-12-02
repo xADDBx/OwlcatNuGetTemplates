@@ -97,8 +97,10 @@
 		<ItemGroup>
 		<Files Include="$(TargetDir)\**\*.*" />
 		</ItemGroup>
-		
-		<Copy SourceFiles="@(Files)" DestinationFolder="$(RogueTraderData)\UnityModManager\$(AssemblyName)" />
+
+    <Copy
+      SourceFiles="@(Files)"
+      DestinationFiles="@(Files->'$(RogueTraderData)\Mods\$(AssemblyName)\%(RecursiveDir)%(Filename)%(Extension)')" />
 	</Target>
 	<ItemGroup Condition="'$(TargetFramework.TrimEnd(`0123456789`))' == 'net'">
 		<PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.2" PrivateAssets="all" />
