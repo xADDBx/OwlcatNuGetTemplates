@@ -28,6 +28,18 @@
 			<HintPath>$(SolutionDir)lib\UnityModManager_public.dll</HintPath>
 			<Private>False</Private>
 		</Reference>
+		<Reference Include="RogueTrader.SharedTypes">
+			<HintPath>$(SolutionDir)lib\RogueTrader.SharedTypes_public.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="Owlcat.Runtime.Core">
+			<HintPath>$(SolutionDir)lib\Owlcat.Runtime.Core_public.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="Owlcat.Runtime.UI">
+			<HintPath>$(SolutionDir)lib\Owlcat.Runtime.UI_public.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
 		<Reference Include="Kingmaker.Blueprints.Base">
 			<HintPath>$(RogueTraderInstallDir)\WH40KRT_Data\Managed\Kingmaker.Blueprints.Base.dll</HintPath>
 			<Private>False</Private>
@@ -64,10 +76,6 @@
 			<HintPath>$(RogueTraderInstallDir)\WH40KRT_Data\Managed\RogueTrader.NetPlayer.dll</HintPath>
 			<Private>False</Private>
 		</Reference>
-		<Reference Include="RogueTrader.SharedTypes">
-			<HintPath>$(RogueTraderInstallDir)\WH40KRT_Data\Managed\RogueTrader.SharedTypes.dll</HintPath>
-			<Private>False</Private>
-		</Reference>
 		<Reference Include="0Harmony">
 			<HintPath>$(RogueTraderInstallDir)\WH40KRT_Data\Managed\0Harmony.dll</HintPath>
 			<Private>False</Private>
@@ -77,19 +85,20 @@
 		<PubliciseInputAssemblies Include="$(RogueTraderInstallDir)\WH40KRT_Data\Managed\Code.dll" />
 		<PubliciseInputAssemblies Include="$(RogueTraderInstallDir)\WH40KRT_Data\Managed\RogueTrader.GameCore.dll" />
 		<PubliciseInputAssemblies Include="$(RogueTraderData)\UnityModManager\UnityModManager.dll" />
+		<PubliciseInputAssemblies Include="$(RogueTraderInstallDir)\WH40KRT_Data\Managed\RogueTrader.SharedTypes.dll" />
+		<PubliciseInputAssemblies Include="$(RogueTraderInstallDir)\WH40KRT_Data\Managed\Owlcat.Runtime.Core.dll" />
+		<PubliciseInputAssemblies Include="$(RogueTraderInstallDir)\WH40KRT_Data\Managed\Owlcat.Runtime.UI.dll" />
 	</ItemGroup>
 	<ItemGroup>
-		<Content Include="ModDetails\*.*">
-			<Link>%(Filename)%(Extension)</Link>
-			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
-		</Content>
+		<None Include="ModDetails\Info.json" CopyToOutputDirectory="PreserveNewest" Link="%(Filename)%(Extension)" />
 	</ItemGroup>
-	<PropertyGroup>
-		<PostBuildEvent Condition=" '$(RogueTraderInstallDir)' != ''">
-			echo "Copying build results to $(RogueTraderData)\UnityModManager\$(AssemblyName)\"
-			xcopy /Y /E "$(TargetDir)*.*" "$(RogueTraderData)\UnityModManager\$(AssemblyName)\"
-		</PostBuildEvent>
-	</PropertyGroup>
+	<Target Name="Deploy" AfterTargets="Build">
+		<ItemGroup>
+		<Files Include="$(TargetDir)\**\*.*" />
+		</ItemGroup>
+		
+		<Copy SourceFiles="@(Files)" DestinationFolder="$(RogueTraderData)\UnityModManager\$(AssemblyName)" />
+	</Target>
 	<ItemGroup Condition="'$(TargetFramework.TrimEnd(`0123456789`))' == 'net'">
 		<PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.2" PrivateAssets="all" />
 	</ItemGroup>
