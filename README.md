@@ -15,7 +15,7 @@
 
 - Open command prompt in directory which should contain project directory
 - `dotnet new --install Owlcat.Templates`
-- `dotnet new <TemplateName> -n <ModID> -D <"Mod Name">`
+- `dotnet new <TemplateName> -n <ModID> -D "<Mod Name>"`  (Replace the <value> placeholder with actual values)
 - Press y to confirm action (necessary to find Steam Installation Directory)
 - **Build resulting project once to publicize**
 - Restart your IDE to rebuild cache if there are still red underlines
