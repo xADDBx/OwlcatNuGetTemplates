@@ -4,6 +4,13 @@
 - `rtmodworkshop`  - UnityModManager Template for Warhammer 40,000: Rogue Trader. Adds a publishing task which will directly publish to Steam Workshop. Included is a tool necessary for publishing.
 - `wrathmod`  - UnityModManager Template for Pathfinder: Wrath of the Righteous
 
+## Requirements
+
+- [.NET SDK](https://dotnet.microsoft.com/en-us/download) Either have .NET 6 or 7 SDK. If you have .NET 8 installed you need torun
+`dotnet new globaljson --sdk-version 7.0.100 --roll-forward minor` once before you can use the template or you'll get a NullReferenceException
+- The target game needs to be installed. The game must've been started once (for a Player.log file).
+- Wrath: Have UnityModManager applied to the game.
+
 ## Usage
 
 - Open command prompt in directory which should contain project directory
@@ -18,9 +25,3 @@ After that you should working setup for a UnityModManager mod which:
 - automatically installs the mod when building
 - has the correct path and already references a few assemblies (and even pubclizies three of them where I know it's often needed)
 - has Hotreloading as an option by default; it's in both Release and Debug builds since I haven't found a way to ship Compiler Conditionals.
-
-## Requirements
-
-- [.NET SDK](https://dotnet.microsoft.com/en-us/download)
-- The target game needs to be installed. The game must've been started once (for a Player.log file).
-- Wrath: Have UnityModManager applied to the game.
