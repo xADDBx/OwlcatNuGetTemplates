@@ -6,8 +6,8 @@
 
 ## Requirements
 
-- [.NET SDK](https://dotnet.microsoft.com/en-us/download) Either have .NET 6 or 7 SDK. If you have .NET 8 installed you need torun
-`dotnet new globaljson --sdk-version 7.0.100 --roll-forward minor` once before you can use the template or you'll get a NullReferenceException
+- [.NET SDK](https://dotnet.microsoft.com/en-us/download) Either have .NET 6 or 7 SDK. If you have .NET 8 installed you need to run the following once before you can use the template or you'll get a NullReferenceException:\n
+`dotnet new globaljson --sdk-version 7.0.100 --roll-forward minor` 
 - The target game needs to be installed. The game must've been started once (for a Player.log file).
 - Wrath: Have UnityModManager applied to the game.
 
