@@ -33,9 +33,13 @@ static class Main
 
     }
 
+//-:cnd:noEmit
+#if DEBUG
     static bool OnUnload(UnityModManager.ModEntry modEntry)
     {
         HarmonyInstance.UnpatchAll(modEntry.Info.Id);
         return true;
     }
+#endif
+//+:cnd:noEmit
 }
