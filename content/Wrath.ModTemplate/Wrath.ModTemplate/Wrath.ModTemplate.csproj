@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
 	<Import Project="$(SolutionDir)GamePath.props" Condition="Exists('$(SolutionDir)GamePath.props')" />
-	
+
 	<PropertyGroup>
 		<TargetFramework>net472</TargetFramework>
 		<AssemblyName>Wrath.ModTemplate</AssemblyName>
@@ -20,18 +20,18 @@
 			<HintPath>$(SolutionDir)lib\Assembly-CSharp_public.dll</HintPath>
 			<Private>False</Private>
 		</Reference>
-    <Reference Include="Owlcat.Runtime.UI">
-      <HintPath>$(SolutionDir)lib\Owlcat.Runtime.UI_public.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Owlcat.Runtime.Core">
-      <HintPath>$(SolutionDir)lib\Owlcat.Runtime.Core_public.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Owlcat.SharedTypes">
-      <HintPath>$(SolutionDir)lib\Owlcat.SharedTypes_public.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
+		<Reference Include="Owlcat.Runtime.UI">
+			<HintPath>$(SolutionDir)lib\Owlcat.Runtime.UI_public.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="Owlcat.Runtime.Core">
+			<HintPath>$(SolutionDir)lib\Owlcat.Runtime.Core_public.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="Owlcat.SharedTypes">
+			<HintPath>$(SolutionDir)lib\Owlcat.SharedTypes_public.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
 		<Reference Include="UnityModManager">
 			<HintPath>$(SolutionDir)lib\UnityModManager_public.dll</HintPath>
 			<Private>False</Private>
@@ -47,23 +47,23 @@
 	</ItemGroup>
 	<ItemGroup>
 		<PubliciseInputAssemblies Include="$(WrathInstallDir)\Wrath_Data\Managed\Assembly-CSharp.dll" />
-    <PubliciseInputAssemblies Include="$(WrathInstallDir)\Wrath_Data\Managed\Owlcat.Runtime.UI.dll" />
-    <PubliciseInputAssemblies Include="$(WrathInstallDir)\Wrath_Data\Managed\Owlcat.Runtime.Core.dll" />
-    <PubliciseInputAssemblies Include="$(WrathInstallDir)\Wrath_Data\Managed\Owlcat.SharedTypes.dll" />
+		<PubliciseInputAssemblies Include="$(WrathInstallDir)\Wrath_Data\Managed\Owlcat.Runtime.UI.dll" />
+		<PubliciseInputAssemblies Include="$(WrathInstallDir)\Wrath_Data\Managed\Owlcat.Runtime.Core.dll" />
+		<PubliciseInputAssemblies Include="$(WrathInstallDir)\Wrath_Data\Managed\Owlcat.SharedTypes.dll" />
 		<PubliciseInputAssemblies Include="$(WrathInstallDir)\Wrath_Data\Managed\UnityModManager\UnityModManager.dll" />
 	</ItemGroup>
 	<ItemGroup>
 		<None Include="Info.json" CopyToOutputDirectory="PreserveNewest" />
 	</ItemGroup>
-  <Target Name="Deploy" AfterTargets="Build">
-    <ItemGroup>
-      <Files Include="$(TargetDir)\**\*.*" />
-    </ItemGroup>
+	<Target Name="Deploy" AfterTargets="Build">
+		<ItemGroup>
+			<Files Include="$(TargetDir)\**\*.*" />
+		</ItemGroup>
 
-    <Copy
-      SourceFiles="@(Files)"
-      DestinationFiles="@(Files->'$(WrathInstallDir)\Mods\$(AssemblyName)\%(RecursiveDir)%(Filename)%(Extension)')" />
-  </Target>
+		<Copy
+		  SourceFiles="@(Files)"
+		  DestinationFiles="@(Files->'$(WrathInstallDir)\Mods\$(AssemblyName)\%(RecursiveDir)%(Filename)%(Extension)')" />
+	</Target>
 	<ItemGroup Condition="'$(TargetFramework.TrimEnd(`0123456789`))' == 'net'">
 		<PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.2" PrivateAssets="all" />
 	</ItemGroup>
@@ -89,8 +89,8 @@
 			<WrathInstallDir>$([System.Text.RegularExpressions.Regex]::Match($(MonoPathLine), $(MonoPathRegex)).Groups[1].Value)</WrathInstallDir>
 		</PropertyGroup>
 
-		<WriteLinesToFile File="$(SolutionDir)GamePath.props" Lines="&lt;Project xmlns='http://schemas.microsoft.com/developer/msbuild/2003'&gt; 
-	&lt;PropertyGroup&gt; 
+		<WriteLinesToFile File="$(SolutionDir)GamePath.props" Lines="&lt;Project xmlns='http://schemas.microsoft.com/developer/msbuild/2003'&gt;
+	&lt;PropertyGroup&gt;
 		&lt;WrathInstallDir&gt;$(WrathInstallDir)&lt;/WrathInstallDir&gt;
 	&lt;/PropertyGroup&gt;
 &lt;/Project&gt;" Overwrite="true" Encoding="utf-8" />
