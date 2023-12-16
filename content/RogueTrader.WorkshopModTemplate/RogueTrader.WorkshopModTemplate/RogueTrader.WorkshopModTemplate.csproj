@@ -108,14 +108,14 @@
 	<ItemGroup>
 		<PackageReference Include="UnityEngine.Modules" Version="2022.3.7" IncludeAssets="compile" />
 		<PackageReference Include="Aze.Publicise.MSBuild.Task" Version="1.1.0" IncludeAssets="runtime; build; native; contentfiles; analyzers; buildtransitive" PrivateAssets="all" />
-		<PackageReference Include="PublishToWorkshop" IncludeAssets="runtime; build; native; contentfiles; analyzers; buildtransitive" Version="1.0.9" PrivateAssets="all" />
+		<PackageReference Include="PublishToWorkshop" IncludeAssets="runtime; build; native; contentfiles; analyzers; buildtransitive" Version="1.0.10" PrivateAssets="all" />
 	</ItemGroup>
 	<Target Name="Publicise" AfterTargets="BeforeBuild;Clean" Inputs="@(PubliciseInputAssemblies)" Outputs="$(SolutionDir)lib\%(PubliciseInputAssemblies.FileName)_public.dll;$(SolutionDir)lib\%(PubliciseInputAssemblies.FileName)_public.hash">
 		<MakeDir Directories="$(SolutionDir)lib/" />
 		<Publicise InputAssemblies="@(PubliciseInputAssemblies)" OutputPath="$(SolutionDir)lib/" PubliciseCompilerGenerated="true" />
 	</Target>
 	<Target Name="PublishToSteamWorkshop" AfterTargets="Publish">
-		<PublishToWorkshop PathToManifest="$(MSBuildThisFileDirectory)\OwlcatModificationManifest.json" ImageDir="$(MSBuildThisFileDirectory)\..\" BuildDir="$(MSBuildProjectDirectory)\$(OutputPath)" GameAppId="2186680" />
+		<PublishToWorkshop PathToManifest="$(MSBuildThisFileDirectory)\OwlcatModificationManifest.json" ImageDir="$(SolutionDir)" BuildDir="$(MSBuildProjectDirectory)\$(OutputPath)" PathToDescription ="$(SolutionDir)Workshop-description.txt" GameAppId="2186680" />
 	</Target>
 	<Target Name="GenerateCustomPropsFile" BeforeTargets="BeforeBuild" Condition="$(RogueTraderInstallDir) == ''">
 		<Exec Command="findstr /C:&quot;Mono path[0]&quot; &quot;$(RogueTraderData)\Player.log&quot;" IgnoreExitCode="true" ConsoleToMSBuild="true">
