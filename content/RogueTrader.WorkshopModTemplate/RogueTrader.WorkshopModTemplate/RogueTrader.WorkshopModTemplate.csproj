@@ -1,14 +1,14 @@
 <Project Sdk="Microsoft.NET.Sdk">
-	<Import Project="GamePath.props" Condition="Exists('GamePath.props')" />
-	
+	<Import Project="$(SolutionDir)GamePath.props" Condition="Exists('$(SolutionDir)GamePath.props')" />
+
 	<PropertyGroup>
 		<TargetFramework>net472</TargetFramework>
-		<AssemblyName>RogueTrader.ModTemplate</AssemblyName>
+		<AssemblyName>RogueTrader.WorkshopModTemplate</AssemblyName>
 		<Description>Template Mod</Description>
 		<Version>1.0.0</Version>
 		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
 		<LangVersion>latest</LangVersion>
-		<RootNamespace>RogueTrader.ModTemplate</RootNamespace>
+		<RootNamespace>RogueTrader.WorkshopModTemplate</RootNamespace>
 		<RestoreAdditionalProjectSources>
 			https://api.nuget.org/v3/index.json;
 			https://nuget.bepinex.dev/v3/index.json;
@@ -90,16 +90,17 @@
 		<PubliciseInputAssemblies Include="$(RogueTraderInstallDir)\WH40KRT_Data\Managed\Owlcat.Runtime.UI.dll" />
 	</ItemGroup>
 	<ItemGroup>
-		<None Include="ModDetails\Info.json" CopyToOutputDirectory="PreserveNewest" Link="%(Filename)%(Extension)" />
+		<None Include="Info.json" CopyToOutputDirectory="PreserveNewest" Link="%(Filename)%(Extension)" />
+		<None Include="OwlcatModificationManifest.json" CopyToOutputDirectory="PreserveNewest" Link="%(Filename)%(Extension)" />
 	</ItemGroup>
 	<Target Name="Deploy" AfterTargets="Build">
 		<ItemGroup>
-		<Files Include="$(TargetDir)\**\*.*" />
+			<Files Include="$(TargetDir)\**\*.*" />
 		</ItemGroup>
 
-    <Copy
-      SourceFiles="@(Files)"
-      DestinationFiles="@(Files->'$(RogueTraderData)\UnityModManager\$(AssemblyName)\%(RecursiveDir)%(Filename)%(Extension)')" />
+		<Copy
+		  SourceFiles="@(Files)"
+		  DestinationFiles="@(Files->'$(RogueTraderData)\UnityModManager\$(AssemblyName)\%(RecursiveDir)%(Filename)%(Extension)')" />
 	</Target>
 	<ItemGroup Condition="'$(TargetFramework.TrimEnd(`0123456789`))' == 'net'">
 		<PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.2" PrivateAssets="all" />
@@ -107,10 +108,14 @@
 	<ItemGroup>
 		<PackageReference Include="UnityEngine.Modules" Version="2022.3.7" IncludeAssets="compile" />
 		<PackageReference Include="Aze.Publicise.MSBuild.Task" Version="1.1.0" IncludeAssets="runtime; build; native; contentfiles; analyzers; buildtransitive" PrivateAssets="all" />
+		<PackageReference Include="PublishToWorkshop" IncludeAssets="runtime; build; native; contentfiles; analyzers; buildtransitive" Version="1.0.10" PrivateAssets="all" />
 	</ItemGroup>
 	<Target Name="Publicise" AfterTargets="BeforeBuild;Clean" Inputs="@(PubliciseInputAssemblies)" Outputs="$(SolutionDir)lib\%(PubliciseInputAssemblies.FileName)_public.dll;$(SolutionDir)lib\%(PubliciseInputAssemblies.FileName)_public.hash">
 		<MakeDir Directories="$(SolutionDir)lib/" />
 		<Publicise InputAssemblies="@(PubliciseInputAssemblies)" OutputPath="$(SolutionDir)lib/" PubliciseCompilerGenerated="true" />
+	</Target>
+	<Target Name="PublishToSteamWorkshop" AfterTargets="Publish">
+		<PublishToWorkshop PathToManifest="$(MSBuildThisFileDirectory)\OwlcatModificationManifest.json" ImageDir="$(SolutionDir)" BuildDir="$(MSBuildProjectDirectory)\$(OutputPath)" PathToDescription="$(SolutionDir)Workshop-description.txt" GameAppId="2186680" />
 	</Target>
 	<Target Name="GenerateCustomPropsFile" BeforeTargets="BeforeBuild" Condition="$(RogueTraderInstallDir) == ''">
 		<Exec Command="findstr /C:&quot;Mono path[0]&quot; &quot;$(RogueTraderData)\Player.log&quot;" IgnoreExitCode="true" ConsoleToMSBuild="true">
@@ -126,7 +131,7 @@
 			<RogueTraderInstallDir>$([System.Text.RegularExpressions.Regex]::Match($(MonoPathLine), $(MonoPathRegex)).Groups[1].Value)</RogueTraderInstallDir>
 		</PropertyGroup>
 
-		<WriteLinesToFile File="GamePath.props" Lines="&lt;Project xmlns='http://schemas.microsoft.com/developer/msbuild/2003'&gt; 
+		<WriteLinesToFile File="$(SolutionDir)GamePath.props" Lines="&lt;Project xmlns='http://schemas.microsoft.com/developer/msbuild/2003'&gt; 
 	&lt;PropertyGroup&gt; 
 		&lt;RogueTraderInstallDir&gt;$(RogueTraderInstallDir)&lt;/RogueTraderInstallDir&gt;
 	&lt;/PropertyGroup&gt;

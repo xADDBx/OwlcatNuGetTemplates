@@ -26,7 +26,7 @@
 		},
 		"Description": {
 			"type": "parameter",
-			"description": "Mod description",
+			"description": "Mod display name",
 			"datatype": "text",
 			"replaces": "Template Mod",
 			"defaultValue": "Template Mod"
