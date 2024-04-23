@@ -1,0 +1,87 @@
+{
+	"$schema": "http://json.schemastore.org/template",
+	"author": "ADDB",
+	"classifications": [
+		"UnityModManager",
+		"UMM",
+		"Mod",
+		"Kingmaker Mod"
+	],
+	"identity": "KingmakerMod",
+	"name": "UnityModManager Pathfinder: Kingmaker Mod",
+	"shortName": "kmmod",
+	"tags": {
+		"language": "C#",
+		"type": "project"
+	},
+	"preferNameDirectory": true,
+	"sourceName": "Kingmaker.ModTemplate",
+	"symbols": {
+		"TargetFramework": {
+			"type": "parameter",
+			"description": "The target framework for the project",
+			"datatype": "text",
+			"defaultValue": "net472",
+			"replaces": "net472"
+		},
+		"Description": {
+			"type": "parameter",
+			"description": "Mod display name",
+			"datatype": "text",
+			"replaces": "Template Mod",
+			"defaultValue": "Template Mod"
+		},
+		"UnityVersion": {
+			"type": "parameter",
+			"description": "Unity version to use when developing the mod",
+			"datatype": "text",
+			"replaces": "2018.4.10",
+			"defaultValue": "2018.4.10"
+		},
+		"Version": {
+			"type": "parameter",
+			"description": "Mod version",
+			"datatype": "text",
+			"defaultValue": "1.0.0"
+		},
+		"VersionImpl": {
+			"type": "generated",
+			"generator": "join",
+			"replaces": "<Version>1.0.0</Version>",
+			"parameters": {
+				"symbols": [
+					{
+						"type": "const",
+						"value": "<Version>"
+					},
+					{
+						"type": "ref",
+						"value": "Version"
+					},
+					{
+						"type": "const",
+						"value": "</Version>"
+					}
+				]
+			}
+		}
+	},
+	"postActions": [
+		{
+			"actionId": "3A7C4B45-1F5D-4A30-959A-51B88E82B5D2",
+			"args": {
+				"executable": "dotnet",
+				"args": "msbuild -t:GenerateCustomPropsFile",
+				"redirectStandardOutput": false,
+				"redirectStandardError": false
+			},
+			"manualInstructions": [
+				{
+					"text": "Run 'GenerateCustomPropsFile' target"
+				}
+			],
+			"continueOnError": false,
+			"description ": "Sets up reference paths by executing the GenerateCustomPropsFile MSBuild target"
+		}
+	]
+}

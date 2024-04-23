@@ -1,8 +1,9 @@
 ## Existing Template:
 
 - `rtmod`  - UnityModManager Template for Warhammer 40,000: Rogue Trader
-- `rtmodworkshop`  - UnityModManager Template for Warhammer 40,000: Rogue Trader. Adds a publishing task which will directly publish to Steam Workshop. Included is a tool necessary for publishing.
+- `rtmodworkshop`  - UnityModManager Template for Warhammer 40,000: Rogue Trader. Adds a publishing task which will directly publish to Steam Workshop.
 - `wrathmod`  - UnityModManager Template for Pathfinder: Wrath of the Righteous
+- `kmmod` - UnityModManager Template for Pathfinder: Kingmaker
 
 ## Requirements
 
