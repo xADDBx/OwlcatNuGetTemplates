@@ -15,11 +15,11 @@ public static class Main {
 
     public static bool Load(UnityModManager.ModEntry modEntry) {
         log = modEntry.Logger;
-        //-:cnd:noEmit
+//-:cnd:noEmit
 #if DEBUG
         modEntry.OnUnload = OnUnload;
 #endif
-        //+:cnd:noEmit
+//+:cnd:noEmit
         modEntry.OnGUI = OnGUI;
         HarmonyInstance = new Harmony(modEntry.Info.Id);
         HarmonyInstance.PatchAll(Assembly.GetExecutingAssembly());
@@ -30,13 +30,12 @@ public static class Main {
 
     }
 
-    //-:cnd:noEmit
+//-:cnd:noEmit
 #if DEBUG
-    public static bool OnUnload(UnityModManager.ModEntry modEntry)
-    {
+    public static bool OnUnload(UnityModManager.ModEntry modEntry) {
         HarmonyInstance.UnpatchAll(modEntry.Info.Id);
         return true;
     }
 #endif
-    //+:cnd:noEmit
+//+:cnd:noEmit
 }
