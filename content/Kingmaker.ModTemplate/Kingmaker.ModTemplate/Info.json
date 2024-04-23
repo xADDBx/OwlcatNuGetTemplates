@@ -3,7 +3,7 @@
   "DisplayName": "Template Mod",
   "Author": "",
   "Version": "1.0.0",
-  "ManagerVersion": "0.25.0",
+  "ManagerVersion": "0.20.0",
   "Requirements": [],
   "AssemblyName": "Kingmaker.ModTemplate.dll",
   "EntryMethod": "Kingmaker.ModTemplate.Main.Load",
