@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <PackageType>Template</PackageType>
-    <PackageVersion>1.3.1</PackageVersion>
+    <PackageVersion>1.3.2</PackageVersion>
     <PackageId>Owlcat.Templates</PackageId>
     <Title>Owlcat Mod Templates</Title>
     <Authors>ADDB;Microsoftenator;AlterAsc</Authors>
@@ -16,9 +16,14 @@
     <NoDefaultExcludes>true</NoDefaultExcludes>
     <ContentTargetFolders>content</ContentTargetFolders>
     <NoWarn>$(NoWarn);NU5128</NoWarn>
+	<PackageReadmeFile>README.md</PackageReadmeFile>
+	<RepositoryType>git</RepositoryType>
+	<RepositoryUrl>https://github.com/xADDBx/OwlcatNuGetTemplates/</RepositoryUrl>
+	<PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
 
   <ItemGroup>
+	<None Include="README.md" Pack="true" PackagePath="\" />
     <Content Include="content\**\*" Exclude="content\**\bin\**;content\**\obj\**;content\**\GamePath.props" />
     <Compile Remove="**\*" />
   </ItemGroup>
