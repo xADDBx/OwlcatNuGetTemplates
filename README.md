@@ -3,6 +3,7 @@
 - `rtmod`  - UnityModManager Template for Warhammer 40,000: Rogue Trader
 - `rtmodworkshop`  - UnityModManager Template for Warhammer 40,000: Rogue Trader. Adds a publishing task which will directly publish to Steam Workshop.
 - `wrathmod`  - UnityModManager Template for Pathfinder: Wrath of the Righteous
+- `wrathsoundmod`  - Wwise Template to add new sounds/voices to the game, bundled with a UnityModManager Template for Pathfinder: Wrath of the Righteous. Read the docs (WIP) to find out how to use the Wwise setup!
 - `kmmod` - UnityModManager Template for Pathfinder: Kingmaker
 
 ## Requirements
@@ -10,7 +11,8 @@
 - [.NET SDK](https://dotnet.microsoft.com/en-us/download) Either have .NET 6 or 7 SDK. If you have .NET 8 installed you need to run the following once before you can use the template (if you ***don't*** run this with .NET 8 SDK installed you'll get a NullReferenceException when running donet new):  
 `dotnet new globaljson --sdk-version 7.0.100 --roll-forward minor` 
 - The target game needs to be installed. The game must've been started once (for a Player.log file).
-- Wrath: Have UnityModManager applied to the game.
+- Kingmaker and Wrath: Have UnityModManager applied to the game.
+- For the sound templates you additionally need a compatible version of Wwise (Audiokinetic) installed. For Wrath, that's any `2019.2` version.
 
 ## Usage
 
@@ -26,3 +28,9 @@ After that you should working setup for a UnityModManager mod which:
 - automatically installs the mod when building
 - has the correct path and already references a few assemblies (and even pubclizies three of them where I know it's often needed)
 - has Hotreloading as an option by default; it's in both Release and Debug builds since I haven't found a way to ship Compiler Conditionals.
+
+For sound mods, they additionally contain:
+
+- A Wwise template in which you can add sounds (and create sound events). The template should automatically include the created Soundbanks in the final output.
+- The UnityModManager mod part will automatically load the Soundbanks contained in the mod directory during runtime.
+- If the event name matches an answer/cue/dialog guid, the sound event should automatically play when that answer/cue/dialog is displayed.
