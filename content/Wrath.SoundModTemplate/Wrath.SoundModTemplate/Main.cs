@@ -6,6 +6,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Reflection;
 using UnityModManagerNet;
+using Kingmaker.Sound;
+using System.IO;
+using Kingmaker.Blueprints.JsonSystem;
+using System.Xml;
+using Kingmaker.Localization;
 
 namespace Wrath.SoundModTemplate;
 
@@ -34,6 +39,7 @@ public static class Main {
     public static void OnGUI(UnityModManager.ModEntry modEntry) {
 
     }
+
     [HarmonyPatch]
     public static class Soundbanks {
         public static readonly HashSet<uint> LoadedBankIds = [];
