@@ -20,11 +20,11 @@
 		<Reference Include="$(RogueTraderInstallDir)\WH40KRT_Data\Managed\Core*.dll" Private="false" />
 		<Reference Include="$(RogueTraderInstallDir)\WH40KRT_Data\Managed\Owlcat*.dll" Publicize="true" Private="false" />
 		<Reference Include="$(RogueTraderInstallDir)\WH40KRT_Data\Managed\RogueTrader*.dll" Publicize="true" Private="false" />
-		<Reference Include="$(RogueTraderInstallDir)\WH40KRT_Data\Managed\Code.dll" Publicize="true" Private="false" />
-		<Reference Include="$(RogueTraderInstallDir)\WH40KRT_Data\Managed\LocalizationShared.dll" Publicize="true" Private="false" />
-		<Reference Include="$(RogueTraderData)\UnityModManager\UnityModManager.dll" Publicize="true" Private="false" />
-		<Reference Include="$(RogueTraderInstallDir)\WH40KRT_Data\Managed\0Harmony.dll" Private="false" />
-		<Reference Include="$(RogueTraderInstallDir)\WH40KRT_Data\Managed\Newtonsoft.Json.dll" Private="false" />
+		<Reference Include="$(RogueTraderInstallDir)\WH40KRT_Data\Managed\Code*.dll" Publicize="true" Private="false" />
+		<Reference Include="$(RogueTraderInstallDir)\WH40KRT_Data\Managed\LocalizationShared*.dll" Publicize="true" Private="false" />
+		<Reference Include="$(RogueTraderData)\UnityModManager\UnityModManager*.dll" Publicize="true" Private="false" />
+		<Reference Include="$(RogueTraderInstallDir)\WH40KRT_Data\Managed\0Harmony*.dll" Private="false" />
+		<Reference Include="$(RogueTraderInstallDir)\WH40KRT_Data\Managed\Newtonsoft.Json*.dll" Private="false" />
 	</ItemGroup>
 	<ItemGroup>
 		<None Include="Info.json" CopyToOutputDirectory="PreserveNewest" Link="%(Filename)%(Extension)" />
@@ -40,7 +40,7 @@
 	</Target>
 	<ItemGroup>
 		<PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.2" PrivateAssets="all" />
-		<PackageReference Include="BepInEx.AssemblyPublicizer.MSBuild" Version="0.4.2" IncludeAssets="contentfiles" PrivateAssets="all" />
+		<PackageReference Include="BepInEx.AssemblyPublicizer.MSBuild" IncludeAssets="build; contentfiles" Version="0.4.2" PrivateAssets="all" />
 	</ItemGroup>
 	<Target Name="GenerateCustomPropsFile" BeforeTargets="BeforeBuild" Condition="$(RogueTraderInstallDir) == ''">
 		<Exec Command="findstr /C:&quot;Mono path[0]&quot; &quot;$(RogueTraderData)\Player.log&quot;" IgnoreExitCode="true" ConsoleToMSBuild="true">

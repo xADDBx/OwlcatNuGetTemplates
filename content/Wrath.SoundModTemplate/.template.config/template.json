@@ -8,7 +8,7 @@
 		"Wrath Sound Mod"
 	],
 	"identity": "WrathSoundMod",
-	"name": "Wwise + UnityModManager Pathfinder: Wrath of the Righteous Mod",
+	"name": "UnityModManager Pathfinder: Wrath of the Righteous + Wwise Mod",
 	"shortName": "wrathsoundmod",
 	"tags": {
 		"language": "C#",
