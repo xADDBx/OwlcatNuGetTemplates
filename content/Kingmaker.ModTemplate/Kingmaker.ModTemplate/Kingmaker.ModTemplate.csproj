@@ -10,33 +10,15 @@
 		<LangVersion>latest</LangVersion>
 		<RootNamespace>Kingmaker.ModTemplate</RootNamespace>
 		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
-		<RestoreAdditionalProjectSources>
-			https://api.nuget.org/v3/index.json;
-			https://nuget.bepinex.dev/v3/index.json;
-		</RestoreAdditionalProjectSources>
+		<RestoreAdditionalProjectSources>https://api.nuget.org/v3/index.json</RestoreAdditionalProjectSources>
 		<KingmakerData>$(LocalAppData)Low\Owlcat Games\Pathfinder Kingmaker</KingmakerData>
 	</PropertyGroup>
 	<ItemGroup>
-		<Reference Include="Assembly-CSharp">
-			<HintPath>$(SolutionDir)lib\Assembly-CSharp_public.dll</HintPath>
-			<Private>False</Private>
-		</Reference>
-		<Reference Include="UnityModManager">
-			<HintPath>$(SolutionDir)lib\UnityModManager_public.dll</HintPath>
-			<Private>False</Private>
-		</Reference>
-		<Reference Include="Newtonsoft.Json">
-			<HintPath>$(KingmakerInstallDir)\Kingmaker_Data\Managed\Newtonsoft.Json.dll</HintPath>
-			<Private>False</Private>
-		</Reference>
-		<Reference Include="0Harmony">
-			<HintPath>$(KingmakerInstallDir)\Kingmaker_Data\Managed\UnityModManager\0Harmony.dll</HintPath>
-			<Private>False</Private>
-		</Reference>
-	</ItemGroup>
-	<ItemGroup>
-		<PubliciseInputAssemblies Include="$(KingmakerInstallDir)\Kingmaker_Data\Managed\Assembly-CSharp.dll" />
-		<PubliciseInputAssemblies Include="$(KingmakerInstallDir)\Kingmaker_Data\Managed\UnityModManager\UnityModManager.dll" />
+		<Reference Include="$(KingmakerInstallDir)\WH40KRT_Data\Managed\Unity*.dll" Private="false" />
+		<Reference Include="$(KingmakerInstallDir)\WH40KRT_Data\Managed\Assembly-CSharp.dll" Publicize="true" Private="false" />
+		<Reference Include="$(KingmakerInstallDir)\Kingmaker_Data\Managed\Newtonsoft.Json.dll" Private="false" />
+		<Reference Include="$(KingmakerInstallDir)\Kingmaker_Data\Managed\UnityModManager\UnityModManager.dll" Publicize="true" Private="false" />
+		<Reference Include="$(KingmakerInstallDir)\Kingmaker_Data\Managed\UnityModManager\0Harmony.dll" Private="false" />
 	</ItemGroup>
 	<ItemGroup>
 		<None Include="Info.json" CopyToOutputDirectory="PreserveNewest" />
@@ -52,13 +34,8 @@
 	</Target>
 	<ItemGroup>
 		<PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.2" PrivateAssets="all" />
-		<PackageReference Include="UnityEngine.Modules" Version="2018.4.10" IncludeAssets="compile" />
-		<PackageReference Include="Aze.Publicise.MSBuild.Task" Version="1.1.0" IncludeAssets="runtime; build; native; contentfiles; analyzers; buildtransitive" PrivateAssets="all" />
+		<PackageReference Include="BepInEx.AssemblyPublicizer.MSBuild" Version="0.4.2" IncludeAssets="contentfiles" PrivateAssets="all" />
 	</ItemGroup>
-	<Target Name="Publicise" AfterTargets="BeforeBuild;Clean" Inputs="@(PubliciseInputAssemblies)" Outputs="$(SolutionDir)lib\%(PubliciseInputAssemblies.FileName)_public.dll;$(SolutionDir)lib\%(PubliciseInputAssemblies.FileName)_public.hash">
-		<MakeDir Directories="$(SolutionDir)lib/" />
-		<Publicise InputAssemblies="@(PubliciseInputAssemblies)" OutputPath="$(SolutionDir)lib/" PubliciseCompilerGenerated="true" />
-	</Target>
 	<Target Name="GenerateCustomPropsFile" BeforeTargets="BeforeBuild" Condition="$(KingmakerInstallDir) == ''">
 		<Exec Command="findstr /C:&quot;[Manager] Mods path: &quot; &quot;$(KingmakerData)\output_log.txt&quot;" IgnoreExitCode="true" ConsoleToMSBuild="true">
 			<Output TaskParameter="ExitCode" PropertyName="ExitCode" />
