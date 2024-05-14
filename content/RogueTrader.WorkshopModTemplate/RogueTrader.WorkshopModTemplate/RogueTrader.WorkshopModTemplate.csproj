@@ -20,11 +20,11 @@
 		<Reference Include="$(RogueTraderInstallDir)\WH40KRT_Data\Managed\Core*.dll" Private="false" />
 		<Reference Include="$(RogueTraderInstallDir)\WH40KRT_Data\Managed\Owlcat*.dll" Publicize="true" Private="false" />
 		<Reference Include="$(RogueTraderInstallDir)\WH40KRT_Data\Managed\RogueTrader*.dll" Publicize="true" Private="false" />
-		<Reference Include="$(RogueTraderInstallDir)\WH40KRT_Data\Managed\Code*.dll" Publicize="true" Private="false" />
-		<Reference Include="$(RogueTraderInstallDir)\WH40KRT_Data\Managed\LocalizationShared*.dll" Publicize="true" Private="false" />
-		<Reference Include="$(RogueTraderData)\UnityModManager\UnityModManager*.dll" Publicize="true" Private="false" />
-		<Reference Include="$(RogueTraderInstallDir)\WH40KRT_Data\Managed\0Harmony*.dll" Private="false" />
-		<Reference Include="$(RogueTraderInstallDir)\WH40KRT_Data\Managed\Newtonsoft.Json*.dll" Private="false" />
+		<Reference Include="$(RogueTraderInstallDir)\WH40KRT_Data\Managed\Code.dll*" Publicize="true" Private="false" />
+		<Reference Include="$(RogueTraderInstallDir)\WH40KRT_Data\Managed\LocalizationShared.dll*" Publicize="true" Private="false" />
+		<Reference Include="$(RogueTraderData)\UnityModManager\UnityModManager.dll*" Publicize="true" Private="false" />
+		<Reference Include="$(RogueTraderInstallDir)\WH40KRT_Data\Managed\0Harmony.dll*" Private="false" />
+		<Reference Include="$(RogueTraderInstallDir)\WH40KRT_Data\Managed\Newtonsoft.Json.dll*" Private="false" />
 	</ItemGroup>
 	<ItemGroup>
 		<None Include="Info.json" CopyToOutputDirectory="PreserveNewest" Link="%(Filename)%(Extension)" />
