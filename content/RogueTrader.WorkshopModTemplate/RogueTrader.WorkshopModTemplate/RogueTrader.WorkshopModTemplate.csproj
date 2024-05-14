@@ -5,7 +5,7 @@
 		<TargetFramework>net472</TargetFramework>
 		<AssemblyName>RogueTrader.WorkshopModTemplate</AssemblyName>
 		<Description>Template Mod</Description>
-		<Version>1.0.0</Version>
+		<Version>{version}</Version>
 		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
 		<LangVersion>latest</LangVersion>
 		<RootNamespace>RogueTrader.WorkshopModTemplate</RootNamespace>

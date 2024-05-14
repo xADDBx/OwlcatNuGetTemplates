@@ -2,7 +2,7 @@
   "Id": "Wrath.SoundModTemplate",
   "DisplayName": "Template Sound Mod",
   "Author": "",
-  "Version": "1.0.0",
+  "Version": "{version}",
   "ManagerVersion": "0.25.0",
   "Requirements": [],
   "AssemblyName": "Wrath.SoundModTemplate.dll",

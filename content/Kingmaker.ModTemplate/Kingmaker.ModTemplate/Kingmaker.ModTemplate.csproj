@@ -5,7 +5,7 @@
 		<TargetFramework>net472</TargetFramework>
 		<AssemblyName>Kingmaker.ModTemplate</AssemblyName>
 		<Description>Template Mod</Description>
-		<Version>1.0.0</Version>
+		<Version>{version}</Version>
 		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
 		<LangVersion>latest</LangVersion>
 		<RootNamespace>Kingmaker.ModTemplate</RootNamespace>

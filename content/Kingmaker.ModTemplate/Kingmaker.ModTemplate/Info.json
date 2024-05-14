@@ -2,7 +2,7 @@
   "Id": "Kingmaker.ModTemplate",
   "DisplayName": "Template Mod",
   "Author": "",
-  "Version": "1.0.0",
+  "Version": "{version}",
   "ManagerVersion": "0.20.0",
   "Requirements": [],
   "AssemblyName": "Kingmaker.ModTemplate.dll",

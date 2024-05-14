@@ -2,7 +2,7 @@
   "Releases": [
     {
       "Id": "Kingmaker.ModTemplate",
-      "Version": "1.0.0"
+      "Version": "{version}"
     }
   ]
 }
