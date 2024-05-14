@@ -8,8 +8,7 @@
 
 ## Requirements
 
-- [.NET SDK](https://dotnet.microsoft.com/en-us/download) Either have .NET 6 or 7 SDK. If you have .NET 8 installed you need to run the following once before you can use the template (if you ***don't*** run this with .NET 8 SDK installed you'll get a NullReferenceException when running donet new):  
-`dotnet new globaljson --sdk-version 7.0.100 --roll-forward minor` 
+- [.NET SDK](https://dotnet.microsoft.com/en-us/download) Have .NET SDK 6 or newer installed.
 - The target game needs to be installed. The game must've been started once (for a Player.log file).
 - Kingmaker and Wrath: Have UnityModManager applied to the game.
 - For the sound templates you additionally need a compatible version of Wwise (Audiokinetic) installed. For Wrath, that's any `2019.2` version.
