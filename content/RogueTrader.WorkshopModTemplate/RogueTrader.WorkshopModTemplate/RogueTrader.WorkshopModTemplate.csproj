@@ -35,7 +35,7 @@
 			<Files Include="$(TargetDir)\**\*.*" />
 		</ItemGroup>
 
-		<Copy SourceFiles="@(Files)" DestinationFiles="@(Files->'$(KingmakerInstallDir)\Mods\$(AssemblyName)\%(RecursiveDir)%(Filename)%(Extension)')" />
+		<Copy SourceFiles="@(Files)" DestinationFiles="@(Files->'$(RogueTraderInstallDir)\Mods\$(AssemblyName)\%(RecursiveDir)%(Filename)%(Extension)')" />
 		<ZipDirectory SourceDirectory="$(MSBuildProjectDirectory)\$(OutputPath)" DestinationFile="$(MSBuildProjectDirectory)\$(OutputPath)\..\$(AssemblyName)_$(Configuration).zip" Overwrite="true" />
 	</Target>
 	<ItemGroup>
