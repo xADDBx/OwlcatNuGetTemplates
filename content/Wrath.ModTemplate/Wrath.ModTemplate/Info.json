@@ -3,7 +3,7 @@
   "DisplayName": "Template Mod",
   "Author": "",
   "Version": "{version}",
-  "ManagerVersion": "0.25.0",
+  "ManagerVersion": "0.27.11",
   "Requirements": [],
   "AssemblyName": "Wrath.ModTemplate.dll",
   "EntryMethod": "Wrath.ModTemplate.Main.Load",
