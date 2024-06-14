@@ -1,0 +1,8 @@
+﻿{
+  "Releases": [
+    {
+      "Id": "Wrath.BPCoreTemplate",
+      "Version": "{version}"
+    }
+  ]
+}

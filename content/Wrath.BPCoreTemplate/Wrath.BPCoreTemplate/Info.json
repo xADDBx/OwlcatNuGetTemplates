@@ -1,0 +1,12 @@
+﻿{
+  "Id": "Wrath.BPCoreTemplate",
+  "DisplayName": "Template Mod",
+  "Author": "",
+  "Version": "{version}",
+  "ManagerVersion": "0.27.11",
+  "Requirements": [],
+  "AssemblyName": "Wrath.BPCoreTemplate.dll",
+  "EntryMethod": "Wrath.BPCoreTemplate.Main.Load",
+  "HomePage": "",
+  "Repository": ""
+}
