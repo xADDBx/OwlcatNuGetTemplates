@@ -37,13 +37,16 @@
 	<Target Name="Deploy" AfterTargets="ILRepack">
 		<ItemGroup>
 			<Files Include="$(TargetDir)\**\*.*" />
-			<Files Remove="*.dll" />
-			<Files Remove="*.pdb" />
-			<Files Include="$(OutputPath)\$(AssemblyName).dll" />
-			<Files Include="$(OutputPath)\$(AssemblyName).pdb" />
+			<Files Remove="$(TargetDir)\**\*.dll" />
+			<Files Remove="$(TargetDir)\**\*.pdb" />
+			<Files Include="$(TargetDir)\**\$(AssemblyName).dll" />
+			<Files Include="$(TargetDir)\**\$(AssemblyName).pdb" />
+			<ToDelete Include="$(TargetDir)\**\*.*" />
+			<ToDelete Remove="@(Files)" />
 		</ItemGroup>
 
 		<Copy SourceFiles="@(Files)" DestinationFiles="@(Files->'$(WrathInstallDir)\Mods\$(AssemblyName)\%(RecursiveDir)%(Filename)%(Extension)')" />
+		<Delete Files="@(ToDelete)" />
 		<ZipDirectory SourceDirectory="$(MSBuildProjectDirectory)\$(OutputPath)" DestinationFile="$(MSBuildProjectDirectory)\$(OutputPath)\..\$(AssemblyName)-$(Version).zip" Overwrite="true" />
 	</Target>
 	<ItemGroup>
