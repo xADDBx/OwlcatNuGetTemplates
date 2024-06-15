@@ -1,0 +1,12 @@
+{
+  "UniqueName": "{SourceName}",
+  "Version": "{Version}",
+  "DisplayName": "{Description}",
+  "Description": "{Description}",
+  "Author": "",
+  "ImageName": "Thumbnail.jpg",
+  "WorkshopId": "",
+  "Repository": "",
+  "HomePage": "",
+  "Dependencies": []
+}

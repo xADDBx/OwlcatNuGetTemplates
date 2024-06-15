@@ -22,7 +22,7 @@
 			"description": "The target framework for the project",
 			"datatype": "text",
 			"replaces": "{TargetFramework}",
-			"defaultValue": "net472"
+			"defaultValue": "net481"
 		},
 		"Description": {
 			"type": "parameter",
@@ -37,6 +37,13 @@
 			"datatype": "text",
 			"replaces": "{Version}",
 			"defaultValue": "1.0.0"
+		}
+		"Game": {
+			"type": "parameter",
+			"description": "Game Name",
+			"datatype": "text",
+			"replaces": "{Game}",
+			"defaultValue": "RogueTrader"
 		}
 	},
 	"postActions": [

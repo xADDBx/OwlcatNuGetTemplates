@@ -16,35 +16,35 @@
 		"type": "project"
 	},
 	"preferNameDirectory": true,
-	"sourceName": "RogueTrader.WorkshopModTemplate",
+	"sourceName": "{SourceName}",
 	"symbols": {
 		"TargetFramework": {
 			"type": "parameter",
 			"description": "The target framework for the project",
 			"datatype": "text",
-			"defaultValue": "net472",
-			"replaces": "net472"
+			"replaces": "{TargetFramework}",
+			"defaultValue": "net481"
 		},
 		"Description": {
 			"type": "parameter",
 			"description": "Mod display name",
 			"datatype": "text",
-			"replaces": "Template Mod",
-			"defaultValue": "Template Mod"
-		},
-		"UnityVersion": {
-			"type": "parameter",
-			"description": "Unity version to use when developing the mod",
-			"datatype": "text",
-			"replaces": "2022.3.7",
-			"defaultValue": "2022.3.7"
+			"replaces": "{Description}",
+			"defaultValue": "Template Workshop Mod"
 		},
 		"Version": {
 			"type": "parameter",
 			"description": "Mod version",
 			"datatype": "text",
-			"replaces": "{version}",
+			"replaces": "{Version}",
 			"defaultValue": "1.0.0"
+		}
+		"Game": {
+			"type": "parameter",
+			"description": "Game Name",
+			"datatype": "text",
+			"replaces": "{Game}",
+			"defaultValue": "RogueTrader"
 		}
 	},
 	"postActions": [

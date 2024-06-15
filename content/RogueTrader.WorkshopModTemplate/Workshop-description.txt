@@ -1,1 +1,1 @@
-[h1]Template Mod[/h1]
+[h1]{Description}[/h1]
