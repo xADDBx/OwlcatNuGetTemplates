@@ -7,9 +7,9 @@
 		"Mod",
 		"Wrath Mod"
 	],
-	"identity": "WrathMod",
+	"identity": "WrathBPCoreMod",
 	"name": "UnityModManager Pathfinder: Wrath of the Righteous Mod",
-	"shortName": "wrathmod",
+	"shortName": "wrathbpcoremod",
 	"tags": {
 		"language": "C#",
 		"type": "project"
