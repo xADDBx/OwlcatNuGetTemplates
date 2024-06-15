@@ -15,34 +15,27 @@
 		"type": "project"
 	},
 	"preferNameDirectory": true,
-	"sourceName": "Kingmaker.ModTemplate",
+	"sourceName": "{SourceName}",
 	"symbols": {
 		"TargetFramework": {
 			"type": "parameter",
 			"description": "The target framework for the project",
 			"datatype": "text",
-			"defaultValue": "net472",
-			"replaces": "net472"
+			"replaces": "{TargetFramework}",
+			"defaultValue": "net472"
 		},
 		"Description": {
 			"type": "parameter",
 			"description": "Mod display name",
 			"datatype": "text",
-			"replaces": "Template Mod",
+			"replaces": "{Description}",
 			"defaultValue": "Template Mod"
-		},
-		"UnityVersion": {
-			"type": "parameter",
-			"description": "Unity version to use when developing the mod",
-			"datatype": "text",
-			"replaces": "2018.4.10",
-			"defaultValue": "2018.4.10"
 		},
 		"Version": {
 			"type": "parameter",
 			"description": "Mod version",
 			"datatype": "text",
-			"replaces": "{version}",
+			"replaces": "{Version}",
 			"defaultValue": "1.0.0"
 		}
 	},

@@ -2,10 +2,10 @@
 
   <PropertyGroup>
     <PackageType>Template</PackageType>
-    <PackageVersion>1.8.0</PackageVersion>
+    <PackageVersion>1.9.0</PackageVersion>
     <PackageId>Owlcat.Templates</PackageId>
     <Title>Owlcat Mod Templates</Title>
-    <Authors>ADDB;Microsoftenator;AlterAsc</Authors>
+    <Authors>ADDB;Microsoftenator;AlterAsc;CascadingDragon</Authors>
     <Description>Mod Templates for Owlcat Games</Description>
     <PackageTags>UnityModManager;Mod;Template;Owlcat</PackageTags>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>

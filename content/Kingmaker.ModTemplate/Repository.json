@@ -1,8 +1,8 @@
 ﻿{
   "Releases": [
     {
-      "Id": "Kingmaker.ModTemplate",
-      "Version": "{version}"
+      "Id": "{SourceName}",
+      "Version": "{Version}"
     }
   ]
 }

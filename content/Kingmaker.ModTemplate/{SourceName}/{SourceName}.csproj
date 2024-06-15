@@ -2,13 +2,13 @@
 	<Import Project="$(SolutionDir)GamePath.props" Condition="Exists('$(SolutionDir)GamePath.props')" />
 
 	<PropertyGroup>
-		<TargetFramework>net472</TargetFramework>
-		<AssemblyName>Kingmaker.ModTemplate</AssemblyName>
-		<Description>Template Mod</Description>
-		<Version>{version}</Version>
+		<TargetFramework>{TargetFramework}</TargetFramework>
+		<AssemblyName>{SourceName}</AssemblyName>
+		<Description>{Description}</Description>
+		<Version>{Version}</Version>
 		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
 		<LangVersion>latest</LangVersion>
-		<RootNamespace>Kingmaker.ModTemplate</RootNamespace>
+		<RootNamespace>{SourceName}</RootNamespace>
 		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
 		<RestoreAdditionalProjectSources>https://api.nuget.org/v3/index.json</RestoreAdditionalProjectSources>
 		<KingmakerData>$(LocalAppData)Low\Owlcat Games\Pathfinder Kingmaker</KingmakerData>
