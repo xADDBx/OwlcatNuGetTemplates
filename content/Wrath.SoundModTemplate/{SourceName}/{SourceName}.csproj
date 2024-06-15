@@ -46,7 +46,7 @@
 		</Exec>
 
 		<PropertyGroup>
-			<MonoPathRegex>^Mono path\[0\] = '(.*?)/{Game}_Data/Managed'$</MonoPathRegex>
+			<MonoPathRegex>^Mono path\[0\] = '(.*?)/Wrath_Data/Managed'$</MonoPathRegex>
 		</PropertyGroup>
 
 		<PropertyGroup>
