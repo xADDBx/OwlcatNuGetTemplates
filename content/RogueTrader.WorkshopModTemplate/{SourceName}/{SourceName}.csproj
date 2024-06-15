@@ -11,7 +11,7 @@
 		<RootNamespace>{SourceName}</RootNamespace>
 		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
 		<RestoreAdditionalProjectSources>https://api.nuget.org/v3/index.json</RestoreAdditionalProjectSources>
-		<RogueTraderData>$(LocalAppData)Low\Owlcat Games\Warhammer 40000 Rogue Trader</RogueTraderData>
+		<{Game}Data>$(LocalAppData)Low\Owlcat Games\Warhammer 40000 Rogue Trader</{Game}Data>
 	</PropertyGroup>
 	<ItemGroup>
 		<Reference Include="$({Game})\WH40KRT_Data\Managed\Unity*.dll" Private="false" />
@@ -19,10 +19,10 @@
 		<Reference Include="$({Game})\WH40KRT_Data\Managed\Utility*.dll" Private="false" />
 		<Reference Include="$({Game})\WH40KRT_Data\Managed\Core*.dll" Private="false" />
 		<Reference Include="$({Game})\WH40KRT_Data\Managed\Owlcat*.dll" Publicize="true" Private="false" />
-		<Reference Include="$({Game})\WH40KRT_Data\Managed\RogueTrader*.dll" Publicize="true" Private="false" />
+		<Reference Include="$({Game})\WH40KRT_Data\Managed\{Game}*.dll" Publicize="true" Private="false" />
 		<Reference Include="$({Game})\WH40KRT_Data\Managed\Code.dll*" Publicize="true" Private="false" />
 		<Reference Include="$({Game})\WH40KRT_Data\Managed\LocalizationShared.dll*" Publicize="true" Private="false" />
-		<Reference Include="$(RogueTraderData)\UnityModManager\UnityModManager.dll*" Publicize="true" Private="false" />
+		<Reference Include="$({Game}Data)\UnityModManager\UnityModManager.dll*" Publicize="true" Private="false" />
 		<Reference Include="$({Game})\WH40KRT_Data\Managed\0Harmony.dll*" Private="false" />
 		<Reference Include="$({Game})\WH40KRT_Data\Managed\Newtonsoft.Json.dll*" Private="false" />
 		<Reference Include="$({Game})\WH40KRT_Data\Managed\ContextData.dll*" Private="false" />
@@ -37,7 +37,7 @@
 			<Files Include="$(TargetDir)\**\*.*" />
 		</ItemGroup>
 
-		<Copy SourceFiles="@(Files)" DestinationFiles="@(Files->'$(RogueTraderData)\UnityModManager\$(AssemblyName)\%(RecursiveDir)%(Filename)%(Extension)')" />
+		<Copy SourceFiles="@(Files)" DestinationFiles="@(Files->'$({Game}Data)\UnityModManager\$(AssemblyName)\%(RecursiveDir)%(Filename)%(Extension)')" />
 		<ZipDirectory SourceDirectory="$(MSBuildProjectDirectory)\$(OutputPath)" DestinationFile="$(MSBuildProjectDirectory)\$(OutputPath)\..\$(AssemblyName)-$(Version).zip" Overwrite="true" />
 	</Target>
 	<ItemGroup>
@@ -50,7 +50,7 @@
 		<PublishToWorkshop PathToManifest="$(MSBuildThisFileDirectory)\OwlcatModificationManifest.json" ImageDir="$(SolutionDir)" BuildDir="$(MSBuildProjectDirectory)\$(OutputPath)" PathToDescription="$(SolutionDir)Workshop-description.txt" GameAppId="2186680" />
 	</Target>
 	<Target Name="GenerateCustomPropsFile" BeforeTargets="BeforeBuild" Condition="$({Game}) == ''">
-		<Exec Command="findstr /C:&quot;Mono path[0]&quot; &quot;$(RogueTraderData)\Player.log&quot;" IgnoreExitCode="true" ConsoleToMSBuild="true">
+		<Exec Command="findstr /C:&quot;Mono path[0]&quot; &quot;$({Game}Data)\Player.log&quot;" IgnoreExitCode="true" ConsoleToMSBuild="true">
 			<Output TaskParameter="ExitCode" PropertyName="ExitCode" />
 			<Output TaskParameter="ConsoleOutput" PropertyName="MonoPathLine" />
 		</Exec>
