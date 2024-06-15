@@ -9,7 +9,7 @@
 		"BPCore Mod"
 	],
 	"identity": "WrathBPCoreMod",
-	"name": "UnityModManager Pathfinder: Wrath of the Righteous Mod",
+	"name": "UnityModManager Pathfinder: Wrath of the Righteous + BPCore Mod",
 	"shortName": "wrathbpcoremod",
 	"tags": {
 		"language": "C#",
