@@ -14,13 +14,13 @@
 		<WrathData>$(LocalAppData)Low\Owlcat Games\Pathfinder Wrath Of The Righteous</WrathData>
 	</PropertyGroup>
 	<ItemGroup>
-		<Reference Include="$(WrathInstallDir)\Wrath_Data\Managed\Unity*.dll" Private="false" />
-		<Reference Include="$(WrathInstallDir)\Wrath_Data\Managed\Core*.dll" Private="false" />
-		<Reference Include="$(WrathInstallDir)\Wrath_Data\Managed\Owlcat*.dll" Publicize="true" Private="false" />
-		<Reference Include="$(WrathInstallDir)\Wrath_Data\Managed\Assembly-CSharp.dll*" Publicize="true" Private="false" />
-		<Reference Include="$(WrathInstallDir)\Wrath_Data\Managed\UnityModManager\UnityModManager.dll*" Publicize="true" Private="false" />
-		<Reference Include="$(WrathInstallDir)\Wrath_Data\Managed\Newtonsoft.Json.dll*" Private="false" />
-		<Reference Include="$(WrathInstallDir)\Wrath_Data\Managed\UnityModManager\0Harmony.dll*" Private="false" />
+		<Reference Include="$(WrathInstallDir)\Wrath_Data\Managed\Unity*.dll" />
+		<Reference Include="$(WrathInstallDir)\Wrath_Data\Managed\Core*.dll" />
+		<Reference Include="$(WrathInstallDir)\Wrath_Data\Managed\Owlcat*.dll" Publicize="true" />
+		<Reference Include="$(WrathInstallDir)\Wrath_Data\Managed\Assembly-CSharp.dll*" Publicize="true" />
+		<Reference Include="$(WrathInstallDir)\Wrath_Data\Managed\UnityModManager\UnityModManager.dll*" Publicize="true" />
+		<Reference Include="$(WrathInstallDir)\Wrath_Data\Managed\Newtonsoft.Json.dll*" />
+		<Reference Include="$(WrathInstallDir)\Wrath_Data\Managed\UnityModManager\0Harmony.dll*" />
 	</ItemGroup>
 	<ItemGroup>
 		<None Include="Info.json" CopyToOutputDirectory="PreserveNewest" />
@@ -37,6 +37,10 @@
 	<Target Name="Deploy" AfterTargets="ILRepack">
 		<ItemGroup>
 			<Files Include="$(TargetDir)\**\*.*" />
+			<Files Remove="*.dll" />
+			<Files Remove="*.pdb" />
+			<Files Include="$(OutputPath)\$(AssemblyName).dll" />
+			<Files Include="$(OutputPath)\$(AssemblyName).pdb" />
 		</ItemGroup>
 
 		<Copy SourceFiles="@(Files)" DestinationFiles="@(Files->'$(WrathInstallDir)\Mods\$(AssemblyName)\%(RecursiveDir)%(Filename)%(Extension)')" />

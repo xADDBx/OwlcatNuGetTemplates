@@ -21,8 +21,8 @@
 			"type": "parameter",
 			"description": "The target framework for the project",
 			"datatype": "text",
-			"defaultValue": "net472",
-			"replaces": "net472"
+			"defaultValue": "net481",
+			"replaces": "net481"
 		},
 		"Description": {
 			"type": "parameter",
