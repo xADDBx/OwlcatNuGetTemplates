@@ -38,6 +38,13 @@
 			"replaces": "{Version}",
 			"defaultValue": "1.0.0"
 		}
+		"Game": {
+			"type": "parameter",
+			"description": "Game Name",
+			"datatype": "text",
+			"replaces": "{Game}",
+			"defaultValue": "Kingmaker"
+		}
 	},
 	"postActions": [
 		{
