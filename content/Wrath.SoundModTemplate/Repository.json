@@ -1,8 +1,8 @@
 ﻿{
   "Releases": [
     {
-      "Id": "Wrath.SoundModTemplate",
-      "Version": "{version}"
+      "Id": "{SourceName}",
+      "Version": "{Version}"
     }
   ]
 }

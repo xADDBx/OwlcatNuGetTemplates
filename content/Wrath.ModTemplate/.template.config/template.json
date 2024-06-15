@@ -15,35 +15,35 @@
 		"type": "project"
 	},
 	"preferNameDirectory": true,
-	"sourceName": "Wrath.ModTemplate",
+	"sourceName": "{SourceName}",
 	"symbols": {
 		"TargetFramework": {
 			"type": "parameter",
 			"description": "The target framework for the project",
 			"datatype": "text",
-			"defaultValue": "net472",
-			"replaces": "net472"
+			"replaces": "{TargetFramework}",
+			"defaultValue": "net481"
 		},
 		"Description": {
 			"type": "parameter",
 			"description": "Mod display name",
 			"datatype": "text",
-			"replaces": "Template Mod",
+			"replaces": "{Description}",
 			"defaultValue": "Template Mod"
-		},
-		"UnityVersion": {
-			"type": "parameter",
-			"description": "Unity version to use when developing the mod",
-			"datatype": "text",
-			"replaces": "2020.3.48",
-			"defaultValue": "2020.3.48"
 		},
 		"Version": {
 			"type": "parameter",
 			"description": "Mod version",
 			"datatype": "text",
-			"replaces": "{version}",
+			"replaces": "{Version}",
 			"defaultValue": "1.0.0"
+		}
+		"Game": {
+			"type": "parameter",
+			"description": "Game Name",
+			"datatype": "text",
+			"replaces": "{Game}",
+			"defaultValue": "Wrath"
 		}
 	},
 	"postActions": [

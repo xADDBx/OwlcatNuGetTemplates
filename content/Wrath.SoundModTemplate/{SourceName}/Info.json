@@ -1,0 +1,12 @@
+﻿{
+  "Id": "{SourceName}",
+  "DisplayName": "{Description}",
+  "Author": "",
+  "Version": "{Version}",
+  "ManagerVersion": "0.27.11",
+  "Requirements": [],
+  "AssemblyName": "{SourceName}.dll",
+  "EntryMethod": "{SourceName}.Main.Load",
+  "HomePage": "",
+  "Repository": ""
+}

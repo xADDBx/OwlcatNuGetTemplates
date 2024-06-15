@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using System.Reflection;
 using UnityModManagerNet;
 
-namespace RogueTrader.WorkshopModTemplate;
+namespace {SourceName};
 
 //-:cnd:noEmit
 #if DEBUG

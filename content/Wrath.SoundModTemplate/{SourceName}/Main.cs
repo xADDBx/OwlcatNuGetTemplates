@@ -12,7 +12,7 @@ using Kingmaker.Blueprints.JsonSystem;
 using System.Xml;
 using Kingmaker.Localization;
 
-namespace Wrath.SoundModTemplate;
+namespace {SourceName};
 
 //-:cnd:noEmit
 #if DEBUG
