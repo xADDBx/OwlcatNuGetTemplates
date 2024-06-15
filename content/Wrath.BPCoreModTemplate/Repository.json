@@ -1,0 +1,8 @@
+﻿{
+  "Releases": [
+    {
+      "Id": "{SourceName}",
+      "Version": "{Version}"
+    }
+  ]
+}
