@@ -46,18 +46,14 @@ public static class Main {
 #endif
 //+:cnd:noEmit
     [HarmonyPatch(typeof(BlueprintsCache))]
-    public static class BlueprintsCaches_Patch
-    {
+    public static class BlueprintsCaches_Patch {
         private static bool Initialized = false;
 
         [HarmonyPriority(Priority.First)]
         [HarmonyPatch(nameof(BlueprintsCache.Init)), HarmonyPostfix]
-        public static void Init_Postfix()
-        {
-            try
-            {
-                if (Initialized)
-                {
+        public static void Init_Postfix() {
+            try {
+                if (Initialized) {
                     log.Log("Already initialized blueprints cache.");
                     return;
                 }
@@ -68,8 +64,7 @@ public static class Main {
                 // Example
                 // SuperAwesomeFeat.Configure()
             }
-            catch (Exception e)
-            {
+            catch (Exception e) {
                 log.Log(string.Concat("Failed to initialize.", e));
             }
         }
