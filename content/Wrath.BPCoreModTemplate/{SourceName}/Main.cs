@@ -6,6 +6,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Reflection;
 using UnityModManagerNet;
+using BlueprintCore.Utils;
+using Kingmaker.Blueprints.JsonSystem;
 
 namespace {SourceName};
 
@@ -43,4 +45,28 @@ public static class Main {
     }
 #endif
 //+:cnd:noEmit
+    [HarmonyPatch(typeof(BlueprintsCache))]
+    public static class BlueprintsCaches_Patch {
+        private static bool Initialized = false;
+
+        [HarmonyPriority(Priority.First)]
+        [HarmonyPatch(nameof(BlueprintsCache.Init)), HarmonyPostfix]
+        public static void Init_Postfix() {
+            try {
+                if (Initialized) {
+                    log.Log("Already initialized blueprints cache.");
+                    return;
+                }
+                Initialized = true;
+
+                log.Log("Patching blueprints.");
+                // Insert your mod's patching methods here
+                // Example
+                // SuperAwesomeFeat.Configure()
+            }
+            catch (Exception e) {
+                log.Log(string.Concat("Failed to initialize.", e));
+            }
+        }
+    }
 }

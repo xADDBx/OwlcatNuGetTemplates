@@ -1,0 +1,68 @@
+{
+	"$schema": "http://json.schemastore.org/template",
+	"author": "ADDB & CascadingDragon",
+	"classifications": [
+		"UnityModManager",
+		"UMM",
+		"Mod",
+		"Rogue Trader Mod",
+		"Steam Workshop"
+	],
+	"identity": "RogueTraderWorkshopBlueprintMod",
+	"name": "UnityModManager Rogue Trader Workshop Mod With Blueprint Patch",
+	"shortName": "rtbpmodworkshop",
+	"tags": {
+		"language": "C#",
+		"type": "project"
+	},
+	"preferNameDirectory": true,
+	"sourceName": "{SourceName}",
+	"symbols": {
+		"TargetFramework": {
+			"type": "parameter",
+			"description": "The target framework for the project",
+			"datatype": "text",
+			"replaces": "{TargetFramework}",
+			"defaultValue": "net481"
+		},
+		"Description": {
+			"type": "parameter",
+			"description": "Mod display name",
+			"datatype": "text",
+			"replaces": "{Description}",
+			"defaultValue": "Template Workshop Mod"
+		},
+		"Version": {
+			"type": "parameter",
+			"description": "Mod version",
+			"datatype": "text",
+			"replaces": "{Version}",
+			"defaultValue": "1.0.0"
+		},
+		"Game": {
+			"type": "parameter",
+			"description": "Game Name",
+			"datatype": "text",
+			"replaces": "{Game}",
+			"defaultValue": "RogueTrader"
+		}
+	},
+	"postActions": [
+		{
+			"actionId": "3A7C4B45-1F5D-4A30-959A-51B88E82B5D2",
+			"args": {
+				"executable": "dotnet",
+				"args": "msbuild -t:GenerateCustomPropsFile",
+				"redirectStandardOutput": false,
+				"redirectStandardError": false
+			},
+			"manualInstructions": [
+				{
+					"text": "Run 'GenerateCustomPropsFile' target"
+				}
+			],
+			"continueOnError": false,
+			"description ": "Sets up reference paths by executing the GenerateCustomPropsFile MSBuild target"
+		}
+	]
+}

@@ -1,0 +1,12 @@
+[
+  {
+    "Key": "Example.Name",
+    "ProcessTemplates": false,
+    "enGB": "Name of your Feat/Class/Whatever"
+  },
+
+  {
+    "Key": "Example.Description",
+    "enGB": "Description for your Feat/Class/Whatever"
+  }
+]
