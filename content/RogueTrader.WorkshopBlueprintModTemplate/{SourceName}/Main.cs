@@ -44,33 +44,33 @@ public static class Main {
     }
 #endif
 //+:cnd:noEmit
-	[HarmonyPatch(typeof(BlueprintsCache))]
-	static class BlueprintsCaches_Patch
-	{
-		private static bool Initialized = false;
-
-		[HarmonyPriority(Priority.First)]
-		[HarmonyPatch(nameof(BlueprintsCache.Init)), HarmonyPostfix]
-		static void Init_Postfix()
-		{
-			try
-			{
-				if (Initialized)
-				{
-					log.Log("Already initialized blueprints cache.");
-					return;
-				}
-				Initialized = true;
+    [HarmonyPatch(typeof(BlueprintsCache))]
+    public static class BlueprintsCaches_Patch
+    {
+        private static bool Initialized = false;
+        
+        [HarmonyPriority(Priority.First)]
+        [HarmonyPatch(nameof(BlueprintsCache.Init)), HarmonyPostfix]
+        public static void Init_Postfix()
+        {
+            try
+            {
+                if (Initialized)
+                {
+                    log.Log("Already initialized blueprints cache.");
+                    return;
+                }
+                Initialized = true;
       
-				log.Log("Patching blueprints.");
-				\\ Insert your mod blueprint add/subtract/patch here
-				\\ Example
-				\\ MyAwesomeFeat.Patch();
-			}
-			catch (Exception e)
-			{
-				log.Log("Failed to initialize.", e);
-			}
-		}
-	}
+                log.Log("Patching blueprints.");
+                // Insert your mod blueprint add/subtract/patch here
+                // Example
+                // MyAwesomeFeat.Patch();
+            }
+            catch (Exception e)
+            {
+                log.Log(string.Concat("Failed to initialize.", e));
+            }
+        }
+    }
 }

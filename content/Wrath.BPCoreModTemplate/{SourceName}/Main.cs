@@ -45,37 +45,33 @@ public static class Main {
     }
 #endif
 //+:cnd:noEmit
-	[HarmonyPatch(typeof(BlueprintsCache))]
-	static class BlueprintsCaches_Patch
-	{
-		// Uses BlueprintCore's LogWrapper which uses Owlcat's internal logging.
-		// Logs to `%APPDATA%\..\LocalLow\Owlcat Games\Pathfinder Wrath Of The Righteous\GameLogFull.txt` and the Mods
-		// channel in RemoteConsole.
-		private static readonly LogWrapper Logger = LogWrapper.Get("{SourceName}");
-		private static bool Initialized = false;
+    [HarmonyPatch(typeof(BlueprintsCache))]
+    public static class BlueprintsCaches_Patch
+    {
+        private static bool Initialized = false;
 
-		[HarmonyPriority(Priority.First)]
-		[HarmonyPatch(nameof(BlueprintsCache.Init)), HarmonyPostfix]
-		static void Init_Postfix()
-		{
-			try
-			{
-				if (Initialized)
-				{
-					Logger.Info("Already initialized blueprints cache.");
-					return;
-				}
-				Initialized = true;
-      
-				Logger.Info("Patching blueprints.");
-				// Insert your mod's patching methods here
-				// Example
-				// SuperAwesomeFeat.Configure()
-			}
-			catch (Exception e)
-			{
-				Logger.Error("Failed to initialize.", e);
-			}
-		}
-	}
+        [HarmonyPriority(Priority.First)]
+        [HarmonyPatch(nameof(BlueprintsCache.Init)), HarmonyPostfix]
+        public static void Init_Postfix()
+        {
+            try
+            {
+                if (Initialized)
+                {
+                    log.Log("Already initialized blueprints cache.");
+                    return;
+                }
+                Initialized = true;
+
+                log.Log("Patching blueprints.");
+                // Insert your mod's patching methods here
+                // Example
+                // SuperAwesomeFeat.Configure()
+            }
+            catch (Exception e)
+            {
+                log.Log(string.Concat("Failed to initialize.", e));
+            }
+        }
+    }
 }
