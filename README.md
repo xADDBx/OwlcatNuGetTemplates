@@ -25,7 +25,9 @@
 - `dotnet new --install Owlcat.Templates`
 - `dotnet new <TemplateName> -n <ModID> -D "<Mod Name>"`  (Replace the <value> placeholder with actual values)
 - Press y to confirm action (necessary to find Steam Installation Directory)
-- **Build resulting project once to publicize**
+- I suggest using Visual Studio 2022 to edit the project. Use the following cmd command to install it:
+  `winget install Microsoft.VisualStudio.2022.Community --override "--add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.Net.Component.4.7.2.SDK"`
+- Open the resulting project (open the .sln file with Visual Studio) and **Build resulting project once to publicize**
 - Restart your IDE to rebuild cache if there are still red underlines
 
 After that you should working setup for a UnityModManager mod which:
