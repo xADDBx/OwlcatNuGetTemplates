@@ -11,8 +11,6 @@
 
 ## Requirements
 
-- Install .NET SDK via the cmd (windows command shell) with the command:
-  `winget install Microsoft.Dotnet.SDK.8`
 - The target game needs to be installed. The game must've been started once (for a Player.log file).
 - Kingmaker and Wrath: Have UnityModManager applied to the game.
 - For the sound templates you additionally need a compatible version of Wwise (Audiokinetic) installed. For Wrath, that's any `2019.2` version.
@@ -20,6 +18,8 @@
 ## Usage
 
 - Open command prompt in directory which should contain project directory
+- Install .NET SDK with the command:  
+  `winget install Microsoft.Dotnet.SDK.8`
 - If you haven't done this before (If you're not sure, just execute in anyways), you might need to add the NuGet repository as a source with the following command:  
   `dotnet nuget add source https://api.nuget.org/v3/index.json -n nuget.org`
 - `dotnet new --install Owlcat.Templates`
