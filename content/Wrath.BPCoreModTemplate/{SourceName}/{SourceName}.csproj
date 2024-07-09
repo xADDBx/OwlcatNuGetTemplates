@@ -25,6 +25,9 @@
 	<ItemGroup>
 		<None Include="Info.json" CopyToOutputDirectory="PreserveNewest" />
 	</ItemGroup>
+	<ItemGroup>
+		<EmbeddedResource Include="LocalizedStrings.json" />
+	</ItemGroup>
 	<Target Name="ILRepack" AfterTargets="Build">
 		<ItemGroup>
 			<InputAssemblies Include="BlueprintCore.dll" />
