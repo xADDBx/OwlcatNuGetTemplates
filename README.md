@@ -11,7 +11,7 @@
 
 ## Usage
 
-- Open Windows command prompt (cmd.exe) in directory which should contain project directory
+- Open Windows command prompt (cmd.exe) in the directory which should contain project folder
 - Install .NET SDK with the command:  
   `winget install Microsoft.Dotnet.SDK.8`
 - I suggest using Visual Studio 2022 to edit the project. Use the following cmd command to install it:  
