@@ -9,12 +9,6 @@
 - `wrathbpcoremod` - BPCore UnityModManager Template for Pathfinder: Wrath of the Righteous. BPCore is a community library to make certain aspects of modding easier in Wrath.
 - `kmmod` - UnityModManager Template for Pathfinder: Kingmaker
 
-## Requirements
-
-- The target game needs to be installed. The game must've been started once (for a Player.log file).
-- Kingmaker and Wrath: Have UnityModManager applied to the game.
-- For the sound templates you additionally need a compatible version of Wwise (Audiokinetic) installed. For Wrath, that's any `2019.2` version.
-
 ## Usage
 
 - Open command prompt in directory which should contain project directory
@@ -41,3 +35,9 @@ For sound mods, they additionally contain:
 - A Wwise template in which you can add sounds (and create sound events). The template should automatically include the created Soundbanks in the final output.
 - The UnityModManager mod part will automatically load the Soundbanks contained in the mod directory during runtime.
 - If the event name matches an answer/cue/dialog guid, the sound event should automatically play when that answer/cue/dialog is displayed.
+
+## Requirements
+
+- The target game needs to be installed. The game must've been started once (for a Player.log file).
+- Kingmaker and Wrath: Have UnityModManager applied to the game.
+- For the sound templates you additionally need a compatible version of Wwise (Audiokinetic) installed. For Wrath, that's any `2019.2` version.
