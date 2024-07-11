@@ -24,9 +24,7 @@
 	</ItemGroup>
 	<ItemGroup>
 		<None Include="Info.json" CopyToOutputDirectory="PreserveNewest" />
-		<None Update="LocalizedStrings.json">
-			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-		</None>
+		<None Include="LocalizedStrings.json" CopyToOutputDirectory="PreserveNewest" />
 	</ItemGroup>
 	<Target Name="ILRepack" AfterTargets="Build">
 		<ItemGroup>
