@@ -9,7 +9,7 @@
     <Description>Mod Templates for Owlcat Games</Description>
     <PackageTags>UnityModManager;Mod;Template;Owlcat</PackageTags>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <TargetFramework>net472</TargetFramework>
+    <TargetFramework>net481</TargetFramework>
     <PackageOutputPath>$(SolutionDir)nuget</PackageOutputPath>
     <IncludeContentInPack>true</IncludeContentInPack>
     <IncludeBuildOutput>false</IncludeBuildOutput>
