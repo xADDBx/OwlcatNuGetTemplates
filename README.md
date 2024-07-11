@@ -18,6 +18,7 @@
   `winget install Microsoft.VisualStudio.2022.Community --override "--add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.Net.Component.4.7.2.SDK"`
 - If you haven't done this before (If you're not sure, just execute in anyways), you might need to add the NuGet repository as a source with the following command:  
   `dotnet nuget add source https://api.nuget.org/v3/index.json -n nuget.org`
+  (Just ignore the following error if it appears: `The name specified has already been added to the list of available package sources. Provide a unique name.`)
 - `dotnet new --install Owlcat.Templates`
 - `dotnet new <TemplateName> -n <ModID> -D "<Mod Name>"`  (Replace the <value> placeholder with actual values)
 - Press y to confirm action (necessary to find Steam Installation Directory)
