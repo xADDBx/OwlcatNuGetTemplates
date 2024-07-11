@@ -62,8 +62,7 @@ public static class Main {
                 // Insert your mod blueprint add/subtract/patch here
                 // Example
                 // MyAwesomeFeat.Patch();
-            }
-            catch (Exception e) {
+            } catch (Exception e) {
                 log.Log(string.Concat("Failed to initialize.", e));
             }
         }

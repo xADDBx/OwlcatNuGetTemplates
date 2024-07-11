@@ -63,8 +63,7 @@ public static class Main {
                 // Insert your mod's patching methods here
                 // Example
                 // SuperAwesomeFeat.Configure()
-            }
-            catch (Exception e) {
+            } catch (Exception e) {
                 log.Log(string.Concat("Failed to initialize.", e));
             }
         }
