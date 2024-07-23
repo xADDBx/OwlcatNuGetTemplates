@@ -21,7 +21,6 @@
   (Just ignore the following error if it appears: "The name specified has already been added to the list of available package sources. Provide a unique name.")
 - `dotnet new --install Owlcat.Templates`
 - `dotnet new <TemplateName> -n <ModID> -D "<Mod Name>"`  (Replace the <value> placeholder with actual values)
-- Press y to confirm action (necessary to find Steam Installation Directory)
 - Open the resulting project (open the .sln file with Visual Studio) and **Build resulting project once to publicize**
 - Restart your IDE to rebuild cache if there are still red underlines
 
