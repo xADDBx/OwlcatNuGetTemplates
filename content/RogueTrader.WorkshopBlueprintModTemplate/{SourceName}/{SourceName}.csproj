@@ -1,4 +1,4 @@
-﻿Project Sdk="Microsoft.NET.Sdk" InitialTargets="GenerateCustomPropsFile">
+﻿<Project Sdk="Microsoft.NET.Sdk" InitialTargets="GenerateCustomPropsFile">
 	<Import Project="$(SolutionDir)GamePath.props" Condition="Exists('$(SolutionDir)GamePath.props')" />
 
 	<PropertyGroup>
