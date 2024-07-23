@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk" InitialTargets="GenerateCustomPropsFile">
 	<Import Project="$(SolutionDir)GamePath.props" Condition="Exists('$(SolutionDir)GamePath.props')" />
 
 	<PropertyGroup>
@@ -49,7 +49,7 @@
 		<RemoveDir Directories="$(OutputPath)\publish" />
 		<PublishToWorkshop PathToManifest="$(MSBuildThisFileDirectory)\OwlcatModificationManifest.json" ImageDir="$(SolutionDir)" BuildDir="$(MSBuildProjectDirectory)\$(OutputPath)" PathToDescription="$(SolutionDir)Workshop-description.txt" GameAppId="2186680" />
 	</Target>
-	<Target Name="GenerateCustomPropsFile" BeforeTargets="BeforeBuild" Condition="$({Game}InstallDir) == ''">
+	<Target Name="GenerateCustomPropsFile" Condition="$({Game}InstallDir) == ''">
 		<Exec Command="findstr /C:&quot;Mono path[0]&quot; &quot;$({Game}Data)\Player.log&quot;" IgnoreExitCode="true" ConsoleToMSBuild="true">
 			<Output TaskParameter="ExitCode" PropertyName="ExitCode" />
 			<Output TaskParameter="ConsoleOutput" PropertyName="MonoPathLine" />

@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk" InitialTargets="GenerateCustomPropsFile">
 	<Import Project="$(SolutionDir)GamePath.props" Condition="Exists('$(SolutionDir)GamePath.props')" />
 
 	<PropertyGroup>
@@ -57,7 +57,7 @@
 		<PackageReference Include="ILRepack.MSBuild.Task" Version="2.*" />
 		<PackageReference Include="WW-Blueprint-Core" Version="*" />
 	</ItemGroup>
-	<Target Name="GenerateCustomPropsFile" BeforeTargets="BeforeBuild" Condition="$({Game}InstallDir) == ''">
+	<Target Name="GenerateCustomPropsFile" Condition="$({Game}InstallDir) == ''">
 		<Exec Command="findstr /C:&quot;Mono path[0]&quot; &quot;$({Game}Data)\Player.log&quot;" IgnoreExitCode="true" ConsoleToMSBuild="true">
 			<Output TaskParameter="ExitCode" PropertyName="ExitCode" />
 			<Output TaskParameter="ConsoleOutput" PropertyName="MonoPathLine" />
