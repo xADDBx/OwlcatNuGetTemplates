@@ -29,7 +29,7 @@
 			"description": "Mod display name",
 			"datatype": "text",
 			"replaces": "{Description}",
-			"defaultValue": "Template Sound Mod"
+			"defaultValue": "Template Sound Player Voice Mod"
 		},
 		"Version": {
 			"type": "parameter",
@@ -44,6 +44,14 @@
 			"datatype": "text",
 			"replaces": "{Game}",
 			"defaultValue": "Wrath"
+		},
+		"ModGUID":{
+			"type": "generated",
+			"generator": "guid",
+			"replaces": "{ModGUID}",
+			"parameters": {
+			"defaultFormat":"n"
+			}
 		}
 	}
 }
