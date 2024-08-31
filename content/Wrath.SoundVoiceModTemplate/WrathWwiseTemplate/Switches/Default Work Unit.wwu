@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{0EB06380-9943-4EC2-B888-F5C70EB7BF4E}" SchemaVersion="97">
+	<Switches>
+		<WorkUnit Name="Default Work Unit" ID="{0EB06380-9943-4EC2-B888-F5C70EB7BF4E}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="StealthAsks" ID="{4771B848-D4A9-461C-BED2-439C27421B60}">
+					<ChildrenList>
+						<Switch Name="StealthOn" ID="{16B89290-D21B-471D-8299-00F46B9B284A}"/>
+						<Switch Name="StealthOff" ID="{755402C4-D40A-4E0A-AD1B-E11DEE6DCD67}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>

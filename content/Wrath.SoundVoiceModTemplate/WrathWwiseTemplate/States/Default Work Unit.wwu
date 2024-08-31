@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{B15935F2-F42F-4C3B-8A0A-A0C530C692BC}" SchemaVersion="97">
+	<States>
+		<WorkUnit Name="Default Work Unit" ID="{B15935F2-F42F-4C3B-8A0A-A0C530C692BC}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="GameAudioState" ID="{1FD22164-458B-45A9-BDB3-3C54644BEF88}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0.05"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{55625F47-FD84-4075-91EA-5BB7B01A7E36}"/>
+						<State Name="MainMenu" ID="{1405C274-325D-49EA-BAA3-CBAB32EFB82F}"/>
+						<State Name="GlobalMap" ID="{9969A30D-B38E-4D2F-8AA1-E69EAD095CF2}"/>
+						<State Name="Kingdom" ID="{10740D01-8EED-4117-8426-F5736917D8C2}"/>
+						<State Name="Default" ID="{4120C547-7E8A-43B2-9C09-E4A61EC9A7B9}"/>
+						<State Name="Combat" ID="{FC9B89E2-1988-4FAE-86E0-E0BE696AFA06}"/>
+						<State Name="InGamePause" ID="{6F15A77C-F010-476B-A0EF-C8FB26A511AE}"/>
+						<State Name="InGameMenu" ID="{1FEC9D95-75C4-425C-A6BC-E883F67B7576}"/>
+						<State Name="CutScene" ID="{BCF1FF2B-EE85-4D17-94D6-E0B27CD44F61}"/>
+						<State Name="BookQuest" ID="{8F8976CB-0505-4651-9247-39986FDD56B2}"/>
+						<State Name="Dialog" ID="{6A9F40DD-6440-4522-82E6-EA885DBCC76F}"/>
+						<State Name="LoadingScreen" ID="{6AD353AE-6EE9-4BD4-9FAE-80083E8AEBE3}"/>
+						<State Name="Narrator" ID="{86FBF5F4-1574-4EA9-B17B-CB79FF33E0E7}"/>
+						<State Name="Rest" ID="{BAB6A0FE-CAED-4BA1-9C53-B27825338775}"/>
+						<State Name="Death" ID="{903534A3-3FC5-459B-9E8F-CF8F0E408FE2}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="Default" ID="{4120C547-7E8A-43B2-9C09-E4A61EC9A7B9}"/>
+							<EndState Name="Combat" ID="{FC9B89E2-1988-4FAE-86E0-E0BE696AFA06}"/>
+							<Time>2</Time>
+							<IsShared>true</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="Default" ID="{4120C547-7E8A-43B2-9C09-E4A61EC9A7B9}"/>
+							<EndState Name="None" ID="{55625F47-FD84-4075-91EA-5BB7B01A7E36}"/>
+							<Time>0.05</Time>
+							<IsShared>true</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="Combat" ID="{FC9B89E2-1988-4FAE-86E0-E0BE696AFA06}"/>
+							<EndState Name="None" ID="{55625F47-FD84-4075-91EA-5BB7B01A7E36}"/>
+							<Time>2</Time>
+							<IsShared>true</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="BookQuest" ID="{8F8976CB-0505-4651-9247-39986FDD56B2}"/>
+							<EndState Name="Default" ID="{4120C547-7E8A-43B2-9C09-E4A61EC9A7B9}"/>
+							<Time>0.5</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="Default" ID="{4120C547-7E8A-43B2-9C09-E4A61EC9A7B9}"/>
+							<EndState Name="Dialog" ID="{6A9F40DD-6440-4522-82E6-EA885DBCC76F}"/>
+							<Time>2</Time>
+							<IsShared>true</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="LoadingScreen" ID="{6AD353AE-6EE9-4BD4-9FAE-80083E8AEBE3}"/>
+							<EndState Name="Default" ID="{4120C547-7E8A-43B2-9C09-E4A61EC9A7B9}"/>
+							<Time>0.01</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="MainMenu" ID="{1405C274-325D-49EA-BAA3-CBAB32EFB82F}"/>
+							<EndState Name="CutScene" ID="{BCF1FF2B-EE85-4D17-94D6-E0B27CD44F61}"/>
+							<Time>2</Time>
+							<IsShared>true</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+				<StateGroup Name="HDRVolumeControl" ID="{B6E536C9-A51F-412F-9691-97D618B12967}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0.5"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{140E2F38-D506-4336-A206-A01CDF04640F}"/>
+						<State Name="Normal" ID="{21CF1DD2-7BC8-4050-B9F5-2CF4BEF94CFB}"/>
+						<State Name="Minus_6dB" ID="{4CCF101B-3EA9-41EE-89D5-DA7D4F831C44}"/>
+						<State Name="Minus_10dB" ID="{ACE72391-7DE2-450C-A708-298914BCB32C}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="Dialogue_Aivu_Event_Starr_DLC6_Ducking" ID="{613D3AF2-2F7F-4192-916F-91E371BC60E1}">
+					<ChildrenList>
+						<State Name="None" ID="{60E3CE70-7D84-4FB0-A558-4F7C9CAFCDAE}"/>
+						<State Name="On" ID="{E2772FDC-4CCB-49A4-8E7A-8358DE8241E0}"/>
+						<State Name="Off" ID="{B799A476-14E6-4BB9-B678-984525305259}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="InGameVoices_DLC6_ComeUpstairsDucking" ID="{96D98B03-B7EC-4609-A072-C0FCC595CFA9}">
+					<ChildrenList>
+						<State Name="None" ID="{84970283-978C-40C4-A5EC-DB92CC4108A8}"/>
+						<State Name="On" ID="{3E2CF464-4395-42A8-AC17-5C18BEA3F227}"/>
+						<State Name="Off" ID="{E117CF21-3FB7-45D0-BBE9-731AE7F1B665}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="FATIGUEBARKMUTE" ID="{F1519134-D081-41D5-AEF9-10E85E0FAFBF}">
+					<ChildrenList>
+						<State Name="None" ID="{5CAD9A78-745C-424F-97D3-B08CAE23C2EA}"/>
+						<State Name="Muted" ID="{37B492A6-834F-411E-B8E2-513B49156385}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>

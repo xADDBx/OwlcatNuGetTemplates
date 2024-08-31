@@ -1,0 +1,49 @@
+{
+	"$schema": "http://json.schemastore.org/template",
+	"author": "Microsoftenator, DarthParametric",
+	"classifications": [
+		"UnityModManager",
+		"UMM",
+		"Mod",
+		"Wrath Sound Player Voice Mod"
+	],
+	"identity": "WrathSoundVoiceMod",
+	"name": "UnityModManager Pathfinder: Wrath of the Righteous + Wwise Mod",
+	"shortName": "wrathsoundvoicemod",
+	"tags": {
+		"language": "C#",
+		"type": "project"
+	},
+	"preferNameDirectory": true,
+	"sourceName": "{SourceName}",
+	"symbols": {
+		"TargetFramework": {
+			"type": "parameter",
+			"description": "The target framework for the project",
+			"datatype": "text",
+			"replaces": "{TargetFramework}",
+			"defaultValue": "net481"
+		},
+		"Description": {
+			"type": "parameter",
+			"description": "Mod display name",
+			"datatype": "text",
+			"replaces": "{Description}",
+			"defaultValue": "Template Sound Mod"
+		},
+		"Version": {
+			"type": "parameter",
+			"description": "Mod version",
+			"datatype": "text",
+			"replaces": "{Version}",
+			"defaultValue": "1.0.0"
+		},
+		"Game": {
+			"type": "parameter",
+			"description": "Game Name",
+			"datatype": "text",
+			"replaces": "{Game}",
+			"defaultValue": "Wrath"
+		}
+	}
+}

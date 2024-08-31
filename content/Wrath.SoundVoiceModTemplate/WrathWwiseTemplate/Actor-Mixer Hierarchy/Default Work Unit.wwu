@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{D7C03C9C-42EC-48F6-88F3-F35664A7A050}" SchemaVersion="97">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{D7C03C9C-42EC-48F6-88F3-F35664A7A050}" PersistMode="Standalone">
+			<ChildrenList>
+				<ActorMixer Name="Voices_Root" ID="{FA358D2D-0264-490D-A057-AD9A8C3FB22E}" ShortID="532551663">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Pseudo_Inverse_Square_25m" ID="{CCA074D8-7C01-40AD-92FF-AE521CD47E73}" WorkUnitID="{E964DF96-45FB-40ED-9772-AA3A8302FC6F}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4AB0A0F3-98F6-495F-963D-FC4CCA512246}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="3DVOICES" ID="{B43AB452-E073-409F-B25A-311D19D82EF1}" WorkUnitID="{F97470BD-30BB-4EDC-B0DF-72FD71FCBCDA}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<ActorMixer Name="Asks" ID="{6879BCD7-0A63-4AB3-8795-65EFDD930CB1}" ShortID="102836765">
+							<PropertyList>
+								<Property Name="MakeUpGain" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{1DB2EFCD-1277-418A-92AC-99CBE09102AF}" ShortID="340541923">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="VoiceLevel" ID="{05503536-FFF7-4166-9011-907B302BCD00}" WorkUnitID="{5311AE41-A636-4175-8711-18EFDC3AA573}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{A95EDA3D-0B9E-41AD-8D43-9C82B499DDEC}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-96</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+								<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
+								<Property Name="OverrideOutput" Type="bool" Value="True"/>
+								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+								<Property Name="UserAuxSendVolume0" Type="Real64">
+									<ValueList>
+										<Value>-27</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4AB0A0F3-98F6-495F-963D-FC4CCA512246}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="COMBATASKS" ID="{673DF302-A7E1-4F26-93B7-B8955A599439}" WorkUnitID="{F97470BD-30BB-4EDC-B0DF-72FD71FCBCDA}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="Delay_Openspace_Dialogs" ID="{8FC3E589-7030-4F87-AAAD-79337BD3EED0}" WorkUnitID="{F97470BD-30BB-4EDC-B0DF-72FD71FCBCDA}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+							</ChildrenList>
+						</ActorMixer>
+						<ActorMixer Name="Character_Creator_Sample" ID="{B1052122-36FC-41EB-8603-35D22A8A47DE}" ShortID="603334724">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+								<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+								<Property Name="MakeUpGain" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+								<Property Name="OverrideOutput" Type="bool" Value="True"/>
+								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UserAuxSendVolume0" Type="Real64">
+									<ValueList>
+										<Value>-27</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Pseudo_Inverse_Square_25m" ID="{CCA074D8-7C01-40AD-92FF-AE521CD47E73}" WorkUnitID="{E964DF96-45FB-40ED-9772-AA3A8302FC6F}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4AB0A0F3-98F6-495F-963D-FC4CCA512246}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="VOICETESTCLIPS" ID="{1450B7C3-44C7-44A8-B84E-0854F1F12584}" WorkUnitID="{F97470BD-30BB-4EDC-B0DF-72FD71FCBCDA}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="Delay_Openspace_Dialogs" ID="{8FC3E589-7030-4F87-AAAD-79337BD3EED0}" WorkUnitID="{F97470BD-30BB-4EDC-B0DF-72FD71FCBCDA}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+							</ChildrenList>
+						</ActorMixer>
+					</ChildrenList>
+					<StateInfo>
+						<StatePropertyList>
+							<Property Name="Lowpass"/>
+							<Property Name="MakeUpGain"/>
+							<Property Name="Volume"/>
+						</StatePropertyList>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="Dialogue_Aivu_Event_Starr_DLC6_Ducking" ID="{613D3AF2-2F7F-4192-916F-91E371BC60E1}"/>
+							</StateGroupInfo>
+							<StateGroupInfo>
+								<StateGroupRef Name="InGameVoices_DLC6_ComeUpstairsDucking" ID="{96D98B03-B7EC-4609-A072-C0FCC595CFA9}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="On" ID="{3E2CF464-4395-42A8-AC17-5C18BEA3F227}"/>
+								<CustomState Name="" ID="{225E71A5-CE91-4613-A1E5-74102FC2DCFC}" ShortID="392882409">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16" Value="31"/>
+										<Property Name="MakeUpGain" Type="Real64" Value="-20"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Off" ID="{E117CF21-3FB7-45D0-BBE9-731AE7F1B665}"/>
+								<CustomState Name="" ID="{37CAC903-BB9B-41AE-AAB1-6F0B25C38DB4}" ShortID="880364519"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="On" ID="{E2772FDC-4CCB-49A4-8E7A-8358DE8241E0}"/>
+								<CustomState Name="" ID="{A0D49D9E-1EB5-422B-844F-E23A0EF5FE79}" ShortID="218347192">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16" Value="20"/>
+										<Property Name="MakeUpGain" Type="Real64" Value="-8"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Off" ID="{B799A476-14E6-4BB9-B678-984525305259}"/>
+								<CustomState Name="" ID="{0E627F42-93C4-4BAA-A3FB-51A163FA0F2D}" ShortID="243931198"/>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>
