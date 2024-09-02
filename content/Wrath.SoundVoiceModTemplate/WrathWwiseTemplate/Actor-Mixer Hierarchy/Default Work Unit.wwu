@@ -80,36 +80,6 @@
 								<ActorMixer Name="{SourceName}" ID="{B78CE440-18B1-4619-81B0-16A29B5840C0}" ShortID="108398284">
 									<PropertyList>
 										<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
-										<Property Name="MakeUpGain" Type="Real64">
-											<RTPCList>
-												<RTPC Name="" ID="{058CBD26-2C35-43A4-9F33-411A6A4327DF}" ShortID="661289362">
-													<Comment>Counteracts the affect of the vanilla RTPC, which was causing the zoomed-in voice to be far too loud compared to vanilla voices.</Comment>
-													<ReferenceList>
-														<Reference Name="ControlInput">
-															<ObjectRef Name="CameraZoom" ID="{77781FE6-ACE1-4FF8-B7D3-7CA1FE9D3FB5}" WorkUnitID="{5311AE41-A636-4175-8711-18EFDC3AA573}"/>
-														</Reference>
-													</ReferenceList>
-													<Curve Name="" ID="{F4E52989-AF8A-4B59-AAE1-CFC04A7E5964}">
-														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="3"/>
-														</PropertyList>
-														<PointList>
-															<Point>
-																<XPos>0</XPos>
-																<YPos>0</YPos>
-																<Flags>5</Flags>
-																<SegmentShape>Exp3</SegmentShape>
-															</Point>
-															<Point>
-																<XPos>100</XPos>
-																<YPos>-4</YPos>
-																<Flags>37</Flags>
-															</Point>
-														</PointList>
-													</Curve>
-												</RTPC>
-											</RTPCList>
-										</Property>
 										<Property Name="MaxSoundPerInstance" Type="int16">
 											<ValueList>
 												<Value>1</Value>
