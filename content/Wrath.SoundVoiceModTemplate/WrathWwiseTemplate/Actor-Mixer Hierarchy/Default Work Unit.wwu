@@ -77,6 +77,16 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
+								<ActorMixer Name="{SourceName}" ID="{17EE386F-7CA8-481E-A5E1-2041EF66071A}" ShortID="53599393">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4AB0A0F3-98F6-495F-963D-FC4CCA512246}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F97470BD-30BB-4EDC-B0DF-72FD71FCBCDA}"/>
+										</Reference>
+									</ReferenceList>
+								</ActorMixer>
 							</ChildrenList>
 						</ActorMixer>
 						<ActorMixer Name="Character_Creator_Sample" ID="{B1052122-36FC-41EB-8603-35D22A8A47DE}" ShortID="603334724">
@@ -122,8 +132,6 @@
 									<ObjectRef Name="Delay_Openspace_Dialogs" ID="{8FC3E589-7030-4F87-AAAD-79337BD3EED0}" WorkUnitID="{F97470BD-30BB-4EDC-B0DF-72FD71FCBCDA}"/>
 								</Reference>
 							</ReferenceList>
-							<ChildrenList>
-							</ChildrenList>
 						</ActorMixer>
 					</ChildrenList>
 					<StateInfo>
