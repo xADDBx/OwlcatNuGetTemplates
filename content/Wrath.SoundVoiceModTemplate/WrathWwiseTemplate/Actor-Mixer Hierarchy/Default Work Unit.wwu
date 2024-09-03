@@ -934,6 +934,11 @@
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+												<Property Name="InitialDelay" Type="Real64">
+													<ValueList>
+														<Value>0.1</Value>
+													</ValueList>
+												</Property>
 												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 												<Property Name="UserAuxSendVolume0" Type="Real64">
@@ -2094,6 +2099,11 @@
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+												<Property Name="InitialDelay" Type="Real64">
+													<ValueList>
+														<Value>0.3</Value>
+													</ValueList>
+												</Property>
 												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 												<Property Name="UserAuxSendVolume0" Type="Real64">
 													<ValueList>
@@ -2267,6 +2277,11 @@
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+												<Property Name="InitialDelay" Type="Real64">
+													<ValueList>
+														<Value>0.3</Value>
+													</ValueList>
+												</Property>
 												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 												<Property Name="UserAuxSendVolume0" Type="Real64">
 													<ValueList>
@@ -2440,6 +2455,11 @@
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+												<Property Name="InitialDelay" Type="Real64">
+													<ValueList>
+														<Value>0.1</Value>
+													</ValueList>
+												</Property>
 												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 												<Property Name="UserAuxSendVolume0" Type="Real64">
 													<ValueList>
@@ -2524,6 +2544,11 @@
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+												<Property Name="InitialDelay" Type="Real64">
+													<ValueList>
+														<Value>0.1</Value>
+													</ValueList>
+												</Property>
 												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 												<Property Name="UserAuxSendVolume0" Type="Real64">
 													<ValueList>
@@ -2608,6 +2633,11 @@
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+												<Property Name="InitialDelay" Type="Real64">
+													<ValueList>
+														<Value>0.1</Value>
+													</ValueList>
+												</Property>
 												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 												<Property Name="UserAuxSendVolume0" Type="Real64">
 													<ValueList>
@@ -2776,6 +2806,11 @@
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+												<Property Name="InitialDelay" Type="Real64">
+													<ValueList>
+														<Value>0.1</Value>
+													</ValueList>
+												</Property>
 												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 												<Property Name="UserAuxSendVolume0" Type="Real64">
 													<ValueList>
