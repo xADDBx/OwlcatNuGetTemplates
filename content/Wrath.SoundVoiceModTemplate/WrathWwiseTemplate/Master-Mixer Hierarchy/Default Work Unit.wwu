@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{F97470BD-30BB-4EDC-B0DF-72FD71FCBCDA}" SchemaVersion="97">
+	<Busses>
+		<WorkUnit Name="Default Work Unit" ID="{F97470BD-30BB-4EDC-B0DF-72FD71FCBCDA}" PersistMode="Standalone">
+			<ChildrenList>
+				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
+					<ReferenceList>
+						<Reference Name="AudioDevice">
+							<ObjectRef Name="System" ID="{CEDF430E-9485-46D3-A66E-40859A44A8D5}" WorkUnitID="{95440112-523B-4E4F-865B-3853EA06BF45}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="AMBIENCE" ID="{C260FAE3-41CF-4D92-ACF7-1217EB1F046F}">
+							<ChildrenList>
+								<Bus Name="INDOOROVERRIDE" ID="{DCADE8D3-168C-4F0D-AF91-E44DEB383BCA}"/>
+								<Bus Name="Weather" ID="{3482E8B4-B735-415D-8991-2202C807125F}">
+									<ChildrenList>
+										<Bus Name="THUNDER" ID="{04ADF85A-D3A6-4BDF-A265-4CEA6D0131F0}"/>
+										<Bus Name="WIND" ID="{F7CAE071-1625-41CB-987B-59D466CE68D0}"/>
+										<Bus Name="Rain" ID="{E692D3F6-A495-4EB7-BF5C-F0275B327ED6}"/>
+									</ChildrenList>
+								</Bus>
+								<Bus Name="AIR" ID="{60074569-FCAE-44EF-B8F1-762F0B0747B5}"/>
+								<Bus Name="LOCALNATURAL" ID="{6AC70CD0-38E6-46ED-9926-A48D7C3EEF0F}"/>
+								<Bus Name="DESCRIPTIVE" ID="{7A0D20D0-D5B3-452E-A16E-7299176D068C}"/>
+								<Bus Name="LOCALLIVE" ID="{D34D9F79-8739-4FE9-8B33-319E4FB89252}">
+									<ChildrenList>
+										<Bus Name="ALLSEASONS" ID="{7E25ECEE-72F7-448F-BC7F-B554C24116AA}"/>
+										<Bus Name="SUMMER" ID="{CBE2B17A-916D-49F6-8229-9EC5C60CFF9A}"/>
+									</ChildrenList>
+								</Bus>
+							</ChildrenList>
+						</Bus>
+						<Bus Name="VOICETESTCLIPS" ID="{1450B7C3-44C7-44A8-B84E-0854F1F12584}"/>
+						<Bus Name="HDR" ID="{52A37AFD-B16C-4C78-A43B-4A445A9F2AD8}">
+							<ChildrenList>
+								<Bus Name="FOLEY" ID="{6954452B-0391-4F5E-85B2-8062CDBCDEDE}"/>
+								<Bus Name="CHANTS" ID="{8C6CA262-4110-4ED6-939B-33E03D108598}"/>
+								<Bus Name="INTERACTIONS" ID="{212FC564-C016-4C89-AAC3-156A48679CB0}"/>
+								<Bus Name="WEAPONS" ID="{1428C325-1A71-4BA0-A8EA-73C49B76F5EF}"/>
+								<Bus Name="COMBATASKS" ID="{673DF302-A7E1-4F26-93B7-B8955A599439}"/>
+								<Bus Name="MAGICSPELLS" ID="{9C6F0AC8-2FF5-4D11-B76E-B9DCE108DA0A}"/>
+								<Bus Name="SPECIALEFFECTS" ID="{40FE7F6E-D01F-41A8-82CD-8DF5BA005D53}"/>
+								<Bus Name="CREATURES" ID="{F03EC0F4-1C31-4E6C-A547-FC3638E667CD}">
+									<ChildrenList>
+										<Bus Name="CREATURESVOICES" ID="{57BB1AD5-6FE3-46FF-9215-DDB2FC4A3787}"/>
+										<Bus Name="CREATURESSFX" ID="{AD509C8F-09E5-419C-AC3E-D3E5BFEA32E1}"/>
+									</ChildrenList>
+								</Bus>
+								<Bus Name="CREATURESIMPORTANT" ID="{C6ED3859-F34A-46FB-8040-265051D7533C}"/>
+								<Bus Name="3DVOICES" ID="{B43AB452-E073-409F-B25A-311D19D82EF1}"/>
+							</ChildrenList>
+						</Bus>
+						<Bus Name="Interface" ID="{B78CB6C0-508D-48A3-A556-10FAAE7DDBB5}"/>
+						<Bus Name="VOICEDUCKINGMUSIC" ID="{A9F48D40-ECBE-4E5D-9316-9C5134B5D29C}"/>
+						<Bus Name="NARRATIVEEFFECTS" ID="{5DFB736D-8C7E-4533-B0BB-4FF7A4D368A8}"/>
+						<Bus Name="STINGERS" ID="{2CBD7375-EA4A-4EC5-8BDF-A92A2C3BBD8C}"/>
+						<Bus Name="INTERCHAPTERS" ID="{03E851F3-A882-4F91-87B0-C449628BAD73}"/>
+						<Bus Name="Music" ID="{F6D80551-D79B-45E7-9147-55736FDE51B9}">
+							<ChildrenList>
+								<Bus Name="MUSICGLOBAL" ID="{E8D1357C-B7A5-4CCA-B1E8-D5CF1651DEEB}"/>
+								<Bus Name="MUSICCOMBATINN" ID="{DC9AEE09-7BEF-46FA-8BF8-D7427A52FEBA}"/>
+								<Bus Name="MUSICSCENES" ID="{45F0FBF2-5FEE-48F0-A1AF-8BD2C07DAD60}"/>
+								<Bus Name="MUSICLOCAL" ID="{BFA85606-4415-4CD3-B8B8-1FBC9ED38A6C}"/>
+							</ChildrenList>
+						</Bus>
+						<Bus Name="DIALOGS" ID="{9823FD41-FBB0-4FB0-B800-3E8BFA836267}"/>
+						<Bus Name="DSP" ID="{FB66C0A9-3C5D-42AE-A122-86D0869504A8}">
+							<ChildrenList>
+								<AuxBus Name="Delay_Openspace_Dialogs" ID="{8FC3E589-7030-4F87-AAAD-79337BD3EED0}">
+									<ReferenceList>
+										<Reference Name="Effect0">
+											<Custom>
+												<Effect Name="Wwise_Stereo_Delay" ID="{CDD7DC2A-9D12-44D8-80FD-C8A7E1119ACB}" ShortID="770904406" PluginName="Wwise Stereo Delay" CompanyID="0" PluginID="135" PluginType="3">
+													<PropertyList>
+														<Property Name="DryLevel" Type="Real32" Value="-96"/>
+														<Property Name="EnableCrossFeed" Type="bool" Value="True"/>
+														<Property Name="FilterFrequency" Type="Real32" Value="2000"/>
+														<Property Name="FilterGain" Type="Real32" Value="-20"/>
+														<Property Name="FilterType" Type="int32" Value="3"/>
+														<Property Name="LeftCrossfeed" Type="Real32" Value="-10"/>
+														<Property Name="LeftDelayTime" Type="Real32" Value="0.29"/>
+														<Property Name="RightCrossfeed" Type="Real32" Value="-8"/>
+														<Property Name="RightDelayTime" Type="Real32" Value="0.37"/>
+														<Property Name="WetLevel" Type="Real32" Value="-15"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
+										</Reference>
+										<Reference Name="Effect1">
+											<Custom>
+												<Effect Name="Wwise_RoomVerb" ID="{F73FD6EF-B5F3-4828-89C6-2D33455A8877}" ShortID="471933628" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+													<PropertyList>
+														<Property Name="DecayTime" Type="Real32" Value="1.3"/>
+														<Property Name="Density" Type="Real32" Value="100"/>
+														<Property Name="DryLevel" Type="Real32" Value="-7"/>
+														<Property Name="ERLevel" Type="Real32" Value="-23"/>
+														<Property Name="EnableToneControls" Type="bool" Value="True"/>
+														<Property Name="Filter1Freq" Type="Real32" Value="590"/>
+														<Property Name="Filter2Freq" Type="Real32" Value="10520"/>
+														<Property Name="Filter2Gain" Type="Real32" Value="-12"/>
+														<Property Name="Filter2InsertPos" Type="int32" Value="0"/>
+														<Property Name="Filter3Freq" Type="Real32" Value="2500"/>
+														<Property Name="Filter3Gain" Type="Real32" Value="-24"/>
+														<Property Name="HFDamping" Type="Real32" Value="10"/>
+														<Property Name="ReverbLevel" Type="Real32" Value="-3"/>
+														<Property Name="RoomSize" Type="Real32" Value="10"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
+										</Reference>
+										<Reference Name="Effect2">
+											<Custom>
+												<Effect Name="Wwise_Parametric_EQ" ID="{BC584EBD-F411-4693-9B36-B3EF7D17FAEF}" ShortID="292798269" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+													<PropertyList>
+														<Property Name="FilterTypeBand1" Type="int32" Value="1"/>
+														<Property Name="FilterTypeBand2" Type="int32" Value="5"/>
+														<Property Name="FrequencyBand1" Type="Real32" Value="250"/>
+														<Property Name="FrequencyBand2" Type="Real32" Value="1500"/>
+														<Property Name="GainBand2" Type="Real32" Value="-8"/>
+														<Property Name="OnOffBand3" Type="bool" Value="False"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+								</AuxBus>
+							</ChildrenList>
+						</Bus>
+					</ChildrenList>
+				</Bus>
+				<Bus Name="Secondary Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F4}">
+					<ReferenceList>
+						<Reference Name="AudioDevice">
+							<ObjectRef Name="System" ID="{CEDF430E-9485-46D3-A66E-40859A44A8D5}" WorkUnitID="{95440112-523B-4E4F-865B-3853EA06BF45}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="MUSIC_DVR" ID="{B1F6EB4B-87B9-4997-85EE-EB98B93139B0}">
+							<ChildrenList>
+								<Bus Name="MUSICGLOBAL_DVR" ID="{6AB057B8-6C9D-4B3C-BE4C-66D0773331E2}"/>
+								<Bus Name="MUSICCOMBATINN_DVR" ID="{1D7F8F27-33A3-4EA6-BB3B-67637C4D4987}"/>
+								<Bus Name="MUSICLOCAL_DVR" ID="{6ABF07C2-7411-448A-BC7C-4CE1B4ACB56C}"/>
+								<Bus Name="MUSICSCENES_DVR" ID="{B0F4D64F-56A0-4906-A509-355C55D96101}"/>
+							</ChildrenList>
+						</Bus>
+					</ChildrenList>
+				</Bus>
+			</ChildrenList>
+		</WorkUnit>
+	</Busses>
+</WwiseDocument>

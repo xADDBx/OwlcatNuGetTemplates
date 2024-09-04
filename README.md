@@ -6,6 +6,7 @@
 - `rtbpmodworkshop`  - UnityModManager Template for Warhammer 40,000: Rogue Trader. Adds a patch for modifying the Blueprint cache. Adds a publishing task which will directly publish to Steam Workshop.
 - `wrathmod`  - UnityModManager Template for Pathfinder: Wrath of the Righteous
 - `wrathsoundmod`  - Wwise Template to add new sounds/voices to the game, bundled with a UnityModManager Template for Pathfinder: Wrath of the Righteous. Read the docs (WIP) to find out how to use the Wwise setup!
+- `wrathsoundvoicemod`  - Wwise Template to add new player/merc voice sets to the game, bundled with a UnityModManager Template for Pathfinder: Wrath of the Righteous. Read the [guide](https://github.com/WittleWolfie/OwlcatModdingWiki/wiki/Creating-Custom-SoundBanks) on the wiki to find out how to use the Wwise setup!
 - `wrathbpcoremod` - BPCore UnityModManager Template for Pathfinder: Wrath of the Righteous. BPCore is a community library to make certain aspects of modding easier in Wrath.
 - `kmmod` - UnityModManager Template for Pathfinder: Kingmaker
 
