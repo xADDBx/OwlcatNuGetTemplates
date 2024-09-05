@@ -100,6 +100,110 @@
 						<State Name="Muted" ID="{37B492A6-834F-411E-B8E2-513B49156385}"/>
 					</ChildrenList>
 				</StateGroup>
+				<StateGroup Name="TimeOfDay" ID="{736D1F5F-30C7-45AD-AD98-48606446128D}">
+					<ChildrenList>
+						<State Name="None" ID="{51F8150B-B9E0-4D63-8920-CD5B977AB851}"/>
+						<State Name="Day" ID="{5E843A49-B3C2-432B-BA18-D39BB2172CB9}"/>
+						<State Name="Evening" ID="{78B8BE27-900D-4CFF-BCE2-E98038B2DDF3}"/>
+						<State Name="Night" ID="{64E4AC42-3923-4F36-8180-A8D531A31B9B}"/>
+						<State Name="Morning" ID="{8AC1696B-B598-4045-BC1E-13737AD1DCDA}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="Weather" ID="{9503B398-30F2-42ED-A607-B3E5669E46C2}">
+					<ChildrenList>
+						<State Name="None" ID="{E9CC295B-1312-4DB8-A5E4-160156EAA4D3}"/>
+						<State Name="Rain" ID="{8F34221F-06D9-474A-9690-F392205A70DB}"/>
+						<State Name="Snow" ID="{41FE7797-FAFA-4E73-90DC-A2A2A72133DC}"/>
+						<State Name="Default" ID="{6B792420-C01F-41C5-9AE5-FA18ED7B399D}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="WeatherOverride" ID="{957333D3-ECD6-4926-B964-8768A81C20A0}">
+					<ChildrenList>
+						<State Name="None" ID="{341632C0-D9AD-4BD1-9A72-DC8FAF31997A}"/>
+						<State Name="On" ID="{A4F20523-651A-459F-A807-609F640A0966}"/>
+						<State Name="Off" ID="{471D629B-B5EC-42FF-B525-B1C6279822EC}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="GlobalAmbienceState" ID="{8B6BAA58-2202-4775-A748-22A1B2CAD2F0}">
+					<ChildrenList>
+						<State Name="None" ID="{95E39503-E80B-41B9-9193-3D24D5B82241}"/>
+						<State Name="Normal" ID="{BBDCFBE2-B26A-41B3-B7F4-5066E7AA0F52}"/>
+						<State Name="Interior" ID="{46C23AC4-F089-496F-A32E-FBA9445C2E31}"/>
+						<State Name="Muted" ID="{D9DBC0FE-174C-4183-B03A-5367D01225CE}"/>
+						<State Name="HalfOpen" ID="{45624E46-255B-41F6-9702-152CE376E6EF}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="PhotoMode" ID="{577C62F4-0620-4F3F-8149-00D3926CDC2D}">
+					<ChildrenList>
+						<State Name="None" ID="{19C2D810-E86D-4FD6-8001-BEB813C08467}"/>
+						<State Name="On" ID="{E05C59DB-7C40-4003-A902-D411A9DA5138}"/>
+						<State Name="Off" ID="{C8B5EC56-DA1C-494D-B9C8-FA7F5AC7B830}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="CreaturesVolumeControl" ID="{F00324B9-A205-4BB3-8CE4-3092BC6C24BB}">
+					<ChildrenList>
+						<State Name="None" ID="{32E1A8DC-6312-49E9-8580-54DA3D9D3641}"/>
+						<State Name="Normal" ID="{7DD23F1E-03A3-42FD-AC7A-757E64965062}"/>
+						<State Name="Minus_6dB" ID="{F593BAC1-EAD5-4632-97C2-79289D2F0665}"/>
+						<State Name="Minus_10dB" ID="{8704D593-C5C7-4E6E-973A-6919796E4D67}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="WeaponVolumeControl" ID="{0F8F6FE6-F5D0-40DE-8A6E-11C3F0AC6011}">
+					<ChildrenList>
+						<State Name="None" ID="{34608B3F-ED65-4FD1-BF73-79062BE898EF}"/>
+						<State Name="Normal" ID="{C4E4A3F0-C58D-4F89-8F93-C8D4B60C6E45}"/>
+						<State Name="Minus_6dB" ID="{AF2C9749-5AB1-4B75-B1FF-4F6076128B0C}"/>
+						<State Name="Minus_10dB" ID="{BE51AE2B-5481-4E3A-AB50-3041B4F566A2}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="MythicPath" ID="{6F5AED81-8C18-4F46-9022-F9466F1C2294}">
+					<ChildrenList>
+						<State Name="None" ID="{334F1E68-71A9-4E0F-940D-687060E3EBC1}"/>
+						<State Name="Legend" ID="{E5E31D69-BF04-4483-93A4-E2D98F663FDD}"/>
+						<State Name="Lich" ID="{3A6BB3B0-F960-4430-BC8D-830DF8BD2AEC}"/>
+						<State Name="Demon" ID="{E2BC4C0E-0E86-4B78-9B45-36B77D939437}"/>
+						<State Name="Azata" ID="{BDE60697-B5EA-4DC3-918A-02BA0DA309B6}"/>
+						<State Name="Angel" ID="{9DA24B04-AE41-4A25-8B86-8FC21A91CD01}"/>
+						<State Name="Trickster" ID="{11C55899-7997-478C-8718-BD764875E69E}"/>
+						<State Name="Aeon" ID="{F7E44CA7-A761-4AAF-99D1-4F6F93413A8F}"/>
+						<State Name="Dragon" ID="{1C3257C2-0E36-49EC-8D0D-967F7FA1F40E}"/>
+						<State Name="Locust" ID="{41D0B42C-77E9-4BBE-857B-982B870AF7E3}"/>
+						<State Name="Devil" ID="{8166734C-8B86-4531-B028-F2741ECB64D2}"/>
+					</ChildrenList>
+				</StateGroup>
+				<Folder Name="Local" ID="{3478DF89-7645-4216-8764-FBB0B8F6B534}" ShortID="255423468">
+					<ChildrenList>
+						<StateGroup Name="FinalFightBosses" ID="{3097F9E2-1917-4715-B378-CD04BBDE339D}">
+							<ChildrenList>
+								<State Name="None" ID="{F5095DB8-7989-4293-AB45-9B5B4ED802D0}"/>
+								<State Name="Areelu" ID="{867FFA6C-951C-4F8E-9427-9A14059CD8B3}"/>
+								<State Name="DemonLords" ID="{6E3F8CCF-619E-4670-BD8C-5991A4CD9D21}"/>
+							</ChildrenList>
+						</StateGroup>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Music" ID="{73CBC686-0201-4D6D-84C3-D2FBD00660B9}" ShortID="516085649">
+					<ChildrenList>
+						<StateGroup Name="MusicGlobalVolumeModify" ID="{82611093-A1E5-45A0-BDDC-898AA6E2D7FC}">
+							<ChildrenList>
+								<State Name="None" ID="{C25FE2BB-C61B-4F64-9C9D-B69B732ED147}"/>
+								<State Name="Full" ID="{F0830F38-9887-4C5E-83F5-C04CDB08404D}"/>
+								<State Name="Off" ID="{86003BCE-B984-48ED-A82B-72D46D8107D8}"/>
+								<State Name="Minus_12dB" ID="{39CD6627-2045-4DA1-A3DF-E19540D0F689}"/>
+								<State Name="Minus_20dB" ID="{E02CDD85-1BB8-4614-B6FA-CB1F81907165}"/>
+								<State Name="Minus_6dB" ID="{8C9AF1BA-5F55-4461-88EF-86E7046C495C}"/>
+							</ChildrenList>
+						</StateGroup>
+						<StateGroup Name="SubMusicState" ID="{ECBC21FA-C79B-4BC7-BC8D-06BB4C728AC8}">
+							<ChildrenList>
+								<State Name="None" ID="{73924D5C-EDF0-4D59-914F-ECEC822D407F}"/>
+								<State Name="On" ID="{9C211194-A89A-4EBE-8D82-B523D3A5DC9B}"/>
+								<State Name="Off" ID="{39B7C8F0-63D9-461A-B7A4-A4C0AA1D363F}"/>
+								<State Name="Muted" ID="{2F6EB48F-B9B0-4729-AE0F-B081678DAC89}"/>
+							</ChildrenList>
+						</StateGroup>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</States>

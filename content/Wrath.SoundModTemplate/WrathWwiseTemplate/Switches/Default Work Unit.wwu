@@ -1,6 +1,118 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{0EB06380-9943-4EC2-B888-F5C70EB7BF4E}" SchemaVersion="97">
 	<Switches>
-		<WorkUnit Name="Default Work Unit" ID="{0EB06380-9943-4EC2-B888-F5C70EB7BF4E}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{0EB06380-9943-4EC2-B888-F5C70EB7BF4E}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="StealthAsks" ID="{4771B848-D4A9-461C-BED2-439C27421B60}">
+					<ChildrenList>
+						<Switch Name="StealthOn" ID="{16B89290-D21B-471D-8299-00F46B9B284A}"/>
+						<Switch Name="StealthOff" ID="{755402C4-D40A-4E0A-AD1B-E11DEE6DCD67}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="Terrain" ID="{9CEE5EC0-CFF8-4E9D-9AD4-E6F50973DE3C}">
+					<ChildrenList>
+						<Switch Name="Ground" ID="{0E6E86FD-5668-44A5-BA9D-7163AF154362}"/>
+						<Switch Name="Grass" ID="{6FD6CD34-3B4F-46C7-8E82-30946D5C8423}"/>
+						<Switch Name="Stone" ID="{3AEFEB38-12DF-4D91-90C9-BF7BD1DB8E2C}"/>
+						<Switch Name="Wood" ID="{9F601062-85CA-4E90-AF89-0E2F0D5C6150}"/>
+						<Switch Name="Water" ID="{6E7913BD-B5E0-4FCD-AF49-C19595A35F09}"/>
+						<Switch Name="Swamp" ID="{75DA2B2F-C2E8-41E6-A59F-6E83533BEEBD}"/>
+						<Switch Name="Ice" ID="{AED68979-B217-43E2-8460-176AECE5578D}"/>
+						<Switch Name="Sand" ID="{989BC1C3-8B3C-4045-9020-681320230256}"/>
+						<Switch Name="Snow" ID="{8EF5DC92-A11B-400B-89EC-40037E125800}"/>
+						<Switch Name="Needles" ID="{F54BCCE0-3347-403D-A5B6-5C0DC4775CBE}"/>
+						<Switch Name="Carpet" ID="{202E655C-4466-4FDE-BDAB-52D65B0F9CAE}"/>
+						<Switch Name="Metal" ID="{B732F6D7-CF35-480F-B4C9-B0E7EE9A6F47}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="FootstepType" ID="{A9BE38EE-CC95-486F-9EB0-1CC34803E9EA}">
+					<ChildrenList>
+						<Switch Name="BootLarge" ID="{3509AB11-55E8-4CDD-AAF3-40683AED5344}"/>
+						<Switch Name="BootMedium" ID="{6C35CF23-9EB7-4B6C-B362-333F2B027EF4}"/>
+						<Switch Name="BootSmall" ID="{40B537D9-5FFE-41FA-81D5-9872D3B61274}"/>
+						<Switch Name="Ghost" ID="{6B30BF56-92A2-44C2-B959-BB4E8BB273E3}"/>
+						<Switch Name="LegsSmall" ID="{167ECCFB-A6EB-4034-9CC0-9ED9C065C729}"/>
+						<Switch Name="BootMetalMedium" ID="{F05B4DAB-54FB-4F25-BE35-ED241956961E}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="RainIntensity" ID="{871662CB-1414-4E25-990F-FAEA8D5CAAE6}">
+					<ChildrenList>
+						<Switch Name="Low" ID="{8752C966-BE68-45B5-9F5A-8FB2F770208A}"/>
+						<Switch Name="Med" ID="{01C01BB7-6788-4DC7-9A0A-878325288E09}"/>
+						<Switch Name="High" ID="{A3A4D94B-E9E9-4A96-800B-92BCF8D42BE9}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="CombatSpeedSelector" ID="{D4B6D563-9F80-46E7-AB67-E2C03E026D7A}">
+					<ChildrenList>
+						<Switch Name="Normal" ID="{36412DDA-679C-428D-9B36-C8827070E421}"/>
+						<Switch Name="Medium" ID="{D68BAA04-43A3-4E21-9E6C-C67A79FE3396}"/>
+						<Switch Name="Fast" ID="{97DB9A64-1ADB-4B05-AEB2-A1AC1D52E2AF}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="CharacterCombat" ID="{C2F014AB-0302-4D0E-820F-A6B6C9612F58}">
+					<ChildrenList>
+						<Switch Name="Off" ID="{EA39F18A-CD12-4700-91E4-DE304040B23B}"/>
+						<Switch Name="On" ID="{D5AF2283-F247-4F12-B761-B00C337666AF}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<Folder Name="PF2" ID="{4FC9295C-EF2F-410D-9831-B98ABC8CD835}" ShortID="584405326">
+					<ChildrenList>
+						<SwitchGroup Name="BodySize" ID="{AC72B223-5C3F-4C36-AF3E-D4032CFFE6CA}">
+							<ChildrenList>
+								<Switch Name="Fine" ID="{89B4D0C5-6ADA-49AA-913B-E086C6D7F86C}"/>
+								<Switch Name="Diminutive" ID="{397A501B-47C2-4D05-8B54-2B2F6E3C7754}"/>
+								<Switch Name="Tiny" ID="{4468C057-EA08-49CC-8F6C-D171B3E2EA8F}"/>
+								<Switch Name="Small" ID="{95031814-EF0A-489B-AB76-D361DF9896AE}"/>
+								<Switch Name="Medium" ID="{9BAA5408-B6AD-4BE5-B95F-E376F05DA886}"/>
+								<Switch Name="Large" ID="{18FF714F-CC9E-4799-B83D-B7885712BA88}"/>
+								<Switch Name="Huge" ID="{C8B129B4-8715-45A7-A90E-12BCDFD810E7}"/>
+								<Switch Name="Gargantuan" ID="{5D4145DB-6923-4C53-B3A1-375671260EE5}"/>
+								<Switch Name="Colossal" ID="{5967249D-5677-4F90-937F-7C0F61A7F932}"/>
+							</ChildrenList>
+						</SwitchGroup>
+						<SwitchGroup Name="VelocityBodyfall" ID="{94091F5B-3BF0-49B8-BC4A-AA9AB3D86947}">
+							<ChildrenList>
+								<Switch Name="Low" ID="{E86E7EB9-5EEB-4E9D-AA9E-CCD641C29FF3}"/>
+								<Switch Name="Med" ID="{AE36BC38-2C03-41D3-872F-1ED70127749C}"/>
+								<Switch Name="High" ID="{373773C2-2200-48B5-9F6C-31EC97F378EC}"/>
+							</ChildrenList>
+						</SwitchGroup>
+						<SwitchGroup Name="FootSize" ID="{63DBAAC9-6100-4322-8396-5007CAE52888}">
+							<ChildrenList>
+								<Switch Name="Colossal" ID="{B7B25F59-119A-497D-B549-4DE8B262BF3A}"/>
+								<Switch Name="Huge" ID="{E06083BE-642E-4C62-ADF0-A8E8F40859A8}"/>
+								<Switch Name="Gargantuan" ID="{CFAFCA9E-4F88-4B00-8ED9-B983CA2B68DB}"/>
+								<Switch Name="Large" ID="{250745CD-5E85-425A-82AF-3DD0806C2EA3}"/>
+								<Switch Name="Medium" ID="{A498490D-EFD1-4669-AC84-B041859250C3}"/>
+								<Switch Name="Small" ID="{BFA0C203-C0DA-4A02-AB79-7B4148CBE878}"/>
+								<Switch Name="Tiny" ID="{D34D81C1-59F0-4FA3-B677-DDC95163BE0D}"/>
+								<Switch Name="Fine" ID="{8BCE690B-41BD-4449-BA93-EFABE725AC92}"/>
+								<Switch Name="Diminutive" ID="{C964B0CD-7A0A-4F3A-BB7C-BB086C3B9820}"/>
+							</ChildrenList>
+						</SwitchGroup>
+						<SwitchGroup Name="BodyType" ID="{F53F18E7-75F8-4602-8EFD-6C56D7E34080}">
+							<ChildrenList>
+								<Switch Name="Stone" ID="{5C09450D-D955-4189-8CFB-31089205D00D}"/>
+								<Switch Name="Metal" ID="{58F6E206-721F-4127-817D-87E0E05ED04B}"/>
+								<Switch Name="Wood" ID="{1AD06D95-BDC1-45FA-8C27-4A63C6E72C07}"/>
+								<Switch Name="Flesh" ID="{AA710BA1-E4CA-4727-812A-D76CCC3A1B58}"/>
+								<Switch Name="Ghost" ID="{F802C986-9170-4DDD-80EF-A10753DF2263}"/>
+							</ChildrenList>
+						</SwitchGroup>
+						<SwitchGroup Name="FootType" ID="{0BC62DDF-C1F8-4F22-B0AB-0316B8066999}">
+							<ChildrenList>
+								<Switch Name="Hoof" ID="{189AD0AC-0F52-40F7-AD20-2D45CD50ADB8}"/>
+								<Switch Name="Fin" ID="{6DFA4730-4FB9-47C7-A540-13F538BA4F20}"/>
+								<Switch Name="SoftPaw" ID="{BB403E83-1FBC-46D1-8665-41A38CF82E07}"/>
+								<Switch Name="HardPaw" ID="{2166186E-4C01-48AC-B429-1CEC6AB412D9}"/>
+								<Switch Name="Boot" ID="{388E629B-2E95-4E06-B49B-1CAE61674673}"/>
+								<Switch Name="Foot" ID="{1C511F05-A09C-4BFE-91E0-FE27CDDCD68F}"/>
+								<Switch Name="Ghost" ID="{B38D2731-EC8F-4DD8-BD2D-D1CBADB2FBFC}"/>
+							</ChildrenList>
+						</SwitchGroup>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
 	</Switches>
 </WwiseDocument>

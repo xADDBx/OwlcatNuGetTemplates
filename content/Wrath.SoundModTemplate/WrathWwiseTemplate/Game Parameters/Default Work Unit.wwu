@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{5311AE41-A636-4175-8711-18EFDC3AA573}" SchemaVersion="97">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{5311AE41-A636-4175-8711-18EFDC3AA573}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{5311AE41-A636-4175-8711-18EFDC3AA573}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="AudioLevel" ID="{38A969CF-6FC1-4060-99DE-021AF3411A8D}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="100"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="CameraZoom" ID="{77781FE6-ACE1-4FF8-B7D3-7CA1FE9D3FB5}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="VoiceLevel" ID="{05503536-FFF7-4166-9011-907B302BCD00}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="100"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>
