@@ -15,11 +15,10 @@
 				</GameParameter>
 				<GameParameter Name="VoiceLevel" ID="{05503536-FFF7-4166-9011-907B302BCD00}">
 					<PropertyList>
-						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="InitialValue" Type="Real64" Value="100"/>
 					</PropertyList>
 				</GameParameter>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>
-

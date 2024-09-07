@@ -398,3 +398,12 @@ FodyWeavers.xsd
 # JetBrains Rider
 *.sln.iml
 /GamePath.props
+
+# If you want to prevent the entire Wwise folder being uploaded
+# to Github, etc., uncomment the following line:
+# WrathWwiseTemplate/
+WrathWwiseTemplate/*.wsettings
+WrathWwiseTemplate/*.validationcache
+WrathWwiseTemplate/.cache/
+WrathWwiseTemplate/GeneratedSoundBanks/
+WrathWwiseTemplate/Originals/
