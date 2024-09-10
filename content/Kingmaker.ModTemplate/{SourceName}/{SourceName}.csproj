@@ -35,7 +35,7 @@
 	<ItemGroup>
 		<PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.2" PrivateAssets="all" />
 		<PackageReference Include="BepInEx.AssemblyPublicizer.MSBuild" IncludeAssets="build; contentfiles" Version="0.4.2" PrivateAssets="all" />
-        <PackageReference Include="MicroUtils.HarmonyAnalyzers" IncludeAssets="runtime; build; native; contentfiles; analyzers" Version="*-*" PrivateAssets="all" />
+		<PackageReference Include="MicroUtils.HarmonyAnalyzers" IncludeAssets="runtime; build; native; contentfiles; analyzers" Version="*-*" PrivateAssets="all" />
 	</ItemGroup>
 	<Target Name="GenerateCustomPropsFile" Condition="$({Game}InstallDir) == ''">
 		<Exec Command="findstr /C:&quot;[Manager] Mods path: &quot; &quot;$({Game}Data)\output_log.txt&quot;" IgnoreExitCode="true" ConsoleToMSBuild="true">
