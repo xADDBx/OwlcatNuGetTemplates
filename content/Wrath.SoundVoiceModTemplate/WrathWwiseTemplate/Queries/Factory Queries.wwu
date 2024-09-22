@@ -3,7 +3,7 @@
 	<Queries>
 		<WorkUnit Name="Factory Queries" ID="{7FBA6390-4CF1-44FA-9DA5-FC65F66E8FC0}" PersistMode="Standalone">
 			<ChildrenList>
-				<Folder Name="Audio Source" ID="{E1FBD3A7-59FE-4064-8B8A-98F1BC63E8AF}" ShortID="26745238">
+				<Folder Name="Audio Source" ID="{E1FBD3A7-59FE-4064-8B8A-98F1BC63E8AF}">
 					<ChildrenList>
 						<Query Name="Audio Source - Original Channels = Stereo" ID="{FA817DBC-3FE4-4F8B-83B7-35978BBF1A26}">
 							<PropertyList>
@@ -164,7 +164,7 @@
 						</Query>
 					</ChildrenList>
 				</Folder>
-				<Folder Name="Sound" ID="{C1F1E09A-134D-477F-B23D-A77A9C88A6C7}" ShortID="354356955">
+				<Folder Name="Sound" ID="{C1F1E09A-134D-477F-B23D-A77A9C88A6C7}">
 					<ChildrenList>
 						<Query Name="Sound = Voice" ID="{DB864841-3338-4AFF-9D3D-DA261AC25994}">
 							<PropertyList>
@@ -241,7 +241,7 @@
 						</Query>
 					</ChildrenList>
 				</Folder>
-				<Folder Name="Interactive Music" ID="{0EA68A78-EBCC-4711-AAA7-7D6C890983BE}" ShortID="783787459">
+				<Folder Name="Interactive Music" ID="{0EA68A78-EBCC-4711-AAA7-7D6C890983BE}">
 					<ChildrenList>
 						<Query Name="Streaming Tracks" ID="{9782FAF2-BE6D-4799-AED8-94AAFE6AB099}">
 							<PropertyList>
@@ -427,7 +427,7 @@
 						</Query>
 					</ChildrenList>
 				</Folder>
-				<Folder Name="Actor-Mixer Hierarchy" ID="{75E26115-FC3D-4E25-99F9-448BC918921E}" ShortID="657523609">
+				<Folder Name="Actor-Mixer Hierarchy" ID="{75E26115-FC3D-4E25-99F9-448BC918921E}">
 					<ChildrenList>
 						<Query Name="Direct Speaker Assignment" ID="{93BB05B6-6653-4842-9DE8-07BF927ED117}">
 							<PropertyList>
@@ -547,7 +547,7 @@
 						</Query>
 					</ChildrenList>
 				</Folder>
-				<Folder Name="Master-Mixer Hierarchy" ID="{F23408F1-FA3E-4006-A7B4-2288E6885FC7}" ShortID="654516827">
+				<Folder Name="Master-Mixer Hierarchy" ID="{F23408F1-FA3E-4006-A7B4-2288E6885FC7}">
 					<ChildrenList>
 						<Query Name="Busses using Effect" ID="{1CD96671-0175-4AE2-A9EE-AC8CF681D49F}">
 							<PropertyList>

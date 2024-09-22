@@ -3,7 +3,7 @@
 	<Attenuations>
 		<WorkUnit Name="Default Work Unit" ID="{E964DF96-45FB-40ED-9772-AA3A8302FC6F}" PersistMode="Standalone">
 			<ChildrenList>
-				<Attenuation Name="Owlcat_Attenuation_01" ID="{7192A5FC-F2B1-496B-B8E2-1ADCFE10BB4E}" ShortID="983533978">
+				<Attenuation Name="Owlcat_Attenuation_01" ID="{7192A5FC-F2B1-496B-B8E2-1ADCFE10BB4E}">
 					<PropertyList>
 						<Property Name="RadiusMax" Type="Real64" Value="25"/>
 					</PropertyList>
@@ -264,7 +264,7 @@
 						</FocusUsage>
 					</CurveUsageInfoList>
 				</Attenuation>
-				<Attenuation Name="Owlcat_Attenuation_02" ID="{B9BDCB82-FB22-4564-AD61-AFA9D62D2121}" ShortID="446483647">
+				<Attenuation Name="Owlcat_Attenuation_02" ID="{B9BDCB82-FB22-4564-AD61-AFA9D62D2121}">
 					<PropertyList>
 						<Property Name="RadiusMax" Type="Real64" Value="25"/>
 					</PropertyList>
@@ -506,7 +506,7 @@
 						</FocusUsage>
 					</CurveUsageInfoList>
 				</Attenuation>
-				<Attenuation Name="Pseudo_Inverse_Square_80m" ID="{313F62C8-D686-4E6D-8FB7-C6344AD242E8}" ShortID="1023591422">
+				<Attenuation Name="Pseudo_Inverse_Square_80m" ID="{313F62C8-D686-4E6D-8FB7-C6344AD242E8}">
 					<PropertyList>
 						<Property Name="RadiusMax" Type="Real64" Value="80"/>
 					</PropertyList>
@@ -674,7 +674,7 @@
 						</FocusUsage>
 					</CurveUsageInfoList>
 				</Attenuation>
-				<Attenuation Name="Pseudo_Inverse_Square_25m" ID="{CCA074D8-7C01-40AD-92FF-AE521CD47E73}" ShortID="571307922">
+				<Attenuation Name="Pseudo_Inverse_Square_25m" ID="{CCA074D8-7C01-40AD-92FF-AE521CD47E73}">
 					<PropertyList>
 						<Property Name="RadiusMax" Type="Real64" Value="25"/>
 					</PropertyList>

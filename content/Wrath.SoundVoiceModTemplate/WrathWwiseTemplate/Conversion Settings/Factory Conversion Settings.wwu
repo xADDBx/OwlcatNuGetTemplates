@@ -3,7 +3,7 @@
 	<Conversions>
 		<WorkUnit Name="Factory Conversion Settings" ID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}" PersistMode="Standalone">
 			<ChildrenList>
-				<Folder Name="Vorbis" ID="{09A6A685-7B03-4387-A7EE-705C2A234D14}" ShortID="784869707">
+				<Folder Name="Vorbis" ID="{09A6A685-7B03-4387-A7EE-705C2A234D14}">
 					<ChildrenList>
 						<Conversion Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}">
 							<PropertyList>
@@ -219,7 +219,7 @@
 						</Conversion>
 					</ChildrenList>
 				</Folder>
-				<Folder Name="PCM" ID="{A6753C13-8ABB-4028-8D96-7483524C2618}" ShortID="764934186">
+				<Folder Name="PCM" ID="{A6753C13-8ABB-4028-8D96-7483524C2618}">
 					<ChildrenList>
 						<Conversion Name="PCM As Input" ID="{E712A671-9647-44EF-8B1B-857926D620F0}">
 							<PropertyList>
@@ -359,7 +359,7 @@
 						</Conversion>
 					</ChildrenList>
 				</Folder>
-				<Folder Name="ADPCM" ID="{C43B4493-F987-4828-ACDF-DAEAA7564E0A}" ShortID="637086534">
+				<Folder Name="ADPCM" ID="{C43B4493-F987-4828-ACDF-DAEAA7564E0A}">
 					<ChildrenList>
 						<Conversion Name="ADPCM As Input" ID="{844B7EC4-A8FF-43AD-821E-25B9459D4413}">
 							<PropertyList>
