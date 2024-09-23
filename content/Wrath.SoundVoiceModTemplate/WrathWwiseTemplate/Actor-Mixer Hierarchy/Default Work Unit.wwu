@@ -3,7 +3,7 @@
 	<AudioObjects>
 		<WorkUnit Name="Default Work Unit" ID="{D7C03C9C-42EC-48F6-88F3-F35664A7A050}" PersistMode="Standalone">
 			<ChildrenList>
-				<ActorMixer Name="Voices_Root" ID="{FA358D2D-0264-490D-A057-AD9A8C3FB22E}" ShortID="532551663">
+				<ActorMixer Name="Voices_Root" ID="{FA358D2D-0264-490D-A057-AD9A8C3FB22E}">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
@@ -25,11 +25,11 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<ActorMixer Name="Asks" ID="{6879BCD7-0A63-4AB3-8795-65EFDD930CB1}" ShortID="102836765">
+						<ActorMixer Name="Asks" ID="{6879BCD7-0A63-4AB3-8795-65EFDD930CB1}">
 							<PropertyList>
 								<Property Name="MakeUpGain" Type="Real64">
 									<RTPCList>
-										<RTPC Name="" ID="{1DB2EFCD-1277-418A-92AC-99CBE09102AF}" ShortID="340541923">
+										<RTPC Name="" ID="{1DB2EFCD-1277-418A-92AC-99CBE09102AF}">
 											<ReferenceList>
 												<Reference Name="ControlInput">
 													<ObjectRef Name="VoiceLevel" ID="{05503536-FFF7-4166-9011-907B302BCD00}" WorkUnitID="{5311AE41-A636-4175-8711-18EFDC3AA573}"/>
@@ -77,7 +77,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<ActorMixer Name="{SourceName}" ID="{B78CE440-18B1-4619-81B0-16A29B5840C0}" ShortID="108398284">
+								<ActorMixer Name="{SourceName}" ID="{B78CE440-18B1-4619-81B0-16A29B5840C0}">
 									<PropertyList>
 										<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
 										<Property Name="MaxSoundPerInstance" Type="int16">
@@ -100,7 +100,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<RandomSequenceContainer Name="{SourceName}_LowHealth_02" ID="{604F82A7-04D6-48A6-B14E-4DAF1B7DB267}" ShortID="263047510">
+										<RandomSequenceContainer Name="{SourceName}_LowHealth_02" ID="{604F82A7-04D6-48A6-B14E-4DAF1B7DB267}">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
@@ -127,7 +127,7 @@
 												</Reference>
 											</ReferenceList>
 										</RandomSequenceContainer>
-										<RandomSequenceContainer Name="{SourceName}_AttackOrder_03" ID="{74339A08-D30D-4D0A-9343-7334635F3CE7}" ShortID="420140334">
+										<RandomSequenceContainer Name="{SourceName}_AttackOrder_03" ID="{74339A08-D30D-4D0A-9343-7334635F3CE7}">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
@@ -154,7 +154,7 @@
 												</Reference>
 											</ReferenceList>
 										</RandomSequenceContainer>
-										<RandomSequenceContainer Name="{SourceName}_AttackOrder_02" ID="{B66A9786-72F3-40D5-B4EE-EFCB2B6A702E}" ShortID="783205756">
+										<RandomSequenceContainer Name="{SourceName}_AttackOrder_02" ID="{B66A9786-72F3-40D5-B4EE-EFCB2B6A702E}">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
@@ -181,7 +181,7 @@
 												</Reference>
 											</ReferenceList>
 										</RandomSequenceContainer>
-										<RandomSequenceContainer Name="{SourceName}_AttackOrder_04" ID="{45EF020F-83A4-401C-BDC4-EAF9CB0573BF}" ShortID="958995708">
+										<RandomSequenceContainer Name="{SourceName}_AttackOrder_04" ID="{45EF020F-83A4-401C-BDC4-EAF9CB0573BF}">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
@@ -208,7 +208,7 @@
 												</Reference>
 											</ReferenceList>
 										</RandomSequenceContainer>
-										<RandomSequenceContainer Name="{SourceName}_AttackOrder_01" ID="{1492F249-A1AA-4DAC-81BC-EF2EE36AD341}" ShortID="66370418">
+										<RandomSequenceContainer Name="{SourceName}_AttackOrder_01" ID="{1492F249-A1AA-4DAC-81BC-EF2EE36AD341}">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
@@ -241,7 +241,7 @@
 												</StatePropertyList>
 											</StateInfo>
 										</RandomSequenceContainer>
-										<RandomSequenceContainer Name="{SourceName}_CharCrit_02" ID="{6CD5C7CF-BA8E-49CE-8AAA-6AA14B162BD7}" ShortID="489619603">
+										<RandomSequenceContainer Name="{SourceName}_CharCrit_02" ID="{6CD5C7CF-BA8E-49CE-8AAA-6AA14B162BD7}">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
@@ -268,7 +268,7 @@
 												</Reference>
 											</ReferenceList>
 										</RandomSequenceContainer>
-										<RandomSequenceContainer Name="{SourceName}_CharCrit_03" ID="{F820346C-A9CF-4375-A192-FD66B5352987}" ShortID="497226606">
+										<RandomSequenceContainer Name="{SourceName}_CharCrit_03" ID="{F820346C-A9CF-4375-A192-FD66B5352987}">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
@@ -295,7 +295,7 @@
 												</Reference>
 											</ReferenceList>
 										</RandomSequenceContainer>
-										<RandomSequenceContainer Name="{SourceName}_CharCrit_01" ID="{E5A4B217-5758-4169-9A3F-63F7E7321827}" ShortID="395544580">
+										<RandomSequenceContainer Name="{SourceName}_CharCrit_01" ID="{E5A4B217-5758-4169-9A3F-63F7E7321827}">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
@@ -322,7 +322,7 @@
 												</Reference>
 											</ReferenceList>
 										</RandomSequenceContainer>
-										<RandomSequenceContainer Name="{SourceName}_LowHealth_01" ID="{3B9B565E-3E19-4260-A04B-BB5EE6869ECE}" ShortID="1061516579">
+										<RandomSequenceContainer Name="{SourceName}_LowHealth_01" ID="{3B9B565E-3E19-4260-A04B-BB5EE6869ECE}">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
@@ -349,7 +349,7 @@
 												</Reference>
 											</ReferenceList>
 										</RandomSequenceContainer>
-										<SwitchContainer Name="{SourceName}_SelectJoke" ID="{6D6A53EB-D050-475B-9AC5-2082BFB997ED}" ShortID="956741267">
+										<SwitchContainer Name="{SourceName}_SelectJoke" ID="{6D6A53EB-D050-475B-9AC5-2082BFB997ED}">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
@@ -386,7 +386,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<RandomSequenceContainer Name="RandomStealthOff" ID="{87D94C05-2B5F-4C51-8F35-5FB39B7103A2}" ShortID="64074384">
+												<RandomSequenceContainer Name="RandomStealthOff" ID="{87D94C05-2B5F-4C51-8F35-5FB39B7103A2}">
 													<PropertyList>
 														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 														<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
@@ -417,7 +417,7 @@
 												</GroupingList>
 											</GroupingInfo>
 										</SwitchContainer>
-										<RandomSequenceContainer Name="{SourceName}_CombatStart_01" ID="{562CF602-9A1E-4D8D-B8FA-6DCCDB891625}" ShortID="775059515">
+										<RandomSequenceContainer Name="{SourceName}_CombatStart_01" ID="{562CF602-9A1E-4D8D-B8FA-6DCCDB891625}">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
@@ -444,7 +444,7 @@
 												</Reference>
 											</ReferenceList>
 										</RandomSequenceContainer>
-										<RandomSequenceContainer Name="{SourceName}_CombatStart_02" ID="{C0676412-6BE6-4389-BA41-21826BF10E2E}" ShortID="989217800">
+										<RandomSequenceContainer Name="{SourceName}_CombatStart_02" ID="{C0676412-6BE6-4389-BA41-21826BF10E2E}">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
@@ -471,7 +471,7 @@
 												</Reference>
 											</ReferenceList>
 										</RandomSequenceContainer>
-										<SwitchContainer Name="{SourceName}_Move_02" ID="{F95A7611-B4DE-4B69-9A93-AA7C97BDEB06}" ShortID="124475968">
+										<SwitchContainer Name="{SourceName}_Move_02" ID="{F95A7611-B4DE-4B69-9A93-AA7C97BDEB06}">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
@@ -508,7 +508,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<RandomSequenceContainer Name="Random_StealthOff" ID="{BA555D1D-7328-4D52-A764-6D907EA83DF3}" ShortID="912369480">
+												<RandomSequenceContainer Name="Random_StealthOff" ID="{BA555D1D-7328-4D52-A764-6D907EA83DF3}">
 													<PropertyList>
 														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 													</PropertyList>
@@ -521,7 +521,7 @@
 														</Reference>
 													</ReferenceList>
 												</RandomSequenceContainer>
-												<RandomSequenceContainer Name="Random_StealthOn" ID="{52B07983-1790-47C5-B331-EEA617FFF9E0}" ShortID="547431368">
+												<RandomSequenceContainer Name="Random_StealthOn" ID="{52B07983-1790-47C5-B331-EEA617FFF9E0}">
 													<PropertyList>
 														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 													</PropertyList>
@@ -560,7 +560,7 @@
 												</GroupingList>
 											</GroupingInfo>
 										</SwitchContainer>
-										<RandomSequenceContainer Name="{SourceName}_CombatStart_03" ID="{CE2DF99D-8399-4518-A256-74126C4CE22B}" ShortID="112265965">
+										<RandomSequenceContainer Name="{SourceName}_CombatStart_03" ID="{CE2DF99D-8399-4518-A256-74126C4CE22B}">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
@@ -587,7 +587,7 @@
 												</Reference>
 											</ReferenceList>
 										</RandomSequenceContainer>
-										<RandomSequenceContainer Name="{SourceName}_Unconscious" ID="{46FDA478-5CA1-491B-AF98-12ADA534AAD1}" ShortID="389994461">
+										<RandomSequenceContainer Name="{SourceName}_Unconscious" ID="{46FDA478-5CA1-491B-AF98-12ADA534AAD1}">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
@@ -614,7 +614,7 @@
 												</Reference>
 											</ReferenceList>
 										</RandomSequenceContainer>
-										<SwitchContainer Name="{SourceName}_Fatigue" ID="{5B589CDE-2B38-4046-9A20-81F345C0E75F}" ShortID="654036228">
+										<SwitchContainer Name="{SourceName}_Fatigue" ID="{5B589CDE-2B38-4046-9A20-81F345C0E75F}">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
@@ -651,7 +651,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<RandomSequenceContainer Name="Fatigue_World_Map_Random" ID="{B718CE1C-BFCD-458F-A094-D0363B05B8AA}" ShortID="715183699">
+												<RandomSequenceContainer Name="Fatigue_World_Map_Random" ID="{B718CE1C-BFCD-458F-A094-D0363B05B8AA}">
 													<PropertyList>
 														<Property Name="OverrideOutput" Type="bool" Value="True"/>
 														<Property Name="OverridePositioning" Type="bool" Value="True"/>
@@ -665,7 +665,7 @@
 														</Reference>
 													</ReferenceList>
 												</RandomSequenceContainer>
-												<SwitchContainer Name="Fatigue_Stealth_Switch" ID="{BA461C30-9BCE-4DD4-9C3A-5BB44B9D2C54}" ShortID="461282316">
+												<SwitchContainer Name="Fatigue_Stealth_Switch" ID="{BA461C30-9BCE-4DD4-9C3A-5BB44B9D2C54}">
 													<PropertyList>
 														<Property Name="3DSpatialization" Type="int16" Value="2"/>
 														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
@@ -696,7 +696,7 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<RandomSequenceContainer Name="Random_StealthOn" ID="{7F84ACDA-B174-412B-AE98-B1A56EDA3246}" ShortID="645789732">
+														<RandomSequenceContainer Name="Random_StealthOn" ID="{7F84ACDA-B174-412B-AE98-B1A56EDA3246}">
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4AB0A0F3-98F6-495F-963D-FC4CCA512246}"/>
@@ -706,7 +706,7 @@
 																</Reference>
 															</ReferenceList>
 														</RandomSequenceContainer>
-														<RandomSequenceContainer Name="Random_StealthOff" ID="{D08D574B-38FF-481E-95BC-A397EB31BDD1}" ShortID="48509333">
+														<RandomSequenceContainer Name="Random_StealthOff" ID="{D08D574B-38FF-481E-95BC-A397EB31BDD1}">
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4AB0A0F3-98F6-495F-963D-FC4CCA512246}"/>
@@ -759,11 +759,11 @@
 												<CustomStateList>
 													<CustomState>
 														<StateRef Name="Kingdom" ID="{10740D01-8EED-4117-8426-F5736917D8C2}"/>
-														<CustomState Name="" ID="{F59A5490-23D9-4C95-B927-FE114E4BDD6F}" ShortID="297692225"/>
+														<CustomState Name="" ID="{F59A5490-23D9-4C95-B927-FE114E4BDD6F}"/>
 													</CustomState>
 													<CustomState>
 														<StateRef Name="Muted" ID="{37B492A6-834F-411E-B8E2-513B49156385}"/>
-														<CustomState Name="" ID="{DA9D03AB-41FF-41E4-AC17-F509264F1C3D}" ShortID="653988772">
+														<CustomState Name="" ID="{DA9D03AB-41FF-41E4-AC17-F509264F1C3D}">
 															<PropertyList>
 																<Property Name="Volume" Type="Real64" Value="-108"/>
 															</PropertyList>
@@ -771,15 +771,15 @@
 													</CustomState>
 													<CustomState>
 														<StateRef Name="InGameMenu" ID="{1FEC9D95-75C4-425C-A6BC-E883F67B7576}"/>
-														<CustomState Name="" ID="{CDACF20F-A869-40B0-8C66-18CA7E5C8AE4}" ShortID="743044661"/>
+														<CustomState Name="" ID="{CDACF20F-A869-40B0-8C66-18CA7E5C8AE4}"/>
 													</CustomState>
 													<CustomState>
 														<StateRef Name="Default" ID="{4120C547-7E8A-43B2-9C09-E4A61EC9A7B9}"/>
-														<CustomState Name="" ID="{A058A0A8-FC0C-4CEF-AF2E-6258BC36FFD6}" ShortID="695688769"/>
+														<CustomState Name="" ID="{A058A0A8-FC0C-4CEF-AF2E-6258BC36FFD6}"/>
 													</CustomState>
 													<CustomState>
 														<StateRef Name="Dialog" ID="{6A9F40DD-6440-4522-82E6-EA885DBCC76F}"/>
-														<CustomState Name="" ID="{308C4423-DD41-4754-9FB1-5DA48D9777CE}" ShortID="304570616">
+														<CustomState Name="" ID="{308C4423-DD41-4754-9FB1-5DA48D9777CE}">
 															<PropertyList>
 																<Property Name="Volume" Type="Real64" Value="-108"/>
 															</PropertyList>
@@ -787,43 +787,43 @@
 													</CustomState>
 													<CustomState>
 														<StateRef Name="Death" ID="{903534A3-3FC5-459B-9E8F-CF8F0E408FE2}"/>
-														<CustomState Name="" ID="{52187FF4-AE49-4BF1-AD33-D6B5F6CEC628}" ShortID="44774345"/>
+														<CustomState Name="" ID="{52187FF4-AE49-4BF1-AD33-D6B5F6CEC628}"/>
 													</CustomState>
 													<CustomState>
 														<StateRef Name="BookQuest" ID="{8F8976CB-0505-4651-9247-39986FDD56B2}"/>
-														<CustomState Name="" ID="{0D5977C1-D4C4-4073-939A-AF491124442B}" ShortID="957882343"/>
+														<CustomState Name="" ID="{0D5977C1-D4C4-4073-939A-AF491124442B}"/>
 													</CustomState>
 													<CustomState>
 														<StateRef Name="InGamePause" ID="{6F15A77C-F010-476B-A0EF-C8FB26A511AE}"/>
-														<CustomState Name="" ID="{0C731FFD-4C1F-4D7A-8C77-A8579A33728D}" ShortID="523290206"/>
+														<CustomState Name="" ID="{0C731FFD-4C1F-4D7A-8C77-A8579A33728D}"/>
 													</CustomState>
 													<CustomState>
 														<StateRef Name="MainMenu" ID="{1405C274-325D-49EA-BAA3-CBAB32EFB82F}"/>
-														<CustomState Name="" ID="{875F6227-4A5C-4262-9BF3-C586A55155CE}" ShortID="275377497"/>
+														<CustomState Name="" ID="{875F6227-4A5C-4262-9BF3-C586A55155CE}"/>
 													</CustomState>
 													<CustomState>
 														<StateRef Name="Rest" ID="{BAB6A0FE-CAED-4BA1-9C53-B27825338775}"/>
-														<CustomState Name="" ID="{50378C41-0B95-4FE7-8294-703359E6738B}" ShortID="978037518"/>
+														<CustomState Name="" ID="{50378C41-0B95-4FE7-8294-703359E6738B}"/>
 													</CustomState>
 													<CustomState>
 														<StateRef Name="LoadingScreen" ID="{6AD353AE-6EE9-4BD4-9FAE-80083E8AEBE3}"/>
-														<CustomState Name="" ID="{212D71ED-3B97-4186-8F82-6440FD161299}" ShortID="209378788"/>
+														<CustomState Name="" ID="{212D71ED-3B97-4186-8F82-6440FD161299}"/>
 													</CustomState>
 													<CustomState>
 														<StateRef Name="CutScene" ID="{BCF1FF2B-EE85-4D17-94D6-E0B27CD44F61}"/>
-														<CustomState Name="" ID="{2A1BF72D-9BBE-48E6-900E-C41FD468CB54}" ShortID="1010497770"/>
+														<CustomState Name="" ID="{2A1BF72D-9BBE-48E6-900E-C41FD468CB54}"/>
 													</CustomState>
 													<CustomState>
 														<StateRef Name="GlobalMap" ID="{9969A30D-B38E-4D2F-8AA1-E69EAD095CF2}"/>
-														<CustomState Name="" ID="{D37C86B2-F7C4-4C15-AEFA-15C0B73E10B4}" ShortID="418877046"/>
+														<CustomState Name="" ID="{D37C86B2-F7C4-4C15-AEFA-15C0B73E10B4}"/>
 													</CustomState>
 													<CustomState>
 														<StateRef Name="Narrator" ID="{86FBF5F4-1574-4EA9-B17B-CB79FF33E0E7}"/>
-														<CustomState Name="" ID="{78B47EE1-F513-4C22-AE69-BA37E2E0AF02}" ShortID="514671694"/>
+														<CustomState Name="" ID="{78B47EE1-F513-4C22-AE69-BA37E2E0AF02}"/>
 													</CustomState>
 													<CustomState>
 														<StateRef Name="Combat" ID="{FC9B89E2-1988-4FAE-86E0-E0BE696AFA06}"/>
-														<CustomState Name="" ID="{C7717485-C1F7-43F6-82ED-43FA35C47988}" ShortID="910169221"/>
+														<CustomState Name="" ID="{C7717485-C1F7-43F6-82ED-43FA35C47988}"/>
 													</CustomState>
 												</CustomStateList>
 											</StateInfo>
@@ -930,7 +930,7 @@
 												</GroupingList>
 											</GroupingInfo>
 										</SwitchContainer>
-										<RandomSequenceContainer Name="{SourceName}_StealthMode" ID="{A9747A62-6D6F-4449-B7F2-5E305D969C2E}" ShortID="451986257">
+										<RandomSequenceContainer Name="{SourceName}_StealthMode" ID="{A9747A62-6D6F-4449-B7F2-5E305D969C2E}">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
@@ -962,7 +962,7 @@
 												</Reference>
 											</ReferenceList>
 										</RandomSequenceContainer>
-										<SwitchContainer Name="{SourceName}_Select_03" ID="{3475900A-EDEB-4736-AD39-526E9A01E2FF}" ShortID="607553424">
+										<SwitchContainer Name="{SourceName}_Select_03" ID="{3475900A-EDEB-4736-AD39-526E9A01E2FF}">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
@@ -999,7 +999,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<RandomSequenceContainer Name="Random_StealthOff" ID="{24827058-159A-420B-B0F1-82793C6ED391}" ShortID="517987492">
+												<RandomSequenceContainer Name="Random_StealthOff" ID="{24827058-159A-420B-B0F1-82793C6ED391}">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4AB0A0F3-98F6-495F-963D-FC4CCA512246}"/>
@@ -1009,7 +1009,7 @@
 														</Reference>
 													</ReferenceList>
 												</RandomSequenceContainer>
-												<RandomSequenceContainer Name="Random_StealthOn" ID="{6FA31A8A-137B-4EEC-B76F-E90ED03C1A49}" ShortID="961662208">
+												<RandomSequenceContainer Name="Random_StealthOn" ID="{6FA31A8A-137B-4EEC-B76F-E90ED03C1A49}">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4AB0A0F3-98F6-495F-963D-FC4CCA512246}"/>
@@ -1045,7 +1045,7 @@
 												</GroupingList>
 											</GroupingInfo>
 										</SwitchContainer>
-										<SwitchContainer Name="{SourceName}_Select_05" ID="{E61AE17C-8D24-4232-AE29-18AAA9751916}" ShortID="385092587">
+										<SwitchContainer Name="{SourceName}_Select_05" ID="{E61AE17C-8D24-4232-AE29-18AAA9751916}">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
@@ -1082,7 +1082,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<RandomSequenceContainer Name="Random_StealthOff" ID="{157BAF78-D813-4701-974E-FB1CDB988035}" ShortID="229092143">
+												<RandomSequenceContainer Name="Random_StealthOff" ID="{157BAF78-D813-4701-974E-FB1CDB988035}">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4AB0A0F3-98F6-495F-963D-FC4CCA512246}"/>
@@ -1092,7 +1092,7 @@
 														</Reference>
 													</ReferenceList>
 												</RandomSequenceContainer>
-												<RandomSequenceContainer Name="Random_StealthOn" ID="{ADE84422-C4BD-42A4-B3EA-356F01C58A97}" ShortID="123660854">
+												<RandomSequenceContainer Name="Random_StealthOn" ID="{ADE84422-C4BD-42A4-B3EA-356F01C58A97}">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4AB0A0F3-98F6-495F-963D-FC4CCA512246}"/>
@@ -1128,7 +1128,7 @@
 												</GroupingList>
 											</GroupingInfo>
 										</SwitchContainer>
-										<SwitchContainer Name="{SourceName}_Select_04" ID="{3217C51E-6574-48BD-A1BD-8A65F5D0B833}" ShortID="740958979">
+										<SwitchContainer Name="{SourceName}_Select_04" ID="{3217C51E-6574-48BD-A1BD-8A65F5D0B833}">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
@@ -1165,7 +1165,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<RandomSequenceContainer Name="Random_StealthOff" ID="{30031CE4-32F3-47EA-B2D5-0D782A7F912F}" ShortID="656865101">
+												<RandomSequenceContainer Name="Random_StealthOff" ID="{30031CE4-32F3-47EA-B2D5-0D782A7F912F}">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4AB0A0F3-98F6-495F-963D-FC4CCA512246}"/>
@@ -1175,7 +1175,7 @@
 														</Reference>
 													</ReferenceList>
 												</RandomSequenceContainer>
-												<RandomSequenceContainer Name="Random_StealthOn" ID="{CE7F1850-C69C-47E4-BBB6-87C092E0545E}" ShortID="926692889">
+												<RandomSequenceContainer Name="Random_StealthOn" ID="{CE7F1850-C69C-47E4-BBB6-87C092E0545E}">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4AB0A0F3-98F6-495F-963D-FC4CCA512246}"/>
@@ -1211,7 +1211,7 @@
 												</GroupingList>
 											</GroupingInfo>
 										</SwitchContainer>
-										<SwitchContainer Name="{SourceName}_Select_02" ID="{1AFDE772-5A39-4FFA-90E8-D862286B21E1}" ShortID="109164619">
+										<SwitchContainer Name="{SourceName}_Select_02" ID="{1AFDE772-5A39-4FFA-90E8-D862286B21E1}">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
@@ -1248,7 +1248,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<RandomSequenceContainer Name="Random_StealthOff" ID="{870DF16A-AF90-45B5-AFD4-917F932FB138}" ShortID="513927428">
+												<RandomSequenceContainer Name="Random_StealthOff" ID="{870DF16A-AF90-45B5-AFD4-917F932FB138}">
 													<PropertyList>
 														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 													</PropertyList>
@@ -1261,7 +1261,7 @@
 														</Reference>
 													</ReferenceList>
 												</RandomSequenceContainer>
-												<RandomSequenceContainer Name="Random_StealthOn" ID="{17F994DD-1A41-4E9B-BBFF-99762168B7AD}" ShortID="742122922">
+												<RandomSequenceContainer Name="Random_StealthOn" ID="{17F994DD-1A41-4E9B-BBFF-99762168B7AD}">
 													<PropertyList>
 														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 													</PropertyList>
@@ -1300,7 +1300,7 @@
 												</GroupingList>
 											</GroupingInfo>
 										</SwitchContainer>
-										<SwitchContainer Name="{SourceName}_Move_07" ID="{080CA49D-2AA1-46E4-B443-8AD561673D00}" ShortID="944058887">
+										<SwitchContainer Name="{SourceName}_Move_07" ID="{080CA49D-2AA1-46E4-B443-8AD561673D00}">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
@@ -1337,7 +1337,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<RandomSequenceContainer Name="Random_StealthOff" ID="{31F842C7-3A19-4662-BFA7-7CDEA079F170}" ShortID="1003369399">
+												<RandomSequenceContainer Name="Random_StealthOff" ID="{31F842C7-3A19-4662-BFA7-7CDEA079F170}">
 													<PropertyList>
 														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 													</PropertyList>
@@ -1350,7 +1350,7 @@
 														</Reference>
 													</ReferenceList>
 												</RandomSequenceContainer>
-												<RandomSequenceContainer Name="Random_StealthOn" ID="{EADF92A8-5C28-4D0E-A61A-7D517A092ADC}" ShortID="845965935">
+												<RandomSequenceContainer Name="Random_StealthOn" ID="{EADF92A8-5C28-4D0E-A61A-7D517A092ADC}">
 													<PropertyList>
 														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 													</PropertyList>
@@ -1389,7 +1389,7 @@
 												</GroupingList>
 											</GroupingInfo>
 										</SwitchContainer>
-										<SwitchContainer Name="{SourceName}_Select_01" ID="{53CE7D6D-3F1A-424F-84AC-F81CF9C30561}" ShortID="718926887">
+										<SwitchContainer Name="{SourceName}_Select_01" ID="{53CE7D6D-3F1A-424F-84AC-F81CF9C30561}">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
@@ -1426,7 +1426,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<RandomSequenceContainer Name="Random_StealthOff" ID="{7544DFD7-8033-4739-8EAD-196BE15E55E9}" ShortID="49817915">
+												<RandomSequenceContainer Name="Random_StealthOff" ID="{7544DFD7-8033-4739-8EAD-196BE15E55E9}">
 													<PropertyList>
 														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 													</PropertyList>
@@ -1439,7 +1439,7 @@
 														</Reference>
 													</ReferenceList>
 												</RandomSequenceContainer>
-												<RandomSequenceContainer Name="Random_StealthOn" ID="{4C7570B3-BC21-4284-B839-33FC1D351372}" ShortID="89763203">
+												<RandomSequenceContainer Name="Random_StealthOn" ID="{4C7570B3-BC21-4284-B839-33FC1D351372}">
 													<PropertyList>
 														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 													</PropertyList>
@@ -1478,7 +1478,7 @@
 												</GroupingList>
 											</GroupingInfo>
 										</SwitchContainer>
-										<SwitchContainer Name="{SourceName}_Select_06" ID="{4529620A-4537-4FF9-B87C-D8B95B2ACA61}" ShortID="968953108">
+										<SwitchContainer Name="{SourceName}_Select_06" ID="{4529620A-4537-4FF9-B87C-D8B95B2ACA61}">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
@@ -1515,7 +1515,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<RandomSequenceContainer Name="Random_StealthOff" ID="{02EA1AC1-7DC0-428F-81BE-853E9B99E2D4}" ShortID="657081985">
+												<RandomSequenceContainer Name="Random_StealthOff" ID="{02EA1AC1-7DC0-428F-81BE-853E9B99E2D4}">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4AB0A0F3-98F6-495F-963D-FC4CCA512246}"/>
@@ -1525,7 +1525,7 @@
 														</Reference>
 													</ReferenceList>
 												</RandomSequenceContainer>
-												<RandomSequenceContainer Name="Random_StealthOn" ID="{0A024B98-7304-47FB-BB07-AFDC479DEAE9}" ShortID="772734702">
+												<RandomSequenceContainer Name="Random_StealthOn" ID="{0A024B98-7304-47FB-BB07-AFDC479DEAE9}">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4AB0A0F3-98F6-495F-963D-FC4CCA512246}"/>
@@ -1561,7 +1561,7 @@
 												</GroupingList>
 											</GroupingInfo>
 										</SwitchContainer>
-										<SwitchContainer Name="{SourceName}_Move_05" ID="{9E9D89FB-249C-4363-8090-A88D096DFDC1}" ShortID="121457873">
+										<SwitchContainer Name="{SourceName}_Move_05" ID="{9E9D89FB-249C-4363-8090-A88D096DFDC1}">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
@@ -1598,7 +1598,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<RandomSequenceContainer Name="Random_StealthOff" ID="{63B17341-37A3-4C1F-8E73-30A6F87628D1}" ShortID="260578924">
+												<RandomSequenceContainer Name="Random_StealthOff" ID="{63B17341-37A3-4C1F-8E73-30A6F87628D1}">
 													<PropertyList>
 														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 													</PropertyList>
@@ -1611,7 +1611,7 @@
 														</Reference>
 													</ReferenceList>
 												</RandomSequenceContainer>
-												<RandomSequenceContainer Name="Random_StealthOn" ID="{DDB5454F-0986-48C8-B0EB-1EC5AB15EE60}" ShortID="132237235">
+												<RandomSequenceContainer Name="Random_StealthOn" ID="{DDB5454F-0986-48C8-B0EB-1EC5AB15EE60}">
 													<PropertyList>
 														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 													</PropertyList>
@@ -1650,7 +1650,7 @@
 												</GroupingList>
 											</GroupingInfo>
 										</SwitchContainer>
-										<SwitchContainer Name="{SourceName}_CantEquip_02" ID="{1D0230E1-3DA3-4BFF-8C4D-8A88F064DDC2}" ShortID="1002472261">
+										<SwitchContainer Name="{SourceName}_CantEquip_02" ID="{1D0230E1-3DA3-4BFF-8C4D-8A88F064DDC2}">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
@@ -1682,7 +1682,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<RandomSequenceContainer Name="Random_StealthOff" ID="{33D1B2E0-E881-4461-B2EC-E1974D3411CA}" ShortID="638868878">
+												<RandomSequenceContainer Name="Random_StealthOff" ID="{33D1B2E0-E881-4461-B2EC-E1974D3411CA}">
 													<PropertyList>
 														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 													</PropertyList>
@@ -1695,7 +1695,7 @@
 														</Reference>
 													</ReferenceList>
 												</RandomSequenceContainer>
-												<RandomSequenceContainer Name="Random_StealthOn" ID="{6AE1E009-C385-45D6-B907-082377EA6444}" ShortID="116992421">
+												<RandomSequenceContainer Name="Random_StealthOn" ID="{6AE1E009-C385-45D6-B907-082377EA6444}">
 													<PropertyList>
 														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 													</PropertyList>
@@ -1734,7 +1734,7 @@
 												</GroupingList>
 											</GroupingInfo>
 										</SwitchContainer>
-										<SwitchContainer Name="{SourceName}_CantEquip_01" ID="{0B2DB06B-4546-44C8-BD4E-3D525FAF0446}" ShortID="134325132">
+										<SwitchContainer Name="{SourceName}_CantEquip_01" ID="{0B2DB06B-4546-44C8-BD4E-3D525FAF0446}">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
@@ -1766,7 +1766,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<RandomSequenceContainer Name="Random_StealthOff" ID="{0D5D2862-6032-4A69-A32D-A128D7A938D3}" ShortID="706253519">
+												<RandomSequenceContainer Name="Random_StealthOff" ID="{0D5D2862-6032-4A69-A32D-A128D7A938D3}">
 													<PropertyList>
 														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 													</PropertyList>
@@ -1779,7 +1779,7 @@
 														</Reference>
 													</ReferenceList>
 												</RandomSequenceContainer>
-												<RandomSequenceContainer Name="Random_StealthOn" ID="{DB04B7B9-BC9C-4E03-860B-147FF0D245A5}" ShortID="420685979">
+												<RandomSequenceContainer Name="Random_StealthOn" ID="{DB04B7B9-BC9C-4E03-860B-147FF0D245A5}">
 													<PropertyList>
 														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 													</PropertyList>
@@ -1818,7 +1818,7 @@
 												</GroupingList>
 											</GroupingInfo>
 										</SwitchContainer>
-										<SwitchContainer Name="{SourceName}_Move_01" ID="{D5A163D7-FF9E-4E5D-B436-6693E2B28402}" ShortID="481136481">
+										<SwitchContainer Name="{SourceName}_Move_01" ID="{D5A163D7-FF9E-4E5D-B436-6693E2B28402}">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
@@ -1855,7 +1855,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<RandomSequenceContainer Name="Random_StealthOff" ID="{9B638576-E7FF-4E18-B472-33E268BF7CB4}" ShortID="487034507">
+												<RandomSequenceContainer Name="Random_StealthOff" ID="{9B638576-E7FF-4E18-B472-33E268BF7CB4}">
 													<PropertyList>
 														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 													</PropertyList>
@@ -1868,7 +1868,7 @@
 														</Reference>
 													</ReferenceList>
 												</RandomSequenceContainer>
-												<RandomSequenceContainer Name="Random_StealthOn" ID="{0810B386-6A5B-426E-A41E-D4B01832039B}" ShortID="137224005">
+												<RandomSequenceContainer Name="Random_StealthOn" ID="{0810B386-6A5B-426E-A41E-D4B01832039B}">
 													<PropertyList>
 														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 													</PropertyList>
@@ -1907,7 +1907,7 @@
 												</GroupingList>
 											</GroupingInfo>
 										</SwitchContainer>
-										<SwitchContainer Name="{SourceName}_Move_03" ID="{0BD20CB7-B4DB-4BFF-8386-862A908E007A}" ShortID="57065074">
+										<SwitchContainer Name="{SourceName}_Move_03" ID="{0BD20CB7-B4DB-4BFF-8386-862A908E007A}">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
@@ -1944,7 +1944,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<RandomSequenceContainer Name="Random_StealthOff" ID="{6397C767-B48E-494D-9B56-6B56DF7D2180}" ShortID="663911257">
+												<RandomSequenceContainer Name="Random_StealthOff" ID="{6397C767-B48E-494D-9B56-6B56DF7D2180}">
 													<PropertyList>
 														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 													</PropertyList>
@@ -1957,7 +1957,7 @@
 														</Reference>
 													</ReferenceList>
 												</RandomSequenceContainer>
-												<RandomSequenceContainer Name="Random_StealthOn" ID="{F9BEE3CB-7832-414F-A446-2F30D0165911}" ShortID="304095996">
+												<RandomSequenceContainer Name="Random_StealthOn" ID="{F9BEE3CB-7832-414F-A446-2F30D0165911}">
 													<PropertyList>
 														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 													</PropertyList>
@@ -1996,7 +1996,7 @@
 												</GroupingList>
 											</GroupingInfo>
 										</SwitchContainer>
-										<SwitchContainer Name="{SourceName}_CastChant" ID="{E127ED6E-9245-4585-80E7-D4471E6C0C17}" ShortID="689109275">
+										<SwitchContainer Name="{SourceName}_CastChant" ID="{E127ED6E-9245-4585-80E7-D4471E6C0C17}">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
@@ -2028,7 +2028,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<RandomSequenceContainer Name="RandomStealthOn" ID="{9F2E990F-1FB1-4952-AB28-233861617EB8}" ShortID="1033687101">
+												<RandomSequenceContainer Name="RandomStealthOn" ID="{9F2E990F-1FB1-4952-AB28-233861617EB8}">
 													<PropertyList>
 														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 														<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
@@ -2042,7 +2042,7 @@
 														</Reference>
 													</ReferenceList>
 												</RandomSequenceContainer>
-												<RandomSequenceContainer Name="RandomStealthOff" ID="{F0F1FF64-25FC-41C1-AF61-753B7699C3F2}" ShortID="185362681">
+												<RandomSequenceContainer Name="RandomStealthOff" ID="{F0F1FF64-25FC-41C1-AF61-753B7699C3F2}">
 													<PropertyList>
 														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 														<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
@@ -2056,7 +2056,7 @@
 														</Reference>
 													</ReferenceList>
 												</RandomSequenceContainer>
-												<RandomSequenceContainer Name="CastEmpty" ID="{F32D285C-0D67-4225-8DF0-7CC2D5020DA8}" ShortID="969403804">
+												<RandomSequenceContainer Name="CastEmpty" ID="{F32D285C-0D67-4225-8DF0-7CC2D5020DA8}">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4AB0A0F3-98F6-495F-963D-FC4CCA512246}"/>
@@ -2095,7 +2095,7 @@
 												</GroupingList>
 											</GroupingInfo>
 										</SwitchContainer>
-										<SwitchContainer Name="{SourceName}_Discovery_02" ID="{16E84F9F-99AE-426D-83C4-DFAA42316890}" ShortID="290247820">
+										<SwitchContainer Name="{SourceName}_Discovery_02" ID="{16E84F9F-99AE-426D-83C4-DFAA42316890}">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
@@ -2132,7 +2132,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<RandomSequenceContainer Name="Random_StealthOff" ID="{05611D5C-F7FE-4472-8D3B-E82A93E57117}" ShortID="34349572">
+												<RandomSequenceContainer Name="Random_StealthOff" ID="{05611D5C-F7FE-4472-8D3B-E82A93E57117}">
 													<PropertyList>
 														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 													</PropertyList>
@@ -2145,7 +2145,7 @@
 														</Reference>
 													</ReferenceList>
 												</RandomSequenceContainer>
-												<RandomSequenceContainer Name="Random_StealthOn" ID="{00827A07-6785-42A2-B238-C9463A12B510}" ShortID="316024728">
+												<RandomSequenceContainer Name="Random_StealthOn" ID="{00827A07-6785-42A2-B238-C9463A12B510}">
 													<PropertyList>
 														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 													</PropertyList>
@@ -2184,7 +2184,7 @@
 												</GroupingList>
 											</GroupingInfo>
 										</SwitchContainer>
-										<SwitchContainer Name="{SourceName}_Move_06" ID="{669C0D36-0FA2-4418-8FB0-97BCA4555AF5}" ShortID="722206855">
+										<SwitchContainer Name="{SourceName}_Move_06" ID="{669C0D36-0FA2-4418-8FB0-97BCA4555AF5}">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
@@ -2221,7 +2221,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<RandomSequenceContainer Name="Random_StealthOff" ID="{BFDD5EA0-845A-48AA-A51F-91DDDE451FE5}" ShortID="274045773">
+												<RandomSequenceContainer Name="Random_StealthOff" ID="{BFDD5EA0-845A-48AA-A51F-91DDDE451FE5}">
 													<PropertyList>
 														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 													</PropertyList>
@@ -2234,7 +2234,7 @@
 														</Reference>
 													</ReferenceList>
 												</RandomSequenceContainer>
-												<RandomSequenceContainer Name="Random_StealthOn" ID="{7DC24E7A-96BB-4C9A-A3C6-3042983B55BC}" ShortID="761603572">
+												<RandomSequenceContainer Name="Random_StealthOn" ID="{7DC24E7A-96BB-4C9A-A3C6-3042983B55BC}">
 													<PropertyList>
 														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 													</PropertyList>
@@ -2273,7 +2273,7 @@
 												</GroupingList>
 											</GroupingInfo>
 										</SwitchContainer>
-										<SwitchContainer Name="{SourceName}_Discovery_01" ID="{740B00EB-3EA0-41B4-950A-D0D19D956F5C}" ShortID="429178870">
+										<SwitchContainer Name="{SourceName}_Discovery_01" ID="{740B00EB-3EA0-41B4-950A-D0D19D956F5C}">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
@@ -2310,7 +2310,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<RandomSequenceContainer Name="Random_StealthOff" ID="{5012209C-B7A5-47C1-AA29-2D96C665F0A0}" ShortID="269851660">
+												<RandomSequenceContainer Name="Random_StealthOff" ID="{5012209C-B7A5-47C1-AA29-2D96C665F0A0}">
 													<PropertyList>
 														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 													</PropertyList>
@@ -2323,7 +2323,7 @@
 														</Reference>
 													</ReferenceList>
 												</RandomSequenceContainer>
-												<RandomSequenceContainer Name="Random_StealthOn" ID="{5A055B73-2C2E-4C5E-A55F-7DB61347A28A}" ShortID="31177059">
+												<RandomSequenceContainer Name="Random_StealthOn" ID="{5A055B73-2C2E-4C5E-A55F-7DB61347A28A}">
 													<PropertyList>
 														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 													</PropertyList>
@@ -2362,7 +2362,7 @@
 												</GroupingList>
 											</GroupingInfo>
 										</SwitchContainer>
-										<SwitchContainer Name="{SourceName}_Move_04" ID="{D20A5DD7-67E7-4721-BDE7-D2F26B15D858}" ShortID="564358410">
+										<SwitchContainer Name="{SourceName}_Move_04" ID="{D20A5DD7-67E7-4721-BDE7-D2F26B15D858}">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
@@ -2399,7 +2399,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<RandomSequenceContainer Name="Random_StealthOff" ID="{7DE19438-2CB1-4B35-B230-362C47034D91}" ShortID="187534326">
+												<RandomSequenceContainer Name="Random_StealthOff" ID="{7DE19438-2CB1-4B35-B230-362C47034D91}">
 													<PropertyList>
 														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 													</PropertyList>
@@ -2412,7 +2412,7 @@
 														</Reference>
 													</ReferenceList>
 												</RandomSequenceContainer>
-												<RandomSequenceContainer Name="Random_StealthOn" ID="{261F3510-855F-4DEA-B5DF-68155A48E55F}" ShortID="171280278">
+												<RandomSequenceContainer Name="Random_StealthOn" ID="{261F3510-855F-4DEA-B5DF-68155A48E55F}">
 													<PropertyList>
 														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 													</PropertyList>
@@ -2451,7 +2451,7 @@
 												</GroupingList>
 											</GroupingInfo>
 										</SwitchContainer>
-										<SwitchContainer Name="{SourceName}_CheckFail_01" ID="{0D5D8269-7DD4-4DCA-A4AB-AFA5A752842C}" ShortID="91604917">
+										<SwitchContainer Name="{SourceName}_CheckFail_01" ID="{0D5D8269-7DD4-4DCA-A4AB-AFA5A752842C}">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
@@ -2488,7 +2488,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<RandomSequenceContainer Name="Random_StealthOff" ID="{1055E032-A3B5-47B2-AC55-DF7D6D8C7EC8}" ShortID="965490842">
+												<RandomSequenceContainer Name="Random_StealthOff" ID="{1055E032-A3B5-47B2-AC55-DF7D6D8C7EC8}">
 													<PropertyList>
 														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 													</PropertyList>
@@ -2501,7 +2501,7 @@
 														</Reference>
 													</ReferenceList>
 												</RandomSequenceContainer>
-												<RandomSequenceContainer Name="Random_StealthOn" ID="{D99E6B4E-D3C5-416A-96F3-D9D6C6030578}" ShortID="743856613">
+												<RandomSequenceContainer Name="Random_StealthOn" ID="{D99E6B4E-D3C5-416A-96F3-D9D6C6030578}">
 													<PropertyList>
 														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 													</PropertyList>
@@ -2540,7 +2540,7 @@
 												</GroupingList>
 											</GroupingInfo>
 										</SwitchContainer>
-										<SwitchContainer Name="{SourceName}_CheckFail_02" ID="{ECDCCAFE-80D7-4A81-9ABE-8A3F81B92F6B}" ShortID="400951437">
+										<SwitchContainer Name="{SourceName}_CheckFail_02" ID="{ECDCCAFE-80D7-4A81-9ABE-8A3F81B92F6B}">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
@@ -2577,7 +2577,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<RandomSequenceContainer Name="Random_StealthOff" ID="{0DB2210A-6948-4FD8-B0F3-A298BD1F0322}" ShortID="460029783">
+												<RandomSequenceContainer Name="Random_StealthOff" ID="{0DB2210A-6948-4FD8-B0F3-A298BD1F0322}">
 													<PropertyList>
 														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 													</PropertyList>
@@ -2590,7 +2590,7 @@
 														</Reference>
 													</ReferenceList>
 												</RandomSequenceContainer>
-												<RandomSequenceContainer Name="Random_StealthOn" ID="{2761D626-521A-49FF-B618-F2668AE68E7B}" ShortID="68004881">
+												<RandomSequenceContainer Name="Random_StealthOn" ID="{2761D626-521A-49FF-B618-F2668AE68E7B}">
 													<PropertyList>
 														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 													</PropertyList>
@@ -2629,7 +2629,7 @@
 												</GroupingList>
 											</GroupingInfo>
 										</SwitchContainer>
-										<SwitchContainer Name="{SourceName}_CheckSuccess_01" ID="{F5321F36-6286-4917-AE62-32B5FDCF2632}" ShortID="224093866">
+										<SwitchContainer Name="{SourceName}_CheckSuccess_01" ID="{F5321F36-6286-4917-AE62-32B5FDCF2632}">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
@@ -2666,7 +2666,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<RandomSequenceContainer Name="RandomStealthOff" ID="{EB343C87-2210-4DEF-9F83-0B0F216916C2}" ShortID="750744766">
+												<RandomSequenceContainer Name="RandomStealthOff" ID="{EB343C87-2210-4DEF-9F83-0B0F216916C2}">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4AB0A0F3-98F6-495F-963D-FC4CCA512246}"/>
@@ -2676,7 +2676,7 @@
 														</Reference>
 													</ReferenceList>
 												</RandomSequenceContainer>
-												<RandomSequenceContainer Name="RandomStealthOn" ID="{E51EAA5C-D18E-4A4A-B1A6-A60537162440}" ShortID="997802614">
+												<RandomSequenceContainer Name="RandomStealthOn" ID="{E51EAA5C-D18E-4A4A-B1A6-A60537162440}">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4AB0A0F3-98F6-495F-963D-FC4CCA512246}"/>
@@ -2712,7 +2712,7 @@
 												</GroupingList>
 											</GroupingInfo>
 										</SwitchContainer>
-										<SwitchContainer Name="{SourceName}_CantCast" ID="{471C2A83-0F47-4575-A1C7-2631B0D5278C}" ShortID="1023643896">
+										<SwitchContainer Name="{SourceName}_CantCast" ID="{471C2A83-0F47-4575-A1C7-2631B0D5278C}">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
@@ -2749,7 +2749,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<RandomSequenceContainer Name="RandomStealthOff" ID="{9180DFB5-594F-4C92-B2FF-EBD4C5345984}" ShortID="618951395">
+												<RandomSequenceContainer Name="RandomStealthOff" ID="{9180DFB5-594F-4C92-B2FF-EBD4C5345984}">
 													<PropertyList>
 														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 														<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
@@ -2763,7 +2763,7 @@
 														</Reference>
 													</ReferenceList>
 												</RandomSequenceContainer>
-												<RandomSequenceContainer Name="RandomStealthOn" ID="{97BC9FF4-6285-4662-953B-B1D921755556}" ShortID="387585058">
+												<RandomSequenceContainer Name="RandomStealthOn" ID="{97BC9FF4-6285-4662-953B-B1D921755556}">
 													<PropertyList>
 														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 													</PropertyList>
@@ -2802,7 +2802,7 @@
 												</GroupingList>
 											</GroupingInfo>
 										</SwitchContainer>
-										<SwitchContainer Name="{SourceName}_CheckSuccess_02" ID="{C6A5EA87-3BC5-42AE-94CD-8AAC2B17CFE4}" ShortID="996093684">
+										<SwitchContainer Name="{SourceName}_CheckSuccess_02" ID="{C6A5EA87-3BC5-42AE-94CD-8AAC2B17CFE4}">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
@@ -2839,7 +2839,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<RandomSequenceContainer Name="RandomStealthOn" ID="{72904CC7-8833-47BE-8D63-277CF2A454DD}" ShortID="289852043">
+												<RandomSequenceContainer Name="RandomStealthOn" ID="{72904CC7-8833-47BE-8D63-277CF2A454DD}">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4AB0A0F3-98F6-495F-963D-FC4CCA512246}"/>
@@ -2849,7 +2849,7 @@
 														</Reference>
 													</ReferenceList>
 												</RandomSequenceContainer>
-												<RandomSequenceContainer Name="RandomStealthOff" ID="{E7FD4BC3-A8F7-4E7F-9F5E-302561C59315}" ShortID="557827444">
+												<RandomSequenceContainer Name="RandomStealthOff" ID="{E7FD4BC3-A8F7-4E7F-9F5E-302561C59315}">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4AB0A0F3-98F6-495F-963D-FC4CCA512246}"/>
@@ -2885,7 +2885,7 @@
 												</GroupingList>
 											</GroupingInfo>
 										</SwitchContainer>
-										<RandomSequenceContainer Name="{SourceName}_Death" ID="{3E345541-C642-47D1-BCE7-66FFE2E07628}" ShortID="530586451">
+										<RandomSequenceContainer Name="{SourceName}_Death" ID="{3E345541-C642-47D1-BCE7-66FFE2E07628}">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
@@ -2911,7 +2911,7 @@
 												</Reference>
 											</ReferenceList>
 										</RandomSequenceContainer>
-										<RandomSequenceContainer Name="{SourceName}_Pain" ID="{CB7AD8ED-2882-44EE-AE34-2054BD0703FA}" ShortID="343629650">
+										<RandomSequenceContainer Name="{SourceName}_Pain" ID="{CB7AD8ED-2882-44EE-AE34-2054BD0703FA}">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
@@ -2939,7 +2939,7 @@
 												</Reference>
 											</ReferenceList>
 										</RandomSequenceContainer>
-										<RandomSequenceContainer Name="{SourceName}_AttackShort" ID="{9EFAFC18-830D-487B-80C9-F93D2ED43DFF}" ShortID="1024007793">
+										<RandomSequenceContainer Name="{SourceName}_AttackShort" ID="{9EFAFC18-830D-487B-80C9-F93D2ED43DFF}">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
@@ -2967,7 +2967,7 @@
 												</Reference>
 											</ReferenceList>
 										</RandomSequenceContainer>
-										<RandomSequenceContainer Name="{SourceName}_CoupDeGrace" ID="{818CE6F2-9A28-4C2E-B829-7AEB2D169573}" ShortID="513541120">
+										<RandomSequenceContainer Name="{SourceName}_CoupDeGrace" ID="{818CE6F2-9A28-4C2E-B829-7AEB2D169573}">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
@@ -2999,7 +2999,7 @@
 								</ActorMixer>
 							</ChildrenList>
 						</ActorMixer>
-						<ActorMixer Name="Character_Creator_Sample" ID="{B1052122-36FC-41EB-8603-35D22A8A47DE}" ShortID="603334724">
+						<ActorMixer Name="Character_Creator_Sample" ID="{B1052122-36FC-41EB-8603-35D22A8A47DE}">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
@@ -3043,7 +3043,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<RandomSequenceContainer Name="{SourceName}_Test" ID="{7C42ABBA-F384-4D32-8B1B-386359C20B6D}" ShortID="790304251">
+								<RandomSequenceContainer Name="{SourceName}_Test" ID="{7C42ABBA-F384-4D32-8B1B-386359C20B6D}">
 									<PropertyList>
 										<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
@@ -3087,7 +3087,7 @@
 						<CustomStateList>
 							<CustomState>
 								<StateRef Name="On" ID="{3E2CF464-4395-42A8-AC17-5C18BEA3F227}"/>
-								<CustomState Name="" ID="{225E71A5-CE91-4613-A1E5-74102FC2DCFC}" ShortID="392882409">
+								<CustomState Name="" ID="{225E71A5-CE91-4613-A1E5-74102FC2DCFC}">
 									<PropertyList>
 										<Property Name="Lowpass" Type="int16" Value="31"/>
 										<Property Name="MakeUpGain" Type="Real64" Value="-20"/>
@@ -3096,11 +3096,11 @@
 							</CustomState>
 							<CustomState>
 								<StateRef Name="Off" ID="{E117CF21-3FB7-45D0-BBE9-731AE7F1B665}"/>
-								<CustomState Name="" ID="{37CAC903-BB9B-41AE-AAB1-6F0B25C38DB4}" ShortID="880364519"/>
+								<CustomState Name="" ID="{37CAC903-BB9B-41AE-AAB1-6F0B25C38DB4}"/>
 							</CustomState>
 							<CustomState>
 								<StateRef Name="On" ID="{E2772FDC-4CCB-49A4-8E7A-8358DE8241E0}"/>
-								<CustomState Name="" ID="{A0D49D9E-1EB5-422B-844F-E23A0EF5FE79}" ShortID="218347192">
+								<CustomState Name="" ID="{A0D49D9E-1EB5-422B-844F-E23A0EF5FE79}">
 									<PropertyList>
 										<Property Name="Lowpass" Type="int16" Value="20"/>
 										<Property Name="MakeUpGain" Type="Real64" Value="-8"/>
@@ -3109,7 +3109,7 @@
 							</CustomState>
 							<CustomState>
 								<StateRef Name="Off" ID="{B799A476-14E6-4BB9-B678-984525305259}"/>
-								<CustomState Name="" ID="{0E627F42-93C4-4BAA-A3FB-51A163FA0F2D}" ShortID="243931198"/>
+								<CustomState Name="" ID="{0E627F42-93C4-4BAA-A3FB-51A163FA0F2D}"/>
 							</CustomState>
 						</CustomStateList>
 					</StateInfo>

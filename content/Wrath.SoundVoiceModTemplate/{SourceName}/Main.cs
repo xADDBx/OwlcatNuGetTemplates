@@ -43,51 +43,40 @@ public static class Main {
 
     [HarmonyPatch]
     public static class Soundbanks {
-        public static readonly HashSet<uint> LoadedBankIds = [];
+        // Adds the mod's folder to the soundbank search paths so that the game knows where to look when trying
+		// to load any of the included soundbanks.
+		[HarmonyPatch(typeof(AkAudioService), nameof(AkAudioService.Initialize))]
+		[HarmonyPostfix]
+		public static void AddBankPaths()
+		{
+			var banksPath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+			AkSoundEngine.AddBasePath(banksPath);
+		}
 
-        [HarmonyPatch(typeof(AkAudioService), nameof(AkAudioService.Initialize))]
-        [HarmonyPostfix]
-        public static void LoadSoundbanks() {
-            var banksPath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+		// Must match the name of your character creator preview Event, i.e PreviewSound in the blueprint.
+		const string PreviewName = "{SourceName}_Test";
+		static readonly uint PreviewEventId = AkSoundEngine.GetIDFromString(PreviewName);
 
-            try {
-                log.Log($"Add soundbank base path {banksPath}");
-                AkSoundEngine.AddBasePath(banksPath);
+		// Patches the call to play a preview sound in the character creator's voice selection window.
+		// If the added soundset is selected, the bank is loaded into memory if it isn't already.
+		[HarmonyPatch(typeof(UnitAsksComponent), nameof(UnitAsksComponent.PlayPreview))]
+		[HarmonyPrefix]
+		static bool LoadPreviewBank(UnitAsksComponent __instance)
+		{
+			// If the selected preview is not the mod's, return the original method.
+			if (__instance.PreviewSound is not PreviewName)
+				return true;
 
-                foreach (var f in Directory.EnumerateFiles(banksPath, "*.bnk")) {
-                    var bankName = Path.GetFileName(f);
-                    var akResult = AkSoundEngine.LoadBank(bankName, out var bankId);
+			// If it is the mod's make sure the preview bank is loaded.
+			if (!SoundBanksManager.s_Handles.Any(handle => handle.Key is PreviewName))
+				SoundBanksManager.LoadBankSync(PreviewName);
 
-                    if (bankName == "Init.bnk")
-                        throw new InvalidOperationException("Do not include Init.bnk");
+			// Pass the event to the PostEvent handler.
+			GameObject gameObject = Game.Instance.UI.Common.gameObject;
+			SoundEventsManager.PostEvent(PreviewEventId, gameObject);
 
-                    if (akResult == AKRESULT.AK_BankAlreadyLoaded)
-                        continue;
-
-                    log.Log($"Loading soundbank {f}");
-
-                    if (akResult == AKRESULT.AK_Success) {
-                        LoadedBankIds.Add(bankId);
-                    } else {
-                        log.Error($"Loading soundbank {f} failed with result {akResult}");
-                    }
-                }
-            } catch (Exception e) {
-                log.LogException(e);
-                UnloadSoundbanks();
-            }
-        }
-
-        public static void UnloadSoundbanks() {
-            foreach (var bankId in LoadedBankIds) {
-                try {
-                    AkSoundEngine.UnloadBank(bankId, IntPtr.Zero);
-                    LoadedBankIds.Remove(bankId);
-                } catch (Exception e) {
-                    log.LogException(e);
-                }
-            }
-        }
+			return false;
+		}
 
         [HarmonyPatch(typeof(BlueprintsCache), nameof(BlueprintsCache.Init))]
         [HarmonyPostfix]
@@ -109,10 +98,11 @@ public static class Main {
             {
                 OwnerBlueprint = blueprint,
 
-                // Since the blueprint is added manually by the mod, remove the usual reference
-                // to the bank name to prevent a Wwise "already loaded" error.
-                SoundBanks = [],
-                PreviewSound = "{SourceName}_Test",
+                // Change this to match the name of your primary soundbank.
+                SoundBanks = [ "{SourceName}_GVR_ENG" ],
+                // This is the name of your character creator preview sounds Event. Make sure
+				// that it matches the name of the Event in your Wwise project.
+				PreviewSound = "{SourceName}_Test",
                 Aggro = new()
                 {
                     Entries =

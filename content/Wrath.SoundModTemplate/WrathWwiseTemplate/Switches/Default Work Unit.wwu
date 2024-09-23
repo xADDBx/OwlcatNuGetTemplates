@@ -55,7 +55,7 @@
 						<Switch Name="On" ID="{D5AF2283-F247-4F12-B761-B00C337666AF}"/>
 					</ChildrenList>
 				</SwitchGroup>
-				<Folder Name="PF2" ID="{4FC9295C-EF2F-410D-9831-B98ABC8CD835}" ShortID="584405326">
+				<Folder Name="PF2" ID="{4FC9295C-EF2F-410D-9831-B98ABC8CD835}">
 					<ChildrenList>
 						<SwitchGroup Name="BodySize" ID="{AC72B223-5C3F-4C36-AF3E-D4032CFFE6CA}">
 							<ChildrenList>

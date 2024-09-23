@@ -71,7 +71,7 @@
 									<ReferenceList>
 										<Reference Name="Effect0">
 											<Custom>
-												<Effect Name="Wwise_Stereo_Delay" ID="{CDD7DC2A-9D12-44D8-80FD-C8A7E1119ACB}" ShortID="770904406" PluginName="Wwise Stereo Delay" CompanyID="0" PluginID="135" PluginType="3">
+												<Effect Name="Wwise_Stereo_Delay" ID="{CDD7DC2A-9D12-44D8-80FD-C8A7E1119ACB}" PluginName="Wwise Stereo Delay" CompanyID="0" PluginID="135" PluginType="3">
 													<PropertyList>
 														<Property Name="DryLevel" Type="Real32" Value="-96"/>
 														<Property Name="EnableCrossFeed" Type="bool" Value="True"/>
@@ -89,7 +89,7 @@
 										</Reference>
 										<Reference Name="Effect1">
 											<Custom>
-												<Effect Name="Wwise_RoomVerb" ID="{F73FD6EF-B5F3-4828-89C6-2D33455A8877}" ShortID="471933628" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+												<Effect Name="Wwise_RoomVerb" ID="{F73FD6EF-B5F3-4828-89C6-2D33455A8877}" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
 													<PropertyList>
 														<Property Name="DecayTime" Type="Real32" Value="1.3"/>
 														<Property Name="Density" Type="Real32" Value="100"/>
@@ -111,7 +111,7 @@
 										</Reference>
 										<Reference Name="Effect2">
 											<Custom>
-												<Effect Name="Wwise_Parametric_EQ" ID="{BC584EBD-F411-4693-9B36-B3EF7D17FAEF}" ShortID="292798269" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+												<Effect Name="Wwise_Parametric_EQ" ID="{BC584EBD-F411-4693-9B36-B3EF7D17FAEF}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
 													<PropertyList>
 														<Property Name="FilterTypeBand1" Type="int32" Value="1"/>
 														<Property Name="FilterTypeBand2" Type="int32" Value="5"/>

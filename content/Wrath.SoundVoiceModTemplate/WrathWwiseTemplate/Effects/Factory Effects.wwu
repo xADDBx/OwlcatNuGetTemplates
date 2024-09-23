@@ -3,7 +3,7 @@
 	<Effects>
 		<WorkUnit Name="Factory Effects" ID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}" PersistMode="Standalone">
 			<ChildrenList>
-				<Folder Name="Wwise Compressor" ID="{6D4F6371-ED53-4C90-98DA-0AEB0484548B}" ShortID="64022668">
+				<Folder Name="Wwise Compressor" ID="{6D4F6371-ED53-4C90-98DA-0AEB0484548B}">
 					<ChildrenList>
 						<Effect Name="Gentle_Program_Compressor_Minus_20dB_RMS" ID="{D3F1F88E-4123-4C05-946B-1B036BAC2DFD}" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
 							<PropertyList>
@@ -96,7 +96,7 @@
 						</Effect>
 					</ChildrenList>
 				</Folder>
-				<Folder Name="Wwise Expander" ID="{93E8C416-F687-4AFA-892F-022B532AFB04}" ShortID="234435539">
+				<Folder Name="Wwise Expander" ID="{93E8C416-F687-4AFA-892F-022B532AFB04}">
 					<ChildrenList>
 						<Effect Name="Light_Expander" ID="{C7E71A3B-745F-47B0-8F31-276DD413F83C}" PluginName="Wwise Expander" CompanyID="0" PluginID="109" PluginType="3">
 							<PropertyList>
@@ -121,7 +121,7 @@
 						</Effect>
 					</ChildrenList>
 				</Folder>
-				<Folder Name="Wwise Delay" ID="{842F3AD6-5B58-4CE4-810D-6ADE0CC61B52}" ShortID="846850439">
+				<Folder Name="Wwise Delay" ID="{842F3AD6-5B58-4CE4-810D-6ADE0CC61B52}">
 					<ChildrenList>
 						<Effect Name="One_Tap_One_Second" ID="{5B5883FA-85A1-45CA-8A52-9DBBCF3B0A03}" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
 							<PropertyList>
@@ -144,7 +144,7 @@
 						</Effect>
 					</ChildrenList>
 				</Folder>
-				<Folder Name="Wwise Peak Limiter" ID="{836AD450-C7A2-4D04-B731-35228C434FD4}" ShortID="766653803">
+				<Folder Name="Wwise Peak Limiter" ID="{836AD450-C7A2-4D04-B731-35228C434FD4}">
 					<ChildrenList>
 						<Effect Name="Brick_Wall_Minus_6dB_Peak_Fast_Release" ID="{3FF9AD86-E377-40F8-970F-3D4EE73288B5}" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
 							<PropertyList>
@@ -211,11 +211,11 @@
 						</Effect>
 					</ChildrenList>
 				</Folder>
-				<Folder Name="Wwise Parametric EQ" ID="{DFCF119F-F31B-4A92-BDD4-B049BB5070CF}" ShortID="679384051">
+				<Folder Name="Wwise Parametric EQ" ID="{DFCF119F-F31B-4A92-BDD4-B049BB5070CF}">
 					<ChildrenList>
-						<Folder Name="Shelving EQ" ID="{CBB1490A-1238-442A-B6AB-2AA5C4E8D264}" ShortID="554267120">
+						<Folder Name="Shelving EQ" ID="{CBB1490A-1238-442A-B6AB-2AA5C4E8D264}">
 							<ChildrenList>
-								<Folder Name="High Shelf" ID="{402A395E-C034-474E-BC9A-BF4402CCFE40}" ShortID="319872485">
+								<Folder Name="High Shelf" ID="{402A395E-C034-474E-BC9A-BF4402CCFE40}">
 									<ChildrenList>
 										<Effect Name="Boost_3dB_10KHz" ID="{59632554-9396-4E15-889E-7A2F5458DEC3}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
 											<PropertyList>
@@ -366,7 +366,7 @@
 										</Effect>
 									</ChildrenList>
 								</Folder>
-								<Folder Name="Low Shelf" ID="{193DFAED-0123-43F1-8A29-2476F68CB55A}" ShortID="694540877">
+								<Folder Name="Low Shelf" ID="{193DFAED-0123-43F1-8A29-2476F68CB55A}">
 									<ChildrenList>
 										<Effect Name="Bass_Remover_1" ID="{D313DB05-6B33-4C1F-8C2F-F989052E8120}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
 											<PropertyList>
@@ -492,7 +492,7 @@
 										</Effect>
 									</ChildrenList>
 								</Folder>
-								<Folder Name="Creative EQ" ID="{E7A5B13B-69F0-4B8D-BE8B-B8C4A0EAA51A}" ShortID="685804813">
+								<Folder Name="Creative EQ" ID="{E7A5B13B-69F0-4B8D-BE8B-B8C4A0EAA51A}">
 									<ChildrenList>
 										<Effect Name="Born_In_1950" ID="{3B3A31C2-C9A6-430E-A3CF-62963E332052}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
 											<PropertyList>
@@ -581,7 +581,7 @@
 								</Folder>
 							</ChildrenList>
 						</Folder>
-						<Folder Name="High Pass Filters" ID="{5441713F-966E-419F-B171-057B368D693B}" ShortID="54754283">
+						<Folder Name="High Pass Filters" ID="{5441713F-966E-419F-B171-057B368D693B}">
 							<ChildrenList>
 								<Effect Name="High_Pass_60Hz" ID="{F9627628-0B10-4272-BC30-D4C20423CB38}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
 									<PropertyList>
@@ -593,7 +593,7 @@
 								</Effect>
 							</ChildrenList>
 						</Folder>
-						<Folder Name="Misc" ID="{151A02CB-142F-4755-B709-77FF2A7A16BD}" ShortID="1004187057">
+						<Folder Name="Misc" ID="{151A02CB-142F-4755-B709-77FF2A7A16BD}">
 							<ChildrenList>
 								<Effect Name="Static_Sibilance_Remover_Female" ID="{3E13EF40-7C1A-4EBC-9858-8CB584A642E5}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
 									<PropertyList>
@@ -615,7 +615,7 @@
 								</Effect>
 							</ChildrenList>
 						</Folder>
-						<Folder Name="Low Pass Filters" ID="{40969D6D-1C68-42EB-B46D-FD1A504F797C}" ShortID="1066977057">
+						<Folder Name="Low Pass Filters" ID="{40969D6D-1C68-42EB-B46D-FD1A504F797C}">
 							<ChildrenList>
 								<Effect Name="Low_Pass_20KHz" ID="{830124FB-B9D5-4AE8-846E-E94A74652666}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
 									<PropertyList>
@@ -628,7 +628,7 @@
 								</Effect>
 							</ChildrenList>
 						</Folder>
-						<Folder Name="Band Pass Filters" ID="{06F31128-3218-4580-A1BE-00714DE3FC6C}" ShortID="606165038">
+						<Folder Name="Band Pass Filters" ID="{06F31128-3218-4580-A1BE-00714DE3FC6C}">
 							<ChildrenList>
 								<Effect Name="Single_Band_1Khz_Wide" ID="{9B6A1D1B-F90F-4EAC-B796-2943413957FE}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
 									<PropertyList>
@@ -676,7 +676,7 @@
 						</Folder>
 					</ChildrenList>
 				</Folder>
-				<Folder Name="Wwise Matrix Reverb" ID="{15437578-D8BA-4E3F-B5DA-E03465545132}" ShortID="292445827">
+				<Folder Name="Wwise Matrix Reverb" ID="{15437578-D8BA-4E3F-B5DA-E03465545132}">
 					<ChildrenList>
 						<Effect Name="Bathroom1" ID="{1969D30F-C165-45C0-B290-DE3ED07A7AA3}" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
 							<PropertyList>
@@ -763,9 +763,9 @@
 						</Effect>
 					</ChildrenList>
 				</Folder>
-				<Folder Name="Wwise RoomVerb" ID="{D16E55BD-B819-4EBE-8C66-2CA5A5FE1653}" ShortID="6853472">
+				<Folder Name="Wwise RoomVerb" ID="{D16E55BD-B819-4EBE-8C66-2CA5A5FE1653}">
 					<ChildrenList>
-						<Folder Name="Halls" ID="{98C56DE1-706D-4D92-B380-69CDF64D5DF2}" ShortID="763157902">
+						<Folder Name="Halls" ID="{98C56DE1-706D-4D92-B380-69CDF64D5DF2}">
 							<ChildrenList>
 								<Effect Name="Hall_Large_Bright" ID="{CB602948-2D1D-4977-A8D5-378184293E80}" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
 									<PropertyList>
@@ -999,7 +999,7 @@
 								</Effect>
 							</ChildrenList>
 						</Folder>
-						<Folder Name="Claustrophobia" ID="{6D163BFA-0E83-434C-AF4D-FCA50934152A}" ShortID="143120504">
+						<Folder Name="Claustrophobia" ID="{6D163BFA-0E83-434C-AF4D-FCA50934152A}">
 							<ChildrenList>
 								<Effect Name="Not_A_Yellow_Submarine" ID="{B5719071-C58D-49FA-8766-B1D986D017EC}" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
 									<PropertyList>
@@ -1153,7 +1153,7 @@
 								</Effect>
 							</ChildrenList>
 						</Folder>
-						<Folder Name="Plates" ID="{D2AFE562-3684-4BF0-83FE-82AB5C0D848B}" ShortID="65904299">
+						<Folder Name="Plates" ID="{D2AFE562-3684-4BF0-83FE-82AB5C0D848B}">
 							<ChildrenList>
 								<Effect Name="Plate_Medium" ID="{33384D0C-6ACB-4E3D-AC82-73AAB3AE1CA5}" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
 									<PropertyList>
@@ -1234,7 +1234,7 @@
 								</Effect>
 							</ChildrenList>
 						</Folder>
-						<Folder Name="Rooms" ID="{2A535D3E-9FB6-4EF9-AE14-0DCC404A4CDA}" ShortID="169312458">
+						<Folder Name="Rooms" ID="{2A535D3E-9FB6-4EF9-AE14-0DCC404A4CDA}">
 							<ChildrenList>
 								<Effect Name="Room_Large" ID="{AD8EFAFC-7121-4D5F-BE4D-B13FBD6CEBAE}" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
 									<PropertyList>
@@ -1328,7 +1328,7 @@
 								</Effect>
 							</ChildrenList>
 						</Folder>
-						<Folder Name="Cathedrals" ID="{DFEE1FB0-5C6E-4BF1-AB5E-3835E6DD0723}" ShortID="978789462">
+						<Folder Name="Cathedrals" ID="{DFEE1FB0-5C6E-4BF1-AB5E-3835E6DD0723}">
 							<ChildrenList>
 								<Effect Name="Holy" ID="{CC7B8638-C670-4AD5-B3FB-331EA81037F6}" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
 									<PropertyList>
@@ -1391,7 +1391,7 @@
 								</Effect>
 							</ChildrenList>
 						</Folder>
-						<Folder Name="Huge Spaces" ID="{BA977855-2013-4BEC-9DA1-14012C02AEB5}" ShortID="987290544">
+						<Folder Name="Huge Spaces" ID="{BA977855-2013-4BEC-9DA1-14012C02AEB5}">
 							<ChildrenList>
 								<Effect Name="Machine_Gun_Hangar" ID="{B8FD966C-FC0F-4CD3-8236-B28DF27CDE7D}" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
 									<PropertyList>
@@ -1503,7 +1503,7 @@
 								</Effect>
 							</ChildrenList>
 						</Folder>
-						<Folder Name="Exteriors" ID="{F49A7F7F-6562-433E-A73C-FCF4A76B2582}" ShortID="1065687125">
+						<Folder Name="Exteriors" ID="{F49A7F7F-6562-433E-A73C-FCF4A76B2582}">
 							<ChildrenList>
 								<Effect Name="Have_U_Ever_Been_Outside" ID="{FE29AE8D-FD86-4652-A95D-68D32F5760EC}" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
 									<PropertyList>
@@ -1530,9 +1530,9 @@
 						</Folder>
 					</ChildrenList>
 				</Folder>
-				<Folder Name="Wwise Flanger" ID="{7DAC593F-E45C-42D6-9C69-23A9DEC47B9D}" ShortID="177523455">
+				<Folder Name="Wwise Flanger" ID="{7DAC593F-E45C-42D6-9C69-23A9DEC47B9D}">
 					<ChildrenList>
-						<Folder Name="Flanging" ID="{BB44E83C-AB2B-4817-AD18-F0CF99AC37E4}" ShortID="256040100">
+						<Folder Name="Flanging" ID="{BB44E83C-AB2B-4817-AD18-F0CF99AC37E4}">
 							<ChildrenList>
 								<Effect Name="Standard" ID="{1A2EAB31-6283-4C0D-89B2-F050DF89D421}" PluginName="Wwise Flanger" CompanyID="0" PluginID="125" PluginType="3">
 									<PropertyList>
@@ -1583,7 +1583,7 @@
 								</Effect>
 							</ChildrenList>
 						</Folder>
-						<Folder Name="Chorus" ID="{6FE96ECA-BF65-4A12-9C7B-B11976CA7133}" ShortID="1003146286">
+						<Folder Name="Chorus" ID="{6FE96ECA-BF65-4A12-9C7B-B11976CA7133}">
 							<ChildrenList>
 								<Effect Name="Chorus_Like" ID="{EEE0CC86-8CA5-4DBC-A6B7-568FCB26F290}" PluginName="Wwise Flanger" CompanyID="0" PluginID="125" PluginType="3">
 									<PropertyList>
@@ -1614,7 +1614,7 @@
 								<Property Name="ModPWM" Type="Real32" Value="0"/>
 							</PropertyList>
 						</Effect>
-						<Folder Name="Static Comb Filtering" ID="{6044FF31-2237-4EC5-B94F-9C0C25CFAC44}" ShortID="504290141">
+						<Folder Name="Static Comb Filtering" ID="{6044FF31-2237-4EC5-B94F-9C0C25CFAC44}">
 							<ChildrenList>
 								<Effect Name="Few_Odd_Harm_Notches" ID="{3B5685A6-6274-4292-B5B9-32AFE28DB80B}" PluginName="Wwise Flanger" CompanyID="0" PluginID="125" PluginType="3">
 									<PropertyList>
@@ -1674,7 +1674,7 @@
 						</Folder>
 					</ChildrenList>
 				</Folder>
-				<Folder Name="Harmonizer" ID="{57E4AB58-AE54-4EA2-B894-6111D1F09163}" ShortID="412342428">
+				<Folder Name="Harmonizer" ID="{57E4AB58-AE54-4EA2-B894-6111D1F09163}">
 					<ChildrenList>
 						<Effect Name="Fear_no_Evil" ID="{A1F17D99-0801-4F32-B74E-ADB2D9ACC556}" PluginName="Wwise Harmonizer" CompanyID="0" PluginID="138" PluginType="3">
 							<PropertyList>
@@ -1730,7 +1730,7 @@
 						</Effect>
 					</ChildrenList>
 				</Folder>
-				<Folder Name="Stereo Delay" ID="{F3D9A55C-379D-4D15-82C8-FFB9B0C1E8C8}" ShortID="352473335">
+				<Folder Name="Stereo Delay" ID="{F3D9A55C-379D-4D15-82C8-FFB9B0C1E8C8}">
 					<ChildrenList>
 						<Effect Name="_1_Frame_Delay" ID="{B8CCC284-212D-4ADF-B8E4-BC724B40D8BD}" PluginName="Wwise Stereo Delay" CompanyID="0" PluginID="135" PluginType="3">
 							<PropertyList>
@@ -1854,7 +1854,7 @@
 						</Effect>
 					</ChildrenList>
 				</Folder>
-				<Folder Name="Tremolo" ID="{F9C07D78-BC4E-4386-9433-A8D7BDDDAE14}" ShortID="998026893">
+				<Folder Name="Tremolo" ID="{F9C07D78-BC4E-4386-9433-A8D7BDDDAE14}">
 					<ChildrenList>
 						<Effect Name="Say_what" ID="{E823825D-3114-4F6D-A6A4-7FB673A10A61}" PluginName="Wwise Tremolo" CompanyID="0" PluginID="131" PluginType="3">
 							<PropertyList>
@@ -1943,9 +1943,9 @@
 						</Effect>
 					</ChildrenList>
 				</Folder>
-				<Folder Name="Pitch Shifter" ID="{CAAFBA9C-900A-43C9-A88A-5AC1B29DC25B}" ShortID="538169855">
+				<Folder Name="Pitch Shifter" ID="{CAAFBA9C-900A-43C9-A88A-5AC1B29DC25B}">
 					<ChildrenList>
-						<Folder Name="Harmonize" ID="{E6BF529D-7390-477C-AFFA-9530FA9598E5}" ShortID="700587864">
+						<Folder Name="Harmonize" ID="{E6BF529D-7390-477C-AFFA-9530FA9598E5}">
 							<ChildrenList>
 								<Effect Name="Octave_Up" ID="{A98F423C-EC97-49D8-8698-445CE91F24B7}" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3">
 									<PropertyList>
@@ -1961,7 +1961,7 @@
 								</Effect>
 							</ChildrenList>
 						</Folder>
-						<Folder Name="Transpose" ID="{3356F030-FA3F-489C-9CC9-BC27F83083C3}" ShortID="691881135">
+						<Folder Name="Transpose" ID="{3356F030-FA3F-489C-9CC9-BC27F83083C3}">
 							<ChildrenList>
 								<Effect Name="Chipmunk" ID="{54F9F04F-0D14-46AB-B38B-21CFD2EB46F6}" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3">
 									<PropertyList>

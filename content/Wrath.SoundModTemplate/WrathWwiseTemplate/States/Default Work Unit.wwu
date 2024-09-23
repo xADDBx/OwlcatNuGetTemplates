@@ -171,7 +171,7 @@
 						<State Name="Devil" ID="{8166734C-8B86-4531-B028-F2741ECB64D2}"/>
 					</ChildrenList>
 				</StateGroup>
-				<Folder Name="Local" ID="{3478DF89-7645-4216-8764-FBB0B8F6B534}" ShortID="255423468">
+				<Folder Name="Local" ID="{3478DF89-7645-4216-8764-FBB0B8F6B534}">
 					<ChildrenList>
 						<StateGroup Name="FinalFightBosses" ID="{3097F9E2-1917-4715-B378-CD04BBDE339D}">
 							<ChildrenList>
@@ -182,7 +182,7 @@
 						</StateGroup>
 					</ChildrenList>
 				</Folder>
-				<Folder Name="Music" ID="{73CBC686-0201-4D6D-84C3-D2FBD00660B9}" ShortID="516085649">
+				<Folder Name="Music" ID="{73CBC686-0201-4D6D-84C3-D2FBD00660B9}">
 					<ChildrenList>
 						<StateGroup Name="MusicGlobalVolumeModify" ID="{82611093-A1E5-45A0-BDDC-898AA6E2D7FC}">
 							<ChildrenList>
