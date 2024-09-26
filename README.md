@@ -5,7 +5,7 @@
 - Install .NET SDK with the command:  
   `winget install Microsoft.Dotnet.SDK.8`
 - I suggest using Visual Studio 2022 to edit the project. Use the following cmd command to install it:  
-  `winget install Microsoft.VisualStudio.2022.Community --override "--add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.Net.Component.4.7.2.SDK"`
+  `winget install Microsoft.VisualStudio.2022.Community --override "--add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.Net.Component.4.8.1.SDK"`
 - If you haven't done this before (If you're not sure, just execute in anyways), you might need to add the NuGet repository as a source with the following command:  
   `dotnet nuget add source https://api.nuget.org/v3/index.json -n nuget.org`  
   (Just ignore the following error if it appears: "`The name specified has already been added to the list of available package sources. Provide a unique name.`")
