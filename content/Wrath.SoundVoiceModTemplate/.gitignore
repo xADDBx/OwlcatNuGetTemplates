@@ -401,9 +401,9 @@ FodyWeavers.xsd
 
 # If you want to prevent the entire Wwise folder being uploaded
 # to Github, etc., uncomment the following line:
-# WrathWwiseTemplate/
-WrathWwiseTemplate/*.wsettings
-WrathWwiseTemplate/*.validationcache
-WrathWwiseTemplate/.cache/
-WrathWwiseTemplate/GeneratedSoundBanks/
-WrathWwiseTemplate/Originals/
+# WwiseTemplate/
+WwiseTemplate/*.wsettings
+WwiseTemplate/*.validationcache
+WwiseTemplate/.cache/
+WwiseTemplate/GeneratedSoundBanks/
+WwiseTemplate/Originals/
