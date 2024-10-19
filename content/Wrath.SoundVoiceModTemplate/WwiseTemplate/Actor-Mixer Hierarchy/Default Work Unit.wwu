@@ -3001,7 +3001,7 @@
 						</ActorMixer>
 						<ActorMixer Name="Character_Creator_Sample" ID="{B1052122-36FC-41EB-8603-35D22A8A47DE}">
 							<PropertyList>
-								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 								<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
 								<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
 								<Property Name="MakeUpGain" Type="Real64">
