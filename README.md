@@ -3,7 +3,7 @@
 ### Environmental Setup (Only needs to be done the first time)
 - Open Windows command prompt (cmd.exe)
 - Install .NET SDK with the command:  
-  `winget install Microsoft.Dotnet.SDK.8`
+  `winget install Microsoft.Dotnet.SDK.9`
 - I suggest using Visual Studio 2022 to edit the project. Use the following cmd command to install it:  
   `winget install Microsoft.VisualStudio.2022.Community --override "--add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.Net.Component.4.8.1.SDK"`
 - If you haven't done this before (If you're not sure, just execute in anyways), you might need to add the NuGet repository as a source with the following command:  
