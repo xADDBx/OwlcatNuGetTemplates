@@ -46,3 +46,4 @@ For sound mods, they additionally contain:
 - The target game needs to be installed. The game must've been started once (for a Player.log file).
 - Kingmaker and Wrath: Have UnityModManager applied to the game.
 - For the sound templates you additionally need a compatible version of Wwise (Audiokinetic) installed. For Wrath, that's any `2019.2` version.
+- You need .NET SDK 6 or newer installed. The Environmental Setup step includes a command which installs one such version.
