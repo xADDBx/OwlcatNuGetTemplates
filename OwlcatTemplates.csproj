@@ -5,7 +5,7 @@
     <PackageVersion>1.12.1</PackageVersion>
     <PackageId>Owlcat.Templates</PackageId>
     <Title>Owlcat Mod Templates</Title>
-    <Authors>ADDB;Microsoftenator;AlterAsc;CascadingDragon</Authors>
+    <Authors>ADDB;Microsoftenator;AlterAsc;CascadingDragon;DarthParametric</Authors>
     <Description>Mod Templates for Owlcat Games</Description>
     <PackageTags>UnityModManager;Mod;Template;Owlcat</PackageTags>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
