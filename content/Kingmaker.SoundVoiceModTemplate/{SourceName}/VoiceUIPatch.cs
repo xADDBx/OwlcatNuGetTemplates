@@ -67,8 +67,11 @@ internal class VoiceUIPatch
             else
                 GameObject.DestroyImmediate(backgroud.gameObject);
 
-            // Add scroll bar.
-            var scollBar = GameObject.Instantiate(_scrollbar, parent.transform, false);
+            // Try to add scroll bar. Should always work but it wont fail now if one can't be found.
+            Scrollbar scollBar = null;
+
+            if (_scrollbar != null)
+                scollBar = GameObject.Instantiate(_scrollbar, parent.transform, false);
 
             // Add Mask. Hides anything not in view of the scroll area.
             var mask = parent.gameObject.AddComponent<Mask>();
@@ -83,7 +86,7 @@ internal class VoiceUIPatch
             scrollRect.viewport = (RectTransform)parent;
             scrollRect.content = (RectTransform)containter;
             scrollRect.verticalScrollbar = scollBar;
-            scrollRect.vertical = true;
+            scrollRect.vertical = scollBar != null;
             scrollRect.horizontal = false;
             scrollRect.scrollSensitivity = 30f;
             scrollRect.movementType = ScrollRectExtended.MovementType.Clamped;
@@ -100,13 +103,24 @@ internal class VoiceUIPatch
     }
 
     [HarmonyPatch]
-    private static class SettingsListScreen_Patch
+    private static class CharacterBuildConroller_Patch
     {
-        [HarmonyPatch(typeof(SettingsListScreen), nameof(SettingsListScreen.DoInitialize))]
-        [HarmonyPrefix]
+        [HarmonyPatch(typeof(CharacterBuildController), nameof(CharacterBuildController.OnShow))]
+        [HarmonyPostfix]
+        static void GetInternalScrollBar(CharacterBuildController __instance)
+        {
+            if (_scrollbar != null)
+                return;
 
-        // Grab a scroll bar.
-        public static void GetInternalScrollRect(SettingsListScreen __instance) => 
-            _scrollbar = GameObject.Instantiate(__instance.ScrollView.verticalScrollbar);
+            var scrollBar = __instance.gameObject.GetComponentInChildren<Scrollbar>();
+
+            if (scrollBar == null)
+            {
+                Main.log.Error("A ScrollBar was not found!");
+                return;
+            }
+
+            _scrollbar = GameObject.Instantiate(scrollBar);
+        }
     }
 }
