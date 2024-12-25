@@ -28,22 +28,23 @@
 - `wrathsoundvoicemod`  - Wwise Template to add new player/merc voice sets to the game, bundled with a UnityModManager Template for Pathfinder: Wrath of the Righteous. Read the [guide](https://github.com/WittleWolfie/OwlcatModdingWiki/wiki/Creating-Custom-SoundBanks) on the wiki to find out how to use the Wwise setup!
 - `wrathbpcoremod` - BPCore UnityModManager Template for Pathfinder: Wrath of the Righteous. BPCore is a community library to make certain aspects of modding easier in Wrath.
 - `kmmod` - UnityModManager Template for Pathfinder: Kingmaker
+- `kmsoundvoicemod`  - Wwise Template to add new player/merc voice sets to the game, bundled with a UnityModManager Template for Pathfinder: Kingmaker. Read the [guide](https://github.com/WittleWolfie/OwlcatModdingWiki/wiki/Creating-Custom-SoundBanks) on the wiki to find out how to use the Wwise setup!
 
 After that you should working setup for a UnityModManager mod which:
 
 - automatically installs the mod when building
-- has the correct path and already references a few assemblies (and even pubclizies three of them where I know it's often needed)
+- has the correct path and already references a few assemblies (and even publicizes three of them where I know it's often needed)
 - has Hotreloading as an option by default; it's in both Release and Debug builds since I haven't found a way to ship Compiler Conditionals.
 
 For sound mods, they additionally contain:
 
 - A Wwise template in which you can add sounds (and create sound events). The template should automatically include the created Soundbanks in the final output.
 - The UnityModManager mod part will automatically load the Soundbanks contained in the mod directory during runtime.
-- If the event name matches an answer/cue/dialog guid, the sound event should automatically play when that answer/cue/dialog is displayed.
+- If the event name matches an answer/cue/dialog GUID, the sound event should automatically play when that answer/cue/dialog is displayed.
 
 ## Requirements
 
 - The target game needs to be installed. The game must've been started once (for a Player.log file).
 - Kingmaker and Wrath: Have UnityModManager applied to the game.
-- For the sound templates you additionally need a compatible version of Wwise (Audiokinetic) installed. For Wrath, that's any `2019.2` version.
+- For the sound templates you additionally need a compatible version of Wwise (Audiokinetic) installed: KM: 2016.2 / Wrath: 2019.2 / RT: 2022.1.
 - You need .NET SDK 6 or newer installed. The Environmental Setup step includes a command which installs one such version.

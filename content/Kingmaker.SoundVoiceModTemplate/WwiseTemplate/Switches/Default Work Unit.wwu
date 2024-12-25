@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{9D712384-791F-4A93-B9D0-1AD312FD2FDD}" SchemaVersion="75">
+	<Switches>
+		<WorkUnit Name="Default Work Unit" ID="{9D712384-791F-4A93-B9D0-1AD312FD2FDD}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="TERRAIN" ID="{A14FE20A-EE58-47A7-B0DF-903FA4B87B1C}">
+					<ChildrenList>
+						<Switch Name="CARPET" ID="{DF04B0C6-65D3-43A8-AE0D-DF491EA74863}"/>
+						<Switch Name="GRASS" ID="{34185BBE-2640-4CB4-9881-A02103C3B107}"/>
+						<Switch Name="GROUND" ID="{948CFBB1-0FDD-406F-A060-F86A606E7B45}"/>
+						<Switch Name="ICE" ID="{F90A33DD-9713-4949-AB73-C744F28DB396}"/>
+						<Switch Name="NEEDLES" ID="{950FBAFE-EF61-4C79-8426-4BCD82E74422}"/>
+						<Switch Name="SAND" ID="{B2802571-219B-46D6-B52D-DAC9C0BB1B12}"/>
+						<Switch Name="SNOW" ID="{BC430DE5-2A0B-4A13-874E-BF2395C38C1C}"/>
+						<Switch Name="STONE" ID="{3A5B0F8F-6250-4242-A6DA-511BD9C7BE3B}"/>
+						<Switch Name="SWAMP" ID="{A929A4C4-7775-4510-8E7A-95650C111256}"/>
+						<Switch Name="WATER" ID="{E569AF9F-5223-406E-8F2E-04BBD40637E3}"/>
+						<Switch Name="WOOD" ID="{C9EBEABB-C9BB-4199-BA29-CE4287526551}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="STEALTHASKS" ID="{FBE1A6A3-262F-4E06-AE99-0E50DA024545}">
+					<ChildrenList>
+						<Switch Name="STEALTHOFF" ID="{A4C9488D-18EB-47ED-99B9-B0470C367257}"/>
+						<Switch Name="STEALTHON" ID="{1080EDEA-DC2A-4021-AEF5-DF12471D3B0A}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="RAININTENSITY" ID="{0CA510BF-DB7F-4A87-BE30-4FC9793C8BCA}">
+					<ChildrenList>
+						<Switch Name="HIGH" ID="{C2CA8CA2-E78B-4548-AF2B-AF3DE17AAF3D}"/>
+						<Switch Name="LOW" ID="{36F7ECD4-C82E-4965-AC2E-D76DC8874B0A}"/>
+						<Switch Name="MED" ID="{B4E79172-ECE5-4C5F-8B36-40F54865E20F}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="FOOTSTEPTYPE" ID="{03A2BAD9-2203-4341-BC6D-F5041F2C03AE}">
+					<ChildrenList>
+						<Switch Name="BOOTLARGE" ID="{7E22D0A7-E3B7-472F-8945-F0A41346AD83}"/>
+						<Switch Name="BOOTMEDIUM" ID="{50062909-59C1-4A7E-8E07-3EB03861A1FA}"/>
+						<Switch Name="BOOTMETALMEDIUM" ID="{B276E28D-BD08-4268-A5CC-55C078EF353B}"/>
+						<Switch Name="BOOTSMALL" ID="{5CB3F386-7DAF-4E59-B239-493ABD12E5D3}"/>
+						<Switch Name="GHOST" ID="{848465B5-4BBD-426C-8577-8C4CDEF30FA5}"/>
+						<Switch Name="LEGSSMALL" ID="{AA213A14-087A-4258-9191-407D461029BF}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="COMBATSPEEDSELECTOR" ID="{B65A9EEA-FF4D-4D77-A208-36FFFCC832AC}">
+					<ChildrenList>
+						<Switch Name="FAST" ID="{C7726E7D-A6CF-4CB2-BF82-CD321D5B4601}"/>
+						<Switch Name="MEDIUM" ID="{6CC4D2EF-A776-4EDA-9C4F-EEDB4AC7F2A7}"/>
+						<Switch Name="NORMAL" ID="{9A497359-9353-4C7D-A34F-830D884AFB77}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="CHARACTERTITLE" ID="{C69F2C73-3EA2-4682-81E2-A306EACF9017}">
+					<ChildrenList>
+						<Switch Name="BARON" ID="{5A1EA91E-D100-4FC5-ABDB-B4C077992F98}"/>
+						<Switch Name="KING" ID="{1EEBBE51-3011-44E2-A100-6A0F9A3E8C79}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="CHARACTERSEX" ID="{6D871DC0-C08A-49CF-8740-B6001537A2EA}">
+					<ChildrenList>
+						<Switch Name="FEMALE" ID="{2B3745F9-B293-42F5-931F-58CA1F1DFB7D}"/>
+						<Switch Name="MALE" ID="{D20F0B7F-8F8F-424D-81FF-C90FEDA0FBE7}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="CHARACTERRACE" ID="{767BD307-E098-45DD-8A0A-B1A5B432ECCC}">
+					<ChildrenList>
+						<Switch Name="DWARF" ID="{E8AE1BF0-D1E4-479D-81BF-1735B7252445}"/>
+						<Switch Name="ELF" ID="{B87B1984-8740-4732-B376-51D8A058E0B6}"/>
+						<Switch Name="GNOME" ID="{5CDA468A-D4E5-4FCE-A5AB-298C7D6AB2F3}"/>
+						<Switch Name="HALFELF" ID="{BDB282A6-7ED2-4E78-9E14-859869AEE0EF}"/>
+						<Switch Name="HALFLING" ID="{6B7653E1-B917-4D4F-A177-E50DD4CD6D42}"/>
+						<Switch Name="HALFORC" ID="{5AE99954-B59E-4F0C-86FB-300D4D3A509B}"/>
+						<Switch Name="HUMAN" ID="{9F4BA24E-E46D-49EE-8CFA-D1BAC70B7F8A}"/>
+						<Switch Name="KOBOLD" ID="{0679F7BD-6EB7-4B36-B0BD-8E77B1163DF5}"/>
+						<Switch Name="TROLL" ID="{9D1BE425-071D-400F-A8ED-582FF00D1437}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="CHARACTERCOMBAT" ID="{D05D26C0-CBCB-4293-9295-5CD5DB837677}">
+					<ChildrenList>
+						<Switch Name="ON" ID="{0830EC8A-BAFC-4E8F-8118-289821A51E10}"/>
+						<Switch Name="OFF" ID="{59601709-C281-46A6-84E5-D0033727ACAD}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>
