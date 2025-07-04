@@ -6,34 +6,25 @@ using Kingmaker.EntitySystem.Entities;
 using Kingmaker.Localization;
 using Kingmaker.Sound;
 using Kingmaker.Visual.Sound;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
 using System.Reflection;
-using System;
 using UnityModManagerNet;
 
 namespace {SourceName};
 
-//-:cnd:noEmit
-#if DEBUG
-[EnableReloading]
-#endif
-//+:cnd:noEmit
 public static class Main {
     internal static Harmony HarmonyInstance;
-    internal static UnityModManager.ModEntry.ModLogger log;
+    internal static UnityModManager.ModEntry.ModLogger Log;
 
     public static bool Load(UnityModManager.ModEntry modEntry) {
-        log = modEntry.Logger;
-//-:cnd:noEmit
-#if DEBUG
-        modEntry.OnUnload = OnUnload;
-#endif
-//+:cnd:noEmit
+        Log = modEntry.Logger;
         modEntry.OnGUI = OnGUI;
         HarmonyInstance = new Harmony(modEntry.Info.Id);
-        HarmonyInstance.PatchAll(Assembly.GetExecutingAssembly());
+        try {
+            HarmonyInstance = new Harmony(modEntry.Info.Id);
+        } catch {
+            HarmonyInstance.UnpatchAll(HarmonyInstance.Id);
+            throw;
+        }
         return true;
     }
 
@@ -914,12 +905,4 @@ public static class Main {
                     .ToArray();
         }
     }
-//-:cnd:noEmit
-#if DEBUG
-    public static bool OnUnload(UnityModManager.ModEntry modEntry) {
-        HarmonyInstance.UnpatchAll(modEntry.Info.Id);
-        return true;
-    }
-#endif
-//+:cnd:noEmit
 }

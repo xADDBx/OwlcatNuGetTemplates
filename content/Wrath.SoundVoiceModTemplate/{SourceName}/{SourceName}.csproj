@@ -11,6 +11,7 @@
 		<RootNamespace>{SourceName}</RootNamespace>
 		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
 		<RestoreAdditionalProjectSources>https://api.nuget.org/v3/index.json</RestoreAdditionalProjectSources>
+		<ImplicitUsings>enable</ImplicitUsings>
 		<{Game}Data>$(LocalAppData)Low\Owlcat Games\Pathfinder Wrath Of The Righteous</{Game}Data>
 	</PropertyGroup>
 	<ItemGroup>
