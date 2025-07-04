@@ -39,7 +39,7 @@ public static class Main {
 
         try
         {
-            log.Log($"Attempting to copy mod soundbank/s to the vanilla soundbanks folder \"{vanillaPath}\":");
+            Log.Log($"Attempting to copy mod soundbank/s to the vanilla soundbanks folder \"{vanillaPath}\":");
 
             foreach (var f in Directory.EnumerateFiles(banksPath, "*.bnk"))
             {
@@ -57,7 +57,7 @@ public static class Main {
                 // Safety check to prevent overwriting vanilla banks (non-exhaustive list).
                 if (vanillaBNKs.Contains(bankName))
                 {
-                    log.Log($"Soundbank \"{bankName}\" uses a vanilla bank name! Skipping.");
+                    Log.Log($"Soundbank \"{bankName}\" uses a vanilla bank name! Skipping.");
                     continue;
                 }
 
@@ -72,24 +72,24 @@ public static class Main {
                     // Compare the mod folder bank to an existing bank to see if it is newer to account for mod updates.
                     if (newBNKWrite.LastWriteTimeUtc > oldBNKWrite.LastWriteTimeUtc)
                     {
-                        log.Log($"Soundbank \"{bankName}\" already exists. Mod folder version is newer ({newBNKWrite.LastWriteTime:HH:mm, dd MMM, yyyy} vs {oldBNKWrite.LastWriteTime:HH:mm, dd MMM, yyyy}), overwriting.");
+                        Log.Log($"Soundbank \"{bankName}\" already exists. Mod folder version is newer ({newBNKWrite.LastWriteTime:HH:mm, dd MMM, yyyy} vs {oldBNKWrite.LastWriteTime:HH:mm, dd MMM, yyyy}), overwriting.");
                         File.Copy(bankSource, bankDest, true);
                     }
                     else
                     {
-                        log.Log($"Soundbank \"{bankName}\" already exists. Mod folder version is the same or older ({newBNKWrite.LastWriteTime:HH:mm, dd MMM, yyyy} vs {oldBNKWrite.LastWriteTime:HH:mm, dd MMM, yyyy}), skipping.");
+                        Log.Log($"Soundbank \"{bankName}\" already exists. Mod folder version is the same or older ({newBNKWrite.LastWriteTime:HH:mm, dd MMM, yyyy} vs {oldBNKWrite.LastWriteTime:HH:mm, dd MMM, yyyy}), skipping.");
                     }
                 }
                 else
                 {
                     File.Copy(bankSource, bankDest);
-                    log.Log($"Copying soundbank \"{bankName}\".");
+                    Log.Log($"Copying soundbank \"{bankName}\".");
                 }
             }
         }
         catch (Exception e)
         {
-            log.Log($"ERROR: Caught an exception trying to copy soundbank/s to the game folder:\n{e}");
+            Log.Log($"ERROR: Caught an exception trying to copy soundbank/s to the game folder:\n{e}");
         }
     }
 
@@ -110,7 +110,7 @@ public static class Main {
 #if DEBUG
             if (strings.TryGetValue(key, out string oldValue) && value != oldValue)
             {
-                log.Log($"Info: found localized string with duplicate key: \"{key}\", but different value: \"{oldValue}\".");
+                Log.Log($"Info: found localized string with duplicate key: \"{key}\", but different value: \"{oldValue}\".");
             }
 #endif
 //+:cnd:noEmit
@@ -677,14 +677,14 @@ public static class Main {
                 // Check it doesn't already exist.
                 if (ResourcesLibrary.LibraryObject.BlueprintsByAssetId.ContainsKey(blueprint.AssetGuid))
                 {
-                    log.Log($"BlueprintUnitAsksList \"{blueprint.name}\" ({blueprint.AssetGuid}) already exists in ResourcesLibrary, skipping.");
+                    Log.Log($"BlueprintUnitAsksList \"{blueprint.name}\" ({blueprint.AssetGuid}) already exists in ResourcesLibrary, skipping.");
                     return;
                 }
                 else
                 {
                     int length = voices.Length;
 
-                    log.Log($"Mod BlueprintUnitAsksList \"{blueprint.name}\" not found in ResourcesLibrary, adding.");
+                    Log.Log($"Mod BlueprintUnitAsksList \"{blueprint.name}\" not found in ResourcesLibrary, adding.");
 
                     Array.Resize<BlueprintUnitAsksList>(ref voices, length + 1);
 
@@ -696,7 +696,7 @@ public static class Main {
             }
             catch (Exception e)
             {
-                log.Log($"ERROR: Trying to add the blueprint to the BlueprintUnitAsksList array resulted in the following exception:\n{e}");
+                Log.Log($"ERROR: Trying to add the blueprint to the BlueprintUnitAsksList array resulted in the following exception:\n{e}");
             }
         }
     }
