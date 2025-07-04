@@ -4,7 +4,6 @@ using Kingmaker.Blueprints.Root;
 using Kingmaker.UI;
 using Kingmaker.UI.Common;
 using Kingmaker.UI.LevelUp;
-using Kingmaker.UI.SettingsUI;
 using Kingmaker.Visual.Sound;
 using UnityEngine;
 using UnityEngine.UI;
@@ -116,7 +115,7 @@ internal class VoiceUIPatch
 
             if (scrollBar == null)
             {
-                Main.log.Error("A ScrollBar was not found!");
+                Main.Log.Error("A ScrollBar was not found!");
                 return;
             }
 
