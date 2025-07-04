@@ -1,12 +1,13 @@
 ﻿using HarmonyLib;
+using Kingmaker;
 using Kingmaker.Blueprints;
 using Kingmaker.Blueprints.JsonSystem;
 using Kingmaker.Blueprints.Root;
-using Kingmaker.EntitySystem.Entities;
 using Kingmaker.Localization;
 using Kingmaker.Sound;
 using Kingmaker.Visual.Sound;
 using System.Reflection;
+using UnityEngine;
 using UnityModManagerNet;
 
 namespace {SourceName};
