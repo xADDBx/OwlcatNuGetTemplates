@@ -15,7 +15,7 @@ public static class Main {
         modEntry.OnGUI = OnGUI;
         HarmonyInstance = new Harmony(modEntry.Info.Id);
         try {
-            HarmonyInstance = new Harmony(modEntry.Info.Id);
+            HarmonyInstance.PatchAll(Assembly.GetExecutingAssembly());
         } catch {
             HarmonyInstance.UnpatchAll(HarmonyInstance.Id);
             throw;

@@ -12,13 +12,13 @@ public static class Main {
     public static bool Load(UnityModManager.ModEntry modEntry) {
         Log = modEntry.Logger;
         modEntry.OnGUI = OnGUI;
+        HarmonyInstance = new Harmony(modEntry.Info.Id);
         try {
-            HarmonyInstance = new Harmony(modEntry.Info.Id);
+            HarmonyInstance.PatchAll(Assembly.GetExecutingAssembly());
         } catch {
             HarmonyInstance.UnpatchAll(HarmonyInstance.Id);
             throw;
         }
-        HarmonyInstance.PatchAll(Assembly.GetExecutingAssembly());
         return true;
     }
 
