@@ -30,7 +30,7 @@
 - `kmmod` - UnityModManager Template for Pathfinder: Kingmaker
 - `kmsoundvoicemod`  - Wwise Template to add new player/merc voice sets to the game, bundled with a UnityModManager Template for Pathfinder: Kingmaker. Read the [guide](https://github.com/WittleWolfie/OwlcatModdingWiki/wiki/Creating-Custom-SoundBanks) on the wiki to find out how to use the Wwise setup!
 
-After that you should working setup for a UnityModManager mod which:
+After that you should have a working setup for a UnityModManager mod which:
 
 - automatically installs the mod when building
 - has the correct path and already references a few assemblies (and even publicizes three of them where I know it's often needed)
