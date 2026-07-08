@@ -26,8 +26,8 @@
 	</ItemGroup>
 	<ItemGroup>
 		<None Include="Info.json" CopyToOutputDirectory="PreserveNewest" />
-		<None Include="$(SolutionDir)WrathWwiseTemplate\GeneratedSoundBanks\Windows\**\*.bnk" Exclude="$(SolutionDir)WrathWwiseTemplate\GeneratedSoundBanks\Windows\Init.bnk" TargetPath="%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
-		<None Include="$(SolutionDir)WrathWwiseTemplate\GeneratedSoundBanks\Windows\SoundbanksInfo.xml" CopyToOutputDirectory="PreserveNewest" />
+		<None Include="$(SolutionDir)WwiseTemplate\GeneratedSoundBanks\Windows\**\*.bnk" Exclude="$(SolutionDir)WwiseTemplate\GeneratedSoundBanks\Windows\Init.bnk" TargetPath="%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+		<None Include="$(SolutionDir)WwiseTemplate\GeneratedSoundBanks\Windows\SoundbanksInfo.xml" CopyToOutputDirectory="PreserveNewest" />
 	</ItemGroup>
 	<Target Name="Deploy" AfterTargets="Build">
 		<ItemGroup>
