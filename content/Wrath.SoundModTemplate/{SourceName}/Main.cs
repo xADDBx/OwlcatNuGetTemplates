@@ -66,7 +66,7 @@ public static class Main {
         }
 
         public static void UnloadSoundbanks() {
-            foreach (var bankId in LoadedBankIds) {
+            foreach (var bankId in LoadedBankIds.ToArray()) {
                 try {
                     AkSoundEngine.UnloadBank(bankId, IntPtr.Zero);
                     LoadedBankIds.Remove(bankId);
