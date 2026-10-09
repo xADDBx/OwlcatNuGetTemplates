@@ -47,6 +47,7 @@
 		<PackageReference Include="BepInEx.AssemblyPublicizer.MSBuild" IncludeAssets="build; contentfiles" Version="0.4.2" PrivateAssets="all" />
 		<PackageReference Include="PublishToWorkshop" IncludeAssets="runtime; build; native; contentfiles; analyzers; buildtransitive" Version="1.0.10" PrivateAssets="all" />
 		<PackageReference Include="MicroUtils.HarmonyAnalyzers" IncludeAssets="runtime; build; native; contentfiles; analyzers" Version="*-*" PrivateAssets="all" />
+		<PackageReference Include="Microsoft.Unity.Analyzers" Version="1.28.0" PrivateAssets="all" />
 	</ItemGroup>
 	<Target Name="PublishToSteamWorkshop" AfterTargets="Publish">
 		<RemoveDir Directories="$(OutputPath)\publish" />
@@ -73,6 +74,6 @@
 &lt;/Project&gt;" Overwrite="true" Encoding="utf-8" />
 	</Target>
 	<Target Name="DeleteCustomPropsFile" BeforeTargets="Clean">
-		<Delete Files="GamePath.props" />
+		<Delete Files="$(SolutionDir)GamePath.props" />
 	</Target>
 </Project>
