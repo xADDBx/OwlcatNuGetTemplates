@@ -3,7 +3,7 @@
 ### Environmental Setup (Only needs to be done the first time)
 - Open Windows command prompt (cmd.exe)
 - Install .NET SDK with the command:  
-  `winget install Microsoft.Dotnet.SDK.9`
+  `winget install Microsoft.Dotnet.SDK.10`
 - I suggest using Visual Studio 2022 to edit the project. Use the following cmd command to install it:  
   `winget install Microsoft.VisualStudio.2022.Community --override "--add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.Net.Component.4.8.1.SDK"`
 - If you haven't done this before (If you're not sure, just execute in anyways), you might need to add the NuGet repository as a source with the following command:  
@@ -14,7 +14,7 @@
 ### Creating a Project
 - Open Windows command prompt (cmd.exe) in the directory which should contain project folder
 - `dotnet new <TemplateName> -n <ModID> -D "<Mod Name>"`  (Replace the `<value>` placeholder with actual values; See a list of TemplateNames just below.)
-- Open the resulting project (open the .sln file with Visual Studio) and **Build resulting project once to publicize**
+- Open the resulting project (open the .slnx file with Visual Studio) and **Build resulting project once to publicize**
 - Restart your IDE to rebuild cache if there are still red underlines
 
 ## Existing Template:
@@ -47,4 +47,4 @@ For sound mods, they additionally contain:
 - The target game needs to be installed. The game must've been started once (for a Player.log file).
 - Kingmaker and Wrath: Have UnityModManager applied to the game.
 - For the sound templates you additionally need a compatible version of Wwise (Audiokinetic) installed: KM: 2016.2 / Wrath: 2019.2 / RT: 2022.1.
-- You need .NET SDK 6 or newer installed. The Environmental Setup step includes a command which installs one such version.
+- You need .NET SDK 9 or newer installed. The Environmental Setup step includes a command which installs one such version.

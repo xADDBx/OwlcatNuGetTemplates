@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <PackageType>Template</PackageType>
-    <PackageVersion>1.14.4</PackageVersion>
+    <PackageVersion>1.15.0</PackageVersion>
     <PackageId>Owlcat.Templates</PackageId>
     <Title>Owlcat Mod Templates</Title>
     <Authors>ADDB;Microsoftenator;AlterAsc;CascadingDragon;DarthParametric;hambeard</Authors>
